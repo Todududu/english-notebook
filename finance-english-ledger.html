@@ -6,7 +6,22 @@
 <title>Finance English Ledger</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Spectral:ital,wght@0,600;0,700;1,500&display=swap">
-<style>html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}
+/* tap-to-translate */
+#view .tapx{cursor:help}
+.tp{position:fixed;z-index:50;width:min(320px,calc(100vw - 32px));background:var(--surface);color:var(--ink);border:1px solid var(--rule);border-radius:10px;box-shadow:0 8px 28px rgba(0,0,0,.18);padding:12px 14px 12px;font-size:14px}
+.tp .tw{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.tp .tw b{font-family:var(--display);font-size:22px;line-height:1.1}
+.tp .ti{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.tp .tv{margin-top:6px;font-size:16px;font-weight:600;color:var(--accent)}
+.tp .tpos{margin-top:4px;color:var(--muted);font-size:13px}
+.tp .tpos i{font-style:normal;font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.06em;margin-right:4px}
+.tp .tloc{margin-top:8px;padding-top:8px;border-top:1px dashed var(--rule);font-size:13px}
+.tp .tft{margin-top:8px;display:flex;justify-content:space-between;gap:8px;font-size:12px}
+.tp .tft a{color:var(--muted)}
+.tp .tx{position:absolute;top:6px;right:8px;border:0;background:none;font-size:18px;color:var(--muted);cursor:pointer;line-height:1;padding:4px}
+.taphint{font-size:12px;color:var(--muted)}
+</style>
 <style>
 :root{
   --paper:#F3F5F0; --surface:#FFFFFF; --ink:#1B2623; --muted:#5B6964; --rule:#D8DFD9; --rule-soft:#E7ECE8;
@@ -285,6 +300,7 @@ details.rel summary{cursor:pointer;font-size:14px;color:var(--muted)}
   </div>
   <div id="ttsWarn" class="warn" hidden>Trình duyệt này chưa hỗ trợ đọc to (Text-to-Speech). Hãy mở trang bằng Chrome, Edge hoặc Safari để nghe phát âm.</div>
 
+  <p class="taphint">Mẹo: chạm vào từ tiếng Anh bất kỳ trong câu, định nghĩa hoặc bài nghe để xem nghĩa tiếng Việt.</p>
   <main id="view"></main>
 </div>
 
@@ -1333,6 +1349,62 @@ $("#bkMake").onclick=async()=>{const o={};try{for(let i=0;i<localStorage.length;
 $("#bkLoad").onclick=()=>{try{const o=JSON.parse(decodeURIComponent(escape(atob($("#bkArea").value.trim()))));
   if(!o||!o.d)throw 0;Object.entries(o.d).forEach(([k,v])=>localStorage.setItem(PFX+k,v));$("#bkMsg").textContent="Đã khôi phục. Đang tải lại…";setTimeout(()=>location.reload(),600)}
   catch(e){$("#bkMsg").textContent="Mã không hợp lệ. Hãy dán lại đúng toàn bộ mã sao lưu."}};
+
+
+/* ============ TAP TO TRANSLATE ============ */
+const TRC=(()=>{try{return JSON.parse(localStorage.getItem("tr-cache")||"{}")}catch(e){return {}}})();
+const trSave=()=>{try{const k=Object.keys(TRC);if(k.length>800)k.slice(0,200).forEach(x=>delete TRC[x]);localStorage.setItem("tr-cache",JSON.stringify(TRC))}catch(e){}};
+function stems(w){const s=[w];if(w.endsWith("ies"))s.push(w.slice(0,-3)+"y");if(w.endsWith("es"))s.push(w.slice(0,-2));if(w.endsWith("s"))s.push(w.slice(0,-1));
+  if(w.endsWith("ied"))s.push(w.slice(0,-3)+"y");if(w.endsWith("ed")){s.push(w.slice(0,-2),w.slice(0,-1));if(/(.)\1ed$/.test(w))s.push(w.slice(0,-3))}
+  if(w.endsWith("ing")){s.push(w.slice(0,-3),w.slice(0,-3)+"e");if(/(.)\1ing$/.test(w))s.push(w.slice(0,-4))}if(w.endsWith("'s"))s.push(w.slice(0,-2));return s}
+function localHits(w,ctx){const out=[],lw=w.toLowerCase(),st=stems(lw),c=(ctx||"").toLowerCase();
+  for(const v of V){const t=v.t.toLowerCase();
+    if(st.includes(t)){out.unshift(v);continue}
+    if(t.includes(" ")&&t.split(/[\s-]+/).some(x=>st.includes(x))&&c.includes(t.split(" ")[0]))out.push(v)}
+  const seen=new Set();return out.filter(v=>!seen.has(v.t)&&seen.add(v.t)).slice(0,3)}
+async function onlineTr(w){const k=w.toLowerCase();if(TRC[k])return TRC[k];
+  let r=null;
+  try{const j=await fetch("https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=vi&dt=t&dt=bd&q="+encodeURIComponent(w)).then(x=>x.json());
+    r={main:(j[0]||[]).map(x=>x[0]).join(""),pos:(j[1]||[]).map(x=>[x[0],x[1].slice(0,4)])}}catch(e){}
+  if(!r||!r.main){try{const j=await fetch("https://api.mymemory.translated.net/get?q="+encodeURIComponent(w)+"&langpair=en|vi").then(x=>x.json());
+    const m=j.responseData&&j.responseData.translatedText;if(m)r={main:m,pos:[]}}catch(e){}}
+  if(r&&r.main){TRC[k]=r;trSave()}return r}
+const POSVI={noun:"danh từ",verb:"động từ",adjective:"tính từ",adverb:"trạng từ",preposition:"giới từ",pronoun:"đại từ",conjunction:"liên từ",interjection:"thán từ",abbreviation:"viết tắt"};
+let tpEl=null;
+function closeTp(){if(tpEl){tpEl.remove();tpEl=null}}
+function placeTp(x,y){const r=tpEl.getBoundingClientRect(),W=innerWidth,H=innerHeight;let left=Math.min(Math.max(16,x-r.width/2),W-r.width-16),top=y+14;
+  if(top+r.height>H-12)top=Math.max(12,y-r.height-14);tpEl.style.left=left+"px";tpEl.style.top=top+"px"}
+async function showTp(w,ctx,x,y){closeTp();
+  const loc=localHits(w,ctx),lv=loc.find(v=>stems(w.toLowerCase()).includes(v.t.toLowerCase()));
+  tpEl=document.createElement("div");tpEl.className="tp";tpEl.setAttribute("role","dialog");tpEl.setAttribute("aria-label","Nghĩa của "+w);
+  tpEl.innerHTML=`<button class="tx" aria-label="Đóng">×</button><div class="tw"><b>${esc(w)}</b>${lv&&lv.ipa?`<span class="ti">${esc(lv.ipa)}</span>`:""}${sayBtn(w,w)}</div>
+    <div class="tv" id="tpMain">${lv?esc(lv.vi):'<span class="muted" style="font-weight:400">Đang dịch…</span>'}</div><div id="tpPos"></div>
+    ${loc.filter(v=>v!==lv).length?`<div class="tloc">Trong bài: ${loc.filter(v=>v!==lv).map(v=>`<b>${esc(v.t)}</b> = ${esc(v.vi)}`).join("<br>")}</div>`:""}
+    <div class="tft"><span class="muted">${lv?"Unit "+lv.u:"Dịch tự động"}</span><a href="https://translate.google.com/?sl=en&tl=vi&text=${encodeURIComponent(w)}" target="_blank" rel="noopener">Mở Google Dịch ↗</a></div>`;
+  document.body.appendChild(tpEl);placeTp(x,y);tpEl.querySelector(".tx").onclick=closeTp;
+  const me=tpEl,r=await onlineTr(w);if(me!==tpEl)return;
+  if(r){if(!lv)$("#tpMain").textContent=r.main;
+    if(r.pos.length)$("#tpPos").innerHTML=r.pos.map(p=>`<div class="tpos"><i>${esc(POSVI[p[0]]||p[0])}</i>${esc(p[1].join(", "))}</div>`).join("")}
+  else if(!lv)$("#tpMain").innerHTML='<span class="muted" style="font-weight:400">Không dịch được (cần kết nối mạng). Bấm “Mở Google Dịch”.</span>';
+  placeTp(x,y)}
+function wordAt(x,y){let node,off;
+  if(document.caretPositionFromPoint){const c=document.caretPositionFromPoint(x,y);if(!c)return null;node=c.offsetNode;off=c.offset}
+  else if(document.caretRangeFromPoint){const c=document.caretRangeFromPoint(x,y);if(!c)return null;node=c.startContainer;off=c.startOffset}
+  if(!node||node.nodeType!==3)return null;const t=node.textContent;const isW=ch=>/[A-Za-z'’-]/.test(ch);
+  let a=off,b=off;while(a>0&&isW(t[a-1]))a--;while(b<t.length&&isW(t[b]))b++;
+  let w=t.slice(a,b).replace(/^['’-]+|['’-]+$/g,"");if(!/[A-Za-z]{2,}/.test(w))return null;
+  // make sure the click really is on the word
+  const rg=document.createRange();rg.setStart(node,a);rg.setEnd(node,b);const bx=rg.getBoundingClientRect();if(x<bx.left-2||x>bx.right+2||y<bx.top-2||y>bx.bottom+2)return null;
+  return {w,ctx:(node.parentElement&&node.parentElement.closest("p,div,span,li,td")||node.parentElement).textContent}}
+document.addEventListener("click",e=>{
+  if(tpEl&&tpEl.contains(e.target))return;
+  const inView=e.target.closest("#view");if(!inView){closeTp();return}
+  if(e.target.closest("button,a,input,select,textarea,label,summary,.opt,.mi,[data-say]")){closeTp();return}
+  const sel=getSelection();if(sel&&String(sel).trim().length>1)return;
+  const hit=wordAt(e.clientX,e.clientY);if(!hit){closeTp();return}
+  showTp(hit.w,hit.ctx,e.clientX,e.clientY)});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeTp()});
+addEventListener("scroll",closeTp,{passive:true});
 
 /* ============ BOOT ============ */
 dataLabel();
