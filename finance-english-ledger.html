@@ -68,6 +68,10 @@ button{cursor:pointer}
 .say{border:0;background:var(--accent-soft);color:var(--accent);border-radius:999px;width:30px;height:30px;display:inline-grid;place-items:center;flex:none}
 .say:hover{filter:brightness(.95)}
 select.sel{border:1px solid var(--rule);background:var(--surface);border-radius:8px;padding:6px 8px;font-size:14px}
+.acct{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;margin-top:14px}
+.acct .grow{flex:1}
+#bkBox{margin-top:10px}
+#bkBox textarea{width:100%;border:1px solid var(--rule);background:var(--paper);color:var(--ink);border-radius:8px;padding:10px;font-family:var(--mono);font-size:12px}
 label.tog{display:inline-flex;gap:6px;align-items:center;font-size:14px;color:var(--muted)}
 .note{font-size:13px;color:var(--muted)}
 .panel{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:20px}
@@ -223,6 +227,22 @@ details.rel summary{cursor:pointer;font-size:14px;color:var(--muted)}
     </div>
     <div class="stat"><b id="knownN">0</b> / <span id="totalN">0</span><br><span class="muted">từ đã thuộc</span></div>
   </header>
+
+  <div class="acct" id="acctBar">
+    <a class="btn" href="index.html">← Trang chủ</a>
+    <label class="tog"><input type="checkbox" id="hideKnownT"> Ẩn từ đã thuộc</label>
+    <span class="grow"></span>
+    <button class="btn" id="bkBtn">Sao lưu / khôi phục tiến độ</button>
+  </div>
+  <div class="panel" id="bkBox" hidden>
+    <p class="note">Tiến độ được lưu trên trình duyệt của máy này. Muốn học tiếp trên máy khác: bấm “Tạo mã sao lưu”, gửi mã sang máy kia, dán mã và bấm “Khôi phục”.</p>
+    <textarea id="bkArea" rows="4" spellcheck="false" placeholder="Mã sao lưu sẽ hiện ở đây, hoặc dán mã vào đây để khôi phục"></textarea>
+    <div class="bar" style="margin-block:8px 0">
+      <button class="btn primary" id="bkMake">Tạo mã sao lưu</button>
+      <button class="btn" id="bkLoad">Khôi phục</button>
+      <span class="note" id="bkMsg" role="status"></span>
+    </div>
+  </div>
 
   <details class="data" id="dataBox">
     <summary>Dữ liệu học: nhập file .txt <span class="note" id="dataSrc"></span></summary>
@@ -717,9 +737,13 @@ const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.random(
 const exPlain=e=>e.replace(/\[|\]/g,"");
 const exAns=e=>(e.match(/\[(.+?)\]/)||[,""])[1];
 const exMark=e=>esc(e).replace(/\[(.+?)\]/,"<mark>$1</mark>");
-const store={get(k,d){try{const v=localStorage.getItem("fel-"+k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem("fel-"+k,JSON.stringify(v))}catch(e){}}};
+const PFX="fel-";
+const store={get(k,d){try{const v=localStorage.getItem(PFX+k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem(PFX+k,JSON.stringify(v))}catch(e){}}};
 let unit=store.get("unit","all");
 let known=new Set(store.get("known",[]));
+let hideKnown=store.get("hideKnown",true);
+function learnPool(){const p=pool();return hideKnown?p.filter(v=>!known.has(v.t)):p}
+const ALLDONE='<div class="panel result"><div class="big">✓</div><p>Bạn đã thuộc hết các từ trong phạm vi này. Chọn unit khác, hoặc bỏ tick “Ẩn từ đã thuộc” để ôn lại.</p></div>';
 let tab="flash";
 const pool=()=>unit==="all"?V:V.filter(v=>v.u===unit);
 function saveKnown(){store.set("known",[...known]);updateStat()}
@@ -781,29 +805,29 @@ function render(){
 }
 
 /* ============ FLASHCARDS ============ */
-let deck=[],di=0,flipped=false,dir=store.get("dir","en"),onlyNew=false;
-function buildDeck(){deck=shuffle(pool().filter(v=>!onlyNew||!known.has(v.t)));di=0;flipped=false}
+let deck=[],di=0,flipped=false,dir=store.get("dir","en"),onlyNew=true;
+function buildDeck(){deck=shuffle(learnPool());di=0;flipped=false}
 function renderFlash(){
   buildDeck();
   $("#view").innerHTML=`
   <div class="bar">
     <select class="sel" id="fcDir" aria-label="Chiều thẻ"><option value="en">Mặt trước: tiếng Anh</option><option value="vi">Mặt trước: tiếng Việt</option></select>
-    <label class="tog"><input type="checkbox" id="fcNew"> Chỉ thẻ chưa thuộc</label>
+    
     <label class="tog"><input type="checkbox" id="fcAuto" checked> Tự đọc khi lật</label>
     <span class="grow"></span>
     <button class="btn" id="fcShuf">Trộn lại</button>
   </div>
   <div id="fcBox"></div>
   <p class="note" style="text-align:center;margin-top:14px">Phím tắt: <b>Space</b> lật thẻ · <b>←</b> chưa nhớ · <b>→</b> nhớ rồi · <b>S</b> nghe</p>`;
-  $("#fcDir").value=dir;$("#fcNew").checked=onlyNew;
+  $("#fcDir").value=dir;
   $("#fcDir").onchange=e=>{dir=e.target.value;store.set("dir",dir);flipped=false;drawCard()};
-  $("#fcNew").onchange=e=>{onlyNew=e.target.checked;buildDeck();drawCard()};
+  
   $("#fcShuf").onclick=()=>{buildDeck();drawCard()};
   drawCard();
 }
-function drawCard(){
+function drawCard(){if(!deck.length){$("#fcBox").innerHTML=ALLDONE;return}
   const box=$("#fcBox");if(!box)return;
-  if(!deck.length){box.innerHTML=`<div class="panel result"><div class="big">✓</div><p>Bạn đã thuộc hết các thẻ trong phần này.</p><p class="note" style="margin-top:6px">Bỏ chọn “Chỉ thẻ chưa thuộc” để ôn lại toàn bộ.</p></div>`;return}
+  if(!deck.length){box.innerHTML=`<div class="panel result"><div class="big">✓</div><p>Bạn đã thuộc hết các thẻ trong phần này.</p><p class="note" style="margin-top:6px">Bỏ tick “Ẩn từ đã thuộc” ở trên để ôn lại toàn bộ.</p></div>`;return}
   if(di>=deck.length){box.innerHTML=`<div class="panel result"><div class="big">${deck.filter(v=>known.has(v.t)).length}/${deck.length}</div><p>Hết một lượt. Số thẻ đã thuộc trong lượt này.</p><div class="fcnav"><button class="btn primary" id="again">Ôn lượt mới</button></div></div>`;$("#again").onclick=()=>{buildDeck();drawCard()};return}
   const v=deck[di],k=known.has(v.t);
   const en=`<div class="row"><span class="tag">Unit ${v.u}</span>${k?'<span class="tag k">đã thuộc</span>':""}</div>
@@ -896,7 +920,7 @@ function bindOpts(correctIdx,onAnswer,after){
   });
 }
 function exGap(){
-  const p=pool().filter(v=>exAns(v.ex));if(p.length<2){$("#exBox").innerHTML='<p class="muted">Cần ít nhất 2 từ có câu ví dụ đánh dấu [ ] để làm bài này.</p>';return}const qs=shuffle(p).slice(0,Math.min(10,p.length));
+  const p=pool().filter(v=>exAns(v.ex));if(p.length<2){$("#exBox").innerHTML='<p class="muted">Cần ít nhất 2 từ có câu ví dụ đánh dấu [ ] để làm bài này.</p>';return}const qp=hideKnown?p.filter(v=>!known.has(v.t)):p;if(!qp.length){$("#exBox").innerHTML=ALLDONE;return}const qs=shuffle(qp).slice(0,Math.min(10,qp.length));
   quizRunner(qs,(v,i,n,mark,next,sc)=>{
     const same=p.length>=4?p:V.filter(v=>exAns(v.ex));
     const others=shuffle(same.filter(o=>exAns(o.ex).toLowerCase()!==exAns(v.ex).toLowerCase())).slice(0,3).map(o=>exAns(o.ex));
@@ -910,7 +934,7 @@ function exGap(){
   },"Điền từ vào câu");
 }
 function exMatch(){
-  const p=pool();if(p.length<2){$("#exBox").innerHTML='<p class="muted">Cần ít nhất 2 từ để làm bài nối.</p>';return}const set=shuffle(p).slice(0,6);
+  const p=pool();if(p.length<2){$("#exBox").innerHTML='<p class="muted">Cần ít nhất 2 từ để làm bài nối.</p>';return}const up=hideKnown?p.filter(v=>!known.has(v.t)):p;if(!up.length){$("#exBox").innerHTML=ALLDONE;return}const set=shuffle(up).slice(0,6);if(set.length<2)set.push(...shuffle(p.filter(v=>!set.includes(v))).slice(0,2-set.length));
   const L=shuffle(set),R=shuffle(set);let sel=null,done=0,miss=0;
   const box=$("#exBox");
   box.innerHTML=`<div class="bar" style="margin-top:0"><span class="eyebrow">Nối từ với định nghĩa đúng</span><span class="grow"></span><span class="score" id="ms">0/${set.length} · sai 0</span></div>
@@ -976,7 +1000,8 @@ function renderTest(){
 function runTest(retryList){
   const p=pool().filter(v=>v.vi);
   if(p.length<4){$("#tBox").innerHTML='<p class="muted">Cần ít nhất 4 từ có nghĩa tiếng Việt để làm bài kiểm tra. Hãy chọn “Tất cả” hoặc unit khác.</p>';return}
-  const items=retryList||shuffle(p).slice(0,tCfg.n?Math.min(tCfg.n,p.length):p.length);
+  const lp=hideKnown?p.filter(v=>!known.has(v.t)):p;if(!retryList&&!lp.length){$("#tBox").innerHTML=ALLDONE;return}
+  const items=retryList||shuffle(lp).slice(0,tCfg.n?Math.min(tCfg.n,lp.length):lp.length);
   const qs=items.map(v=>({v,m:tCfg.mode==="mix"?["ev","ve","vt"][Math.random()*3|0]:tCfg.mode}));
   let i=0,score=0;const wrong=[];
   const box=$("#tBox");
@@ -1001,7 +1026,7 @@ function runTest(retryList){
     $("#tNew").onclick=renderTest;
     if(wrong.length){
       $("#tRetry").onclick=()=>runTest(shuffle(wrong.map(w=>w.v)));
-      $("#tFlash").onclick=()=>{wrong.forEach(w=>known.delete(w.v.t));saveKnown();$("#tMsg").textContent=`Đã bỏ đánh dấu “đã thuộc” cho ${wrong.length} từ. Vào tab Flashcard, chọn “Chỉ thẻ chưa thuộc” để ôn.`};
+      $("#tFlash").onclick=()=>{wrong.forEach(w=>known.delete(w.v.t));saveKnown();$("#tMsg").textContent=`Đã bỏ đánh dấu “đã thuộc” cho ${wrong.length} từ. Các từ này sẽ xuất hiện lại trong Flashcard và bài tập.`};
     }
   };
   const step=()=>{
@@ -1089,7 +1114,7 @@ function renderListen(){
   });
   // dictation
   let cur=null;
-  const pick=()=>{const p=pool().filter(v=>v.ex);if(!p.length){cur={u:0,t:"",vi:"",ex:"No example sentence."};return}cur=p[Math.random()*p.length|0];$("#dIn").value="";$("#dRes").innerHTML="";$("#dUnit").textContent="Unit "+cur.u};
+  const pick=()=>{const p=learnPool().filter(v=>v.ex);if(!p.length){cur={u:0,t:"",vi:"",ex:"No example sentence."};return}cur=p[Math.random()*p.length|0];$("#dIn").value="";$("#dRes").innerHTML="";$("#dUnit").textContent="Unit "+cur.u};
   pick();
   $("#dPlay").onclick=()=>sayNow(exPlain(cur.ex));
   $("#dSlow").onclick=()=>{stopAll();speak(exPlain(cur.ex),.7)};
@@ -1134,10 +1159,10 @@ function renderImm(){
   $("#imGo").onclick=async()=>{
     stopAll();const id=runId;box.classList.add("running");$("#imGo").classList.add("running");
     const gap=()=>wait(+$("#imGap").value);
-    if($("#imMode").value==="words"){if(!pool().length){stopAll();return}
+    if($("#imMode").value==="words"){if(!learnPool().length){stopAll();$("#imMeta").textContent="Bạn đã thuộc hết các từ trong phạm vi này.";return}
       let n=0;
       while(id===runId){
-        for(const v of shuffle(pool())){
+        for(const v of shuffle(learnPool())){
           if(id!==runId)return;
           n++;$("#imMeta").textContent=`Unit ${v.u} · ${UNITS[v.u]} · từ thứ ${n}`;
           set("t",esc(v.t));set("v",$("#imVi").checked?esc(v.vi):"");set("d",esc(v.en));set("e",exMark(v.ex));
@@ -1296,6 +1321,18 @@ $("#impReset").onclick=()=>{store.set("imports",[]);applyData(JSON.parse(JSON.st
 $("#copyTxt").onclick=async()=>{const t=toTxt();$("#txtArea").value=t;try{await navigator.clipboard.writeText(t);$("#impMsg").className="note ok";$("#impMsg").textContent="Đã sao chép dữ liệu hiện tại. Dán vào Notepad và lưu thành file .txt."}catch(e){$("#txtArea").select();$("#impMsg").className="note";$("#impMsg").textContent="Dữ liệu đã hiện trong ô. Bấm Ctrl+C để sao chép."}};
 // áp dụng lại dữ liệu đã nhập lần trước
 store.get("imports",[]).forEach(im=>{try{applyData(parseTxt(im.txt).d,im.mode)}catch(e){}});
+
+
+/* ============ ACCOUNT & PROGRESS ============ */
+$("#hideKnownT").checked=hideKnown;
+$("#hideKnownT").onchange=e=>{hideKnown=e.target.checked;store.set("hideKnown",hideKnown);render()};
+$("#bkBtn").onclick=()=>{$("#bkBox").hidden=!$("#bkBox").hidden};
+$("#bkMake").onclick=async()=>{const o={};try{for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(k.startsWith(PFX))o[k.slice(PFX.length)]=localStorage.getItem(k)}}catch(e){}
+  const code=btoa(unescape(encodeURIComponent(JSON.stringify({p:PFX,d:o}))));$("#bkArea").value=code;
+  try{await navigator.clipboard.writeText(code);$("#bkMsg").textContent="Đã tạo và sao chép mã ("+known.size+" từ đã thuộc)."}catch(e){$("#bkArea").select();$("#bkMsg").textContent="Đã tạo mã. Bấm Ctrl+C để sao chép."}};
+$("#bkLoad").onclick=()=>{try{const o=JSON.parse(decodeURIComponent(escape(atob($("#bkArea").value.trim()))));
+  if(!o||!o.d)throw 0;Object.entries(o.d).forEach(([k,v])=>localStorage.setItem(PFX+k,v));$("#bkMsg").textContent="Đã khôi phục. Đang tải lại…";setTimeout(()=>location.reload(),600)}
+  catch(e){$("#bkMsg").textContent="Mã không hợp lệ. Hãy dán lại đúng toàn bộ mã sao lưu."}};
 
 /* ============ BOOT ============ */
 dataLabel();
