@@ -1,0 +1,608 @@
+# ================================================================
+# FINANCE ENGLISH LEDGER · dữ liệu học
+# Nguồn: Professional English in Use · Finance · Units 1–20, 22 (định nghĩa và ví dụ tự biên soạn)
+# ----------------------------------------------------------------
+# CÁCH VIẾT (mỗi cột cách nhau bằng dấu | ; dòng bắt đầu bằng # là ghi chú):
+#
+# [UNIT số | Tên unit | từ khoá tìm video (không bắt buộc)]
+# từ | phiên âm | nghĩa tiếng Việt | định nghĩa tiếng Anh | câu ví dụ có [từ cần điền]
+#   - Phiên âm có thể để trống:  cash |  | tiền mặt | ...
+#   - Trong câu ví dụ, đặt từ cần điền trong [ ] để dùng cho bài tập điền từ.
+#     Nếu quên [ ], trang sẽ tự tìm từ đó trong câu.
+#
+# [TRUE-FALSE]
+# unit | câu nhận định | T hoặc F | giải thích
+#
+# [BRE-AME]
+# từ Anh-Anh | từ Anh-Mỹ
+#
+# [PASSAGE số-unit | Tiêu đề bài nghe]
+# Đoạn văn (có thể viết nhiều dòng)...
+# Q: Câu hỏi? | *đáp án đúng (có dấu *) | đáp án sai | đáp án sai | đáp án sai
+#
+# [VIDEO]
+# unit | tiêu đề | link https://... | mức độ      (unit = 0: video tổng hợp, hiện ở mọi unit)
+# ================================================================
+
+[UNIT 1 | Personal finance | personal finance vocabulary salary wages budget english]
+currency | /ˈkʌrənsi/ | tiền tệ | the money used in a particular country | The [currency] of Vietnam is the dong.
+banknote | /ˈbæŋknəʊt/ | tiền giấy (AmE: bill) | a piece of paper money; also called a note | The machine only accepts [banknotes], not coins.
+coin | /kɔɪn/ | đồng xu | a small flat piece of metal used as money | I need some [coins] for the parking meter.
+cash | /kæʃ/ | tiền mặt | money in the form of notes and coins | Do you want to pay by card or in [cash]?
+bank deposits |  | tiền gửi ngân hàng | money that people and organizations keep in bank accounts | Most of the money in the economy consists of [bank deposits].
+on paper |  | trên giấy tờ, trên lý thuyết | existing in theory only, not as physical cash | The company is worth millions [on paper].
+income | /ˈɪnkʌm/ | thu nhập | all the money a person receives or earns | Her monthly [income] has doubled since she changed jobs.
+earn | /ɜːn/ | kiếm được (tiền) | to receive money as payment for work | He [earns] about twenty million dong a month.
+salary | /ˈsæləri/ | lương tháng | money paid monthly by an employer | Her [salary] is paid on the last day of each month.
+wages | /ˈweɪdʒɪz/ | tiền công (theo giờ/ngày) | money paid by the day or the hour, usually received weekly | Factory workers receive their [wages] every Friday.
+overtime | /ˈəʊvətaɪm/ | tiền làm thêm giờ | money received for working extra hours | I worked ten hours of [overtime] last week.
+commission | /kəˈmɪʃn/ | tiền hoa hồng | money paid to salespeople and agents: a percentage of the income they generate | She gets five per cent [commission] on every car she sells.
+bonus | /ˈbəʊnəs/ | tiền thưởng | extra money given for meeting a target or for good financial results | All staff received a [bonus] after a record year.
+fees | /fiːz/ | thù lao, phí dịch vụ | money paid to professional people such as lawyers and architects | The lawyer's [fees] were higher than we expected.
+social security |  | trợ cấp xã hội (AmE: welfare) | money paid by the government to unemployed and sick people | After losing his job, he lived on [social security] for six months.
+pension | /ˈpenʃn/ | lương hưu | money paid by a company or the government to a retired person | My grandfather lives on his state [pension].
+deductions | /dɪˈdʌkʃnz/ | các khoản khấu trừ | amounts taken from pay before it is received, such as tax and pension contributions | After [deductions], my take-home pay is much lower.
+outgoings | /ˈaʊtɡəʊɪŋz/ | các khoản chi định kỳ | amounts of money that people have to spend regularly | Our monthly [outgoings] include rent, bills and transport.
+living expenses |  | chi phí sinh hoạt | money spent on everyday needs such as food, clothes and public transport | [Living expenses] in big cities have risen sharply.
+bills | /bɪlz/ | hóa đơn | requests for payment for services such as electricity, gas and telephone | I pay all my [bills] online.
+rent | /rent/ | tiền thuê nhà | money paid for the use of a house or flat | The [rent] for this flat is eight million dong a month.
+mortgage | /ˈmɔːɡɪdʒ/ | khoản vay thế chấp mua nhà | repayments of money borrowed to buy a house or flat | They took out a twenty-year [mortgage] to buy their apartment.
+health insurance |  | bảo hiểm y tế | financial protection against medical expenses for sickness or accidents | My company pays for my [health insurance].
+tax | /tæks/ | thuế | money paid to finance government spending | Income [tax] is deducted from your salary every month.
+budget | /ˈbʌdʒɪt/ | ngân sách | a financial plan showing how much money a person or organization expects to earn and spend | We need to make a [budget] for next year.
+
+[UNIT 2 | Business finance | business finance explained capital revenue profit dividend]
+capital | /ˈkæpɪtl/ | vốn | money needed to set up or start a company | They raised enough [capital] to open a second factory.
+set up |  | thành lập | to start a company or organization | She [set up] her own consulting firm in 2020.
+borrow | /ˈbɒrəʊ/ | vay | to receive money that you must pay back | Small firms often [borrow] money from banks.
+loan | /ləʊn/ | khoản vay | money borrowed from a bank that must be paid back with interest | The bank gave us a [loan] of two billion dong.
+interest | /ˈɪntrəst/ | lãi (tiền lãi) | the amount paid to borrow money | The loan must be paid back with eight per cent [interest].
+shares | /ʃeəz/ | cổ phần (AmE: stocks) | certificates representing units of ownership of a company | He bought one thousand [shares] in the bank.
+equities | /ˈekwətiz/ | cổ phiếu, vốn chủ sở hữu | another word for shares | Pension funds invest heavily in [equities].
+shareholder | /ˈʃeəhəʊldə/ | cổ đông (AmE: stockholder) | a person who owns shares and so owns part of a company | Every [shareholder] is invited to the annual meeting.
+share capital |  | vốn cổ phần | the money provided by shareholders | The company has a [share capital] of fifty billion dong.
+investor | /ɪnˈvestə/ | nhà đầu tư | an individual or financial institution that puts money into a business | Foreign [investors] are interested in the project.
+lend | /lend/ | cho vay | to give money that must be paid back | Banks are reluctant to [lend] to new businesses.
+bonds | /bɒndz/ | trái phiếu | loans that pay interest and are repaid at a fixed future date | The government issued ten-year [bonds].
+debt | /det/ | nợ | money that is owed and will have to be paid to others | The company has paid off all its [debt].
+owe | /əʊ/ | nợ (ai đó) | to have to pay money to someone | We still [owe] the supplier three hundred million dong.
+liabilities | /ˌlaɪəˈbɪlətiz/ | nợ phải trả | in accounting, a company's debts | Short-term [liabilities] include money owed to suppliers.
+on credit |  | mua chịu, trả sau | bought now and paid for later | We buy raw materials [on credit] and pay after thirty days.
+supplier | /səˈplaɪə/ | nhà cung cấp | a business that provides goods or services | We changed [suppliers] to reduce costs.
+working capital |  | vốn lưu động | money a business uses for everyday expenses or has available for spending | Without enough [working capital], the firm can't pay its staff.
+revenue | /ˈrevənjuː/ | doanh thu | all the money coming into a company during a given period | [Revenue] rose by twelve per cent this year.
+profit | /ˈprɒfɪt/ | lợi nhuận | revenue minus cost of sales and operating expenses; also called earnings or net income | The company made a [profit] of five billion dong.
+operating expenses |  | chi phí hoạt động | money spent to run a business, such as rent and salaries | We must cut our [operating expenses].
+dividend | /ˈdɪvɪdend/ | cổ tức | the part of its profit that a company pays to its shareholders | Shareholders will receive a [dividend] of fifteen hundred dong per share.
+retain | /rɪˈteɪn/ | giữ lại | to keep some earnings for future use | The firm [retains] forty per cent of its profits to buy new machines.
+retained earnings |  | lợi nhuận giữ lại | profits kept by the company rather than paid out | [Retained earnings] paid for the new warehouse.
+financial statements |  | báo cáo tài chính | documents giving information about a company's financial situation | Listed companies must publish their [financial statements].
+balance sheet |  | bảng cân đối kế toán | a statement showing a company's assets, liabilities and capital | The [balance sheet] shows what the company owns and owes.
+assets | /ˈæsets/ | tài sản | the things a company owns | Buildings and machines are long-term [assets].
+profit and loss account |  | báo cáo kết quả kinh doanh (AmE: income statement) | a statement of revenues and expenses during a particular period | The [profit and loss account] shows a loss for the first quarter.
+
+[UNIT 3 | Accounting and accountancy | accounting vs bookkeeping explained auditing]
+accounting | /əˈkaʊntɪŋ/ | kế toán | recording and summarizing an organization's transactions and reporting them in financial statements | She studied [accounting] at university.
+transaction | /trænˈzækʃn/ | giao dịch | a business deal, such as a purchase or a sale | Every [transaction] must be recorded.
+accountancy | /əˈkaʊntənsi/ | nghề kế toán | the profession of accountants | He wants a career in [accountancy].
+ethical | /ˈeθɪkl/ | thuộc đạo đức nghề nghiệp | relating to accepted, correct ways of doing things | Accountants must follow strict [ethical] rules.
+bookkeeping | /ˈbʊkkiːpɪŋ/ | ghi sổ kế toán | the day-to-day recording of transactions | Our [bookkeeping] is done with accounting software.
+financial accounting |  | kế toán tài chính | bookkeeping and preparing financial statements for shareholders and creditors | [Financial accounting] produces reports for people outside the company.
+creditor | /ˈkredɪtə/ | chủ nợ | a person or organization that has lent money to a company | The company could not pay its [creditors].
+management accounting |  | kế toán quản trị | the use of accounting data by managers for making plans and decisions | [Management accounting] helps managers decide which products to keep.
+auditing | /ˈɔːdɪtɪŋ/ | kiểm toán | examining a company's systems of control and the accuracy of its records | [Auditing] takes about three weeks every year.
+fraud | /frɔːd/ | gian lận | deliberately giving false information | The auditors discovered a [fraud] in the sales department.
+internal audit |  | kiểm toán nội bộ | an audit carried out by a company's own accountants or internal auditors | The [internal audit] found several weak controls.
+external audit |  | kiểm toán độc lập | an audit done by independent auditors who are not employees of the company | An [external audit] is required by law for large companies.
+independent auditors |  | kiểm toán viên độc lập | auditors who are not employees of the company | The accounts were checked by [independent auditors].
+creative accounting |  | kế toán “phù phép” sổ sách | recording transactions in a way that produces a false result, usually an artificially high profit | The CEO was accused of [creative accounting].
+true and fair view |  | phản ánh trung thực và hợp lý (AmE: fair presentation) | a correct and reasonable picture of a company's financial condition | The auditors confirmed that the accounts give a [true and fair view].
+standards | /ˈstændədz/ | chuẩn mực | accounting rules established by independent organizations | Companies must apply accounting [standards] in their annual accounts.
+annual accounts |  | báo cáo tài chính năm | a company's financial statements for the year | The [annual accounts] are published in March.
+tax authorities |  | cơ quan thuế | the government organization that collects tax | The [tax authorities] asked to see our records.
+
+[UNIT 4 | Bookkeeping | double entry bookkeeping debit credit ledger trial balance]
+bookkeeper | /ˈbʊkkiːpə/ | nhân viên ghi sổ | a person who records a company's daily transactions | Zaheer began his career as a [bookkeeper].
+double-entry bookkeeping |  | ghi sổ kép | a system that records two aspects of every transaction | In [double-entry bookkeeping], total debits always equal total credits.
+debit | /ˈdebɪt/ | ghi Nợ | an entry on the left side of an account | The purchase is recorded as a [debit] in the purchases account.
+credit | /ˈkredɪt/ | ghi Có | an entry on the right side of an account | Each debit has a corresponding [credit] in another account.
+raw materials |  | nguyên vật liệu thô | the substances and components used to make products | The price of [raw materials] such as steel has gone up.
+stock | /stɒk/ | hàng tồn kho (AmE: inventory) | goods ready for sale | We have too much [stock] in the warehouse.
+debtors | /ˈdetəz/ | con nợ, khoản phải thu | customers who owe money for goods or services purchased | Our [debtors] owe us four hundred million dong.
+accounts receivable |  | khoản phải thu (AmE) | the American term for money owed by customers | [Accounts receivable] increased because customers are paying late.
+day books |  | sổ nhật ký | books in which many transactions are recorded before a summary is made | Sales are first recorded in [day books].
+journal | /ˈdʒɜːnl/ | sổ nhật ký | another name for a day book | Every sale is entered in the sales [journal].
+nominal ledger |  | sổ cái tổng hợp | in Britain, the main book of accounts | The weekly totals are posted to the [nominal ledger].
+bought ledger |  | sổ chi tiết phải trả người bán | a record of creditors: suppliers the company owes money to | Check the [bought ledger] to see which suppliers we still owe.
+accounting period |  | kỳ kế toán | a period, for example a year, for which accounts are prepared | Our [accounting period] ends on the thirty-first of December.
+trial balance |  | bảng cân đối thử | a list transferring the debit and credit balances of all accounts onto one page | The [trial balance] didn't balance, so we looked for errors.
+
+[UNIT 5 | Company law | partnership vs limited company limited liability explained]
+partnership | /ˈpɑːtnəʃɪp/ | công ty hợp danh | a business in which several people work together and share the risks and profits | The three lawyers formed a [partnership].
+partner | /ˈpɑːtnə/ | thành viên hợp danh | one of the owners of a partnership | Each [partner] is fully responsible for the firm's debts.
+liable | /ˈlaɪəbl/ | chịu trách nhiệm pháp lý | legally responsible, for example for debts | Shareholders are not [liable] for the company's debts.
+legal entity |  | pháp nhân | an organization that has a legal existence separate from its owners | A limited company is a [legal entity].
+sole trader |  | doanh nghiệp một chủ | an enterprise owned and operated by a single person | As a [sole trader], she keeps all the profit but carries all the risk.
+unlimited liability |  | trách nhiệm vô hạn | being fully responsible for all of a business's debts | Sole traders have [unlimited liability].
+limited liability |  | trách nhiệm hữu hạn | owners are responsible for debts only up to the value of their share capital | [Limited liability] encourages people to invest.
+sue | /suː/ | kiện | to take someone to court | The customer [sued] the company for breaking the contract.
+contract | /ˈkɒntrækt/ | hợp đồng | a legal agreement | We signed a three-year [contract] with the supplier.
+limited company |  | công ty trách nhiệm hữu hạn | a company whose owners have limited liability | They turned the family business into a [limited company].
+directors | /dəˈrektəz/ | giám đốc, thành viên HĐQT | senior managers who run a company for its owners | The [directors] meet every month.
+corporate governance |  | quản trị doanh nghiệp | the way a company is run by its managers for the shareholders | Good [corporate governance] builds investor trust.
+accountable | /əˈkaʊntəbl/ | chịu trách nhiệm giải trình | responsible and required to explain your actions | Managers are [accountable] to the shareholders.
+chairman | /ˈtʃeəmən/ | chủ tịch HĐQT | the person who leads the board of directors | The [chairman] opened the annual meeting.
+managing director |  | tổng giám đốc (AmE: CEO) | the person in charge of running the company day to day | The [managing director] announced a new strategy.
+non-executive directors |  | thành viên HĐQT không điều hành | board members who do not work full-time for the company but offer expert advice | Two [non-executive directors] joined the board this year.
+board of directors |  | hội đồng quản trị | the group of directors that controls a company | The [board of directors] approved the budget.
+objective | /əbˈdʒektɪv/ | khách quan | less influenced by personal opinions and beliefs | An outside adviser can be more [objective].
+audit committee |  | ủy ban kiểm toán | a board committee of non-executive directors to which the auditors report | The auditors presented their findings to the [audit committee].
+
+[UNIT 6 | Types of company | private vs public limited company plc explained]
+private company |  | công ty tư nhân (Ltd) | a company not allowed to sell its shares on an open market | Most companies in Britain are [private companies].
+public limited company |  | công ty đại chúng (plc) | a company whose shares are publicly traded on a stock exchange | A [public limited company] has 'plc' at the end of its name.
+stock exchange |  | sở giao dịch chứng khoán | a market where anyone can buy stocks and shares | Its shares are traded on the Ho Chi Minh City [stock exchange].
+corporation | /ˌkɔːpəˈreɪʃn/ | tập đoàn, công ty (Mỹ) | in the US, a company registered with the SEC | He works for a large American [corporation].
+listed company |  | công ty niêm yết | a company whose shares are traded on a stock exchange | [Listed companies] have to make quarterly reports.
+quarterly | /ˈkwɔːtəli/ | hàng quý | every three months | The company publishes [quarterly] results.
+turnover | /ˈtɜːnəʊvə/ | doanh thu (BrE) | money received from selling goods or services in a period; sales revenue | Annual [turnover] reached one hundred billion dong.
+gross profit |  | lợi nhuận gộp | turnover less cost of sales | [Gross profit] fell because material costs rose.
+net profit |  | lợi nhuận ròng | gross profit less administrative expenses and tax | After tax, [net profit] was three billion dong.
+quoted company |  | công ty niêm yết (London) | a company on the London Stock Exchange | [Quoted companies] must produce a half-yearly report.
+interim report |  | báo cáo giữa kỳ | a half-yearly report informing shareholders about progress; not audited | The [interim report] showed strong sales in the first half.
+annual report |  | báo cáo thường niên | a yearly document reviewing activity, financial position and results | Shareholders receive the [annual report] in April.
+auditors' report |  | báo cáo kiểm toán | the auditors' opinion on the financial statements | The [auditors' report] is included at the end of the annual report.
+
+[UNIT 7 | Accounting policies and standards | accounting policies GAAP vs IFRS historical cost explained]
+accounting policies |  | chính sách kế toán | a company's chosen ways of doing its accounts | Any change in [accounting policies] must be disclosed.
+valuation | /ˌvæljuˈeɪʃn/ | định giá | deciding how much something is worth | The [valuation] of the land was higher than expected.
+measurement | /ˈmeʒəmənt/ | đo lường | determining how big something is | Accounting standards cover the [measurement] of assets.
+GAAP | /ɡæp/ | Nguyên tắc kế toán chung (Mỹ) | Generally Accepted Accounting Principles, used in the USA | American companies report under [GAAP].
+IFRS |  | Chuẩn mực BCTC quốc tế | International Financial Reporting Standards, set by the International Accounting Standards Board | Many countries require listed companies to use [IFRS].
+conventions | /kənˈvenʃnz/ | quy ước | accepted ways of doing things that are not written down in a law | Accountants follow certain [conventions] when preparing accounts.
+consistency principle |  | nguyên tắc nhất quán | using the same accounting methods every year unless there is a good reason to change | The [consistency principle] lets shareholders compare different years.
+disclose | /dɪsˈkləʊz/ | công bố, thuyết minh | to reveal information | Companies must [disclose] their accounting policies.
+depreciation | /dɪˌpriːʃiˈeɪʃn/ | khấu hao (AmE: amortization) | reducing the value of assets in the company's accounts | [Depreciation] on our vehicles is twenty per cent a year.
+inventory | /ˈɪnvəntri/ | hàng tồn kho | another word for stock | The [inventory] was valued at cost.
+provisions | /prəˈvɪʒnz/ | dự phòng | amounts of money deducted from profits for future payments | The company made [provisions] for future pension payments.
+historical cost |  | giá gốc | the original purchase price of an asset | Under the [historical cost] principle, the building stays at its purchase price.
+replacement cost |  | chi phí thay thế | the amount that would have to be paid to replace an asset now | The [replacement cost] of the machine is much higher today.
+going concern |  | doanh nghiệp hoạt động liên tục | a successful company that will continue to do business | The auditors doubted whether the firm was a [going concern].
+inflation accounting |  | kế toán lạm phát | accounting systems that take account of changing prices | Countries with high inflation may use [inflation accounting].
+bondholder | /ˈbɒndhəʊldə/ | người nắm giữ trái phiếu | a person or institution that owns bonds | [Bondholders] receive interest twice a year.
+
+[UNIT 8 | Accounting assumptions and principles | accounting assumptions and principles explained matching revenue recognition]
+assumption | /əˈsʌmpʃn/ | giả định | an idea that people accept as true without proof | Every set of accounts rests on a few basic [assumptions].
+separate entity assumption |  | giả định thực thể kinh doanh riêng biệt | the idea that a business is a unit apart from its owners and their personal money | Under the [separate entity assumption], the owner's car is not a company asset.
+time-period assumption |  | giả định kỳ kế toán | the idea that a business's life can be cut into periods such as years or quarters | The [time-period assumption] lets us report results every quarter.
+unit-of-measure assumption |  | giả định đơn vị tiền tệ | the idea that all transactions are recorded in one currency | Because of the [unit-of-measure assumption], the group reports everything in dollars.
+subsidiary | /səbˈsɪdiəri/ | công ty con | a company that is owned by another company | The bank opened a [subsidiary] in Singapore.
+consolidated financial statements |  | báo cáo tài chính hợp nhất | accounts that combine the results of a parent company and all its subsidiaries | The group publishes [consolidated financial statements] every year.
+full-disclosure principle |  | nguyên tắc công khai đầy đủ | the rule that reports must include every piece of information that matters to users | The lawsuit had to be mentioned because of the [full-disclosure principle].
+materiality | /məˌtɪəriˈæləti/ | tính trọng yếu | the idea that very small amounts do not need to be reported separately | A missing pen is below the level of [materiality].
+conservatism | /kənˈsɜːvətɪzəm/ | nguyên tắc thận trọng | choosing the method that is least likely to make assets or income look too high | [Conservatism] means we record losses early but profits only when they are certain.
+objectivity principle |  | nguyên tắc khách quan | the rule that accounts should rest on facts, not personal opinion | The [objectivity principle] requires a receipt for every expense.
+verifiable | /ˈverɪfaɪəbl/ | có thể kiểm chứng | able to be checked and shown to be true | Each figure in the report must be [verifiable].
+subjective | /səbˈdʒektɪv/ | chủ quan | based on opinion rather than fact | Estimating bad debts is partly [subjective].
+revenue recognition principle |  | nguyên tắc ghi nhận doanh thu | the rule that revenue is recorded when it is earned, not when cash arrives | Under the [revenue recognition principle], a December sale counts this year even if paid in January.
+matching principle |  | nguyên tắc phù hợp | the rule that expenses go in the same period as the revenue they helped to earn | The [matching principle] puts the sales commission in the same month as the sale.
+
+[UNIT 9 | Depreciation and amortization | depreciation explained straight line vs accelerated]
+current assets |  | tài sản ngắn hạn | assets such as cash and stock that will be used or turned into cash within a year | Cash in the bank is part of [current assets].
+fixed assets |  | tài sản cố định (AmE: property, plant and equipment) | assets such as buildings and machines that a business keeps using for many years | Our delivery trucks are [fixed assets].
+wear out |  | hao mòn | to become unusable after a long time of use | Machines [wear out] after years of heavy use.
+obsolete | /ˈɒbsəliːt/ | lỗi thời | out of date and no longer useful | These old computers are now [obsolete].
+depreciate | /dɪˈpriːʃieɪt/ | khấu hao; giảm giá trị | to reduce the value of an asset in the accounts over time | We [depreciate] our vehicles over five years.
+charge against profits |  | trừ vào lợi nhuận | to deduct a cost from the profits of a period | Depreciation is a [charge against profits] each year.
+appreciate | /əˈpriːʃieɪt/ | tăng giá trị | to increase in value | Land in the city centre tends to [appreciate].
+revalue | /ˌriːˈvæljuː/ | đánh giá lại | to calculate a new value for an asset | The company decided to [revalue] its office buildings.
+net realizable value |  | giá trị thuần có thể thực hiện được (NRV) | the amount an asset could be sold for, minus selling costs | The old stock was written down to its [net realizable value].
+market value |  | giá thị trường | the price at which something could be sold today | The [market value] of the warehouse is far above its cost.
+straight-line method |  | phương pháp khấu hao đường thẳng | depreciation that deducts the same amount every year | With the [straight-line method], a $10,000 machine loses $1,000 a year for ten years.
+accelerated depreciation |  | khấu hao nhanh | depreciation that deducts most or all of an asset's cost in a short time | [Accelerated depreciation] lowers taxable profit in the first years.
+incentive | /ɪnˈsentɪv/ | biện pháp khuyến khích | something that encourages people to do something | Tax allowances are an [incentive] to invest in new equipment.
+amortization | /əˌmɔːtaɪˈzeɪʃn/ | phân bổ, khấu trừ dần | spreading the cost of an asset over several years; in the US often used for intangible assets | The [amortization] of the patent is spread over ten years.
+
+[UNIT 10 | Auditing | internal vs external audit qualified audit report explained]
+internal auditor |  | kiểm toán viên nội bộ | an employee who checks the company's own accounts and controls | The [internal auditor] found an error in the payroll.
+controller | /kənˈtrəʊlə/ | trưởng kiểm soát tài chính | a senior person who checks and controls a company's accounts | The [controller] reviewed every department's spending.
+accuracy | /ˈækjərəsi/ | độ chính xác | the quality of being correct | The auditors tested the [accuracy] of the sales figures.
+comply with |  | tuân thủ | to follow a rule, law or policy | All branches must [comply with] the new accounting policy.
+adequate | /ˈædɪkwət/ | đầy đủ, thỏa đáng | good enough for a particular purpose | The auditors said our controls were not [adequate].
+submit | /səbˈmɪt/ | nộp, đệ trình | to give a document to someone for checking or approval | Listed companies must [submit] their accounts to external auditors.
+genuine | /ˈdʒenjuɪn/ | thật, xác thực | real and not false | The auditors wrote to customers to check that the debts were [genuine].
+stock take |  | kiểm kê hàng tồn kho (AmE: count of the inventory) | counting all the goods a business holds for sale | We close the warehouse for two days for the annual [stock take].
+consulting services |  | dịch vụ tư vấn | paid advice to companies about planning, strategy or restructuring | Many audit firms separated their [consulting services] after the scandals.
+irregularities | /ɪˌreɡjəˈlærətiz/ | sai phạm, bất thường | things that break the rules or are done incorrectly | The audit revealed several [irregularities] in the expense claims.
+audit report |  | báo cáo kiểm toán | the auditors' written opinion on the financial statements | The [audit report] is attached to the annual accounts.
+qualified report |  | báo cáo kiểm toán ngoại trừ | an audit report saying the accounts do not give an entirely true and fair view | Investors worry when a company receives a [qualified report].
+management letter |  | thư quản lý | a letter from auditors to managers explaining what needs to change | The auditors sent a [management letter] about weak cash controls.
+unqualified report |  | báo cáo kiểm toán chấp nhận toàn phần | an audit report with no problems or reservations | The company received an [unqualified report] this year.
+
+[UNIT 11 | The balance sheet 1 | balance sheet explained assets liabilities equity]
+balance | /ˈbæləns/ | cân bằng | to have equal totals on both sides | The two halves of the balance sheet must always [balance].
+economic benefits |  | lợi ích kinh tế | future value, such as cash or income, that an asset will bring | A new machine brings [economic benefits] for many years.
+obligation | /ˌɒblɪˈɡeɪʃn/ | nghĩa vụ | something you must do, for example a payment you must make | Pension payments are a long-term [obligation].
+grant credit |  | cấp tín dụng, cho nợ | to allow a buyer to pay for goods later | The supplier agreed to [grant credit] for sixty days.
+shareholders' equity |  | vốn chủ sở hữu | the part of the company's value that belongs to its shareholders | [Shareholders' equity] rose because profits were retained.
+vertical format |  | trình bày dạng dọc | a layout with assets at the top and liabilities and capital below | Most British companies now use a [vertical format].
+distribute | /dɪˈstrɪbjuːt/ | phân phối, chia | to pay out profits to shareholders | The board decided to [distribute] half of the profit as dividends.
+net assets |  | tài sản thuần | total assets minus total liabilities | The company's [net assets] are worth $4 million.
+cash flow statement |  | báo cáo lưu chuyển tiền tệ | a statement showing cash coming into and going out of a business | The [cash flow statement] shows how much cash the business generated.
+statement of financial position |  | bảng cân đối kế toán (tên gọi khác) | another name for the balance sheet | IFRS uses the term [statement of financial position].
+
+[UNIT 12 | The balance sheet 2: assets | tangible vs intangible assets goodwill explained]
+non-current assets |  | tài sản dài hạn | another name for fixed assets | Buildings and long-term investments are [non-current assets].
+anticipate | /ænˈtɪsɪpeɪt/ | lường trước | to expect something and prepare for it | Accountants should [anticipate] losses but not profits.
+write off |  | xóa sổ (nợ, tài sản) | to remove an amount from the accounts because it will not be recovered | We had to [write off] the debt when the customer went bankrupt.
+bad debt |  | nợ khó đòi, nợ xấu | money owed that will probably never be paid | The unpaid invoice was recorded as a [bad debt].
+work-in-progress |  | sản phẩm dở dang | products that are only partly finished | At year end we had 300 chairs in [work-in-progress].
+lower of cost or market |  | giá thấp hơn giữa giá gốc và giá thị trường | a rule that stock is valued at whichever is lower, its cost or its market price | Inventory is valued at the [lower of cost or market].
+tangible assets |  | tài sản hữu hình | assets that physically exist and can be touched | Factories and trucks are [tangible assets].
+accumulated depreciation |  | khấu hao lũy kế | the total depreciation charged on an asset so far | After five years, [accumulated depreciation] was half the machine's cost.
+net book value |  | giá trị ghi sổ còn lại | an asset's cost minus its accumulated depreciation | The van has a [net book value] of $6,000.
+intangible assets |  | tài sản vô hình | assets with no physical form, such as brands and patents | A famous brand is one of its most valuable [intangible assets].
+brand name |  | tên thương hiệu | a legally protected name for a company's products | The [brand name] is known all over Asia.
+patent | /ˈpætnt/ | bằng sáng chế | the exclusive right to make a new product for a fixed period | The company holds a [patent] on the new battery design.
+trademark | /ˈtreɪdmɑːk/ | nhãn hiệu | a protected name or symbol that other companies cannot use | The logo is a registered [trademark].
+goodwill | /ˌɡʊdˈwɪl/ | lợi thế thương mại | the amount paid for a company above the value of its net assets | The deal created $2 million of [goodwill].
+
+[UNIT 13 | The balance sheet 3: liabilities | current vs long term liabilities accrued expenses explained]
+long-term liabilities |  | nợ dài hạn | debts that do not have to be paid within the next year | Bonds are usually [long-term liabilities].
+current liabilities |  | nợ ngắn hạn | debts that must be paid within a year | Money owed to suppliers is part of [current liabilities].
+creditors | /ˈkredɪtəz/ | chủ nợ, khoản phải trả (AmE: accounts payable) | suppliers and others the company owes money to | We pay our [creditors] within thirty days.
+deferred taxes |  | thuế hoãn lại | tax that will have to be paid in the future but not now | The balance sheet shows $950,000 of [deferred taxes].
+accrued expenses |  | chi phí phải trả, chi phí dồn tích | costs that built up during the year but will be paid next year | December's electricity bill is included in [accrued expenses].
+accumulate | /əˈkjuːmjəleɪt/ | tích lũy, dồn lại | to build up over time | Interest will [accumulate] until the loan is repaid.
+utility bills |  | hóa đơn tiện ích (điện, nước) | bills for services such as electricity, gas and water | [Utility bills] are paid every quarter.
+share premium |  | thặng dư vốn cổ phần (AmE: additional paid-in capital) | money received when shares are sold above their face value | Selling shares at $15 with a face value of $10 created a [share premium].
+face value |  | mệnh giá | the value printed on a share or bond | Each share has a [face value] of 10,000 dong.
+reserves | /rɪˈzɜːvz/ | quỹ dự trữ | money kept from capital or earnings for future needs | The company built up [reserves] for difficult years.
+short-term debt |  | vay ngắn hạn | loans that must be repaid within a year | The firm used a bank overdraft as [short-term debt].
+long-term debt |  | vay dài hạn | loans that are repaid over more than one year | [Long-term debt] includes a ten-year bank loan.
+
+[UNIT 14 | The other financial statements | income statement EBITDA cash flow statement explained]
+income and expenditure account |  | báo cáo thu chi | the statement used by non-profit organizations instead of a profit and loss account | The museum publishes an [income and expenditure account].
+non-profit organization |  | tổ chức phi lợi nhuận | an organization, such as a charity, that does not aim to make a profit | The hospital is run by a [non-profit organization].
+surplus | /ˈsɜːpləs/ | thặng dư | extra money when income is higher than spending | The charity had a [surplus] of $20,000 this year.
+cost of goods sold |  | giá vốn hàng bán (COGS) | the direct costs of making the products that were sold | Raw materials and factory wages are part of the [cost of goods sold].
+SG&A |  | chi phí bán hàng và quản lý | selling, general and administrative expenses, such as rent and office salaries | [SG&A] rose because we hired more sales staff.
+EBITDA |  | lợi nhuận trước lãi vay, thuế và khấu hao | earnings before interest, tax, depreciation and amortization | Analysts compare companies using [EBITDA].
+EBIT |  | lợi nhuận trước lãi vay và thuế | earnings before interest and tax | [EBIT] shows profit from operations before financing costs.
+bottom line |  | lợi nhuận ròng (dòng cuối) | the net profit, shown on the last line of the statement | Cost cuts improved the [bottom line].
+cash flows |  | dòng tiền | money coming into and going out of a business | Strong [cash flows] let the company repay its loans early.
+operations | /ˌɒpəˈreɪʃnz/ | hoạt động kinh doanh | a business's day-to-day activities | Most of our cash comes from [operations].
+investing | /ɪnˈvestɪŋ/ | hoạt động đầu tư | buying or selling property, plant and equipment | Buying the new factory is shown under [investing].
+financing | /ˈfaɪnænsɪŋ/ | hoạt động tài chính | raising or repaying debt, or issuing shares | Paying back the bond appears under [financing].
+
+[UNIT 15 | Financial ratios 1 | current ratio quick ratio EPS PE ratio explained]
+financial ratio |  | chỉ số tài chính | a number showing the relationship between two items in the financial statements | Investors use every [financial ratio] to compare companies.
+liquidity | /lɪˈkwɪdəti/ | khả năng thanh khoản | how easily assets can be turned into cash | High [liquidity] means the firm can pay its bills quickly.
+solvency | /ˈsɒlvənsi/ | khả năng thanh toán nợ | having enough money to pay debts | Banks check a borrower's [solvency] before lending.
+bankrupt | /ˈbæŋkrʌpt/ | phá sản | unable to pay debts, so assets are sold to repay creditors | The retailer went [bankrupt] after two bad years.
+efficiency | /ɪˈfɪʃnsi/ | hiệu quả | how well a company uses its resources | Better software improved the warehouse's [efficiency].
+current ratio |  | hệ số thanh toán hiện hành | current assets divided by current liabilities | A [current ratio] of 1.5 is usually acceptable.
+quick ratio |  | hệ số thanh toán nhanh (acid test) | current assets minus stock, divided by current liabilities | The [quick ratio] ignores stock because it may be hard to sell.
+liquid assets |  | tài sản thanh khoản | current assets that can quickly become cash | Cash and receivables are [liquid assets].
+earnings per share |  | lợi nhuận trên mỗi cổ phiếu (EPS) | a company's profit divided by the number of its shares | [Earnings per share] rose from $0.60 to $0.75.
+price/earnings ratio |  | hệ số giá trên lợi nhuận (P/E) | a share's market price divided by its earnings per share | A high [price/earnings ratio] shows investors expect strong growth.
+dividend cover |  | hệ số chi trả cổ tức | how many times the dividend could be paid from the year's earnings | A [dividend cover] of 2.5 means the dividend is safe.
+ordinary share |  | cổ phiếu phổ thông | a normal share that gives voting rights and a share of profits | Each [ordinary share] has one vote.
+
+[UNIT 16 | Financial ratios 2 | gross profit margin return on assets ROE explained]
+profitability | /ˌprɒfɪtəˈbɪləti/ | khả năng sinh lời | the ability of a business to make a profit | The new product improved the company's [profitability].
+gross profit margin |  | tỷ suất lợi nhuận gộp | gross profit divided by sales | A [gross profit margin] of 40% is high for a retailer.
+return on assets |  | tỷ suất sinh lời trên tài sản (ROA) | net profit divided by total assets | [Return on assets] shows how well the firm uses what it owns.
+return on equity |  | tỷ suất sinh lời trên vốn chủ sở hữu (ROE) | net profit divided by shareholders' equity | Shareholders look closely at [return on equity].
+financial analyst |  | chuyên viên phân tích tài chính | a person who studies companies and writes reports for investors | The [financial analyst] recommended buying the shares.
+competitor | /kəmˈpetɪtə/ | đối thủ cạnh tranh | a company that sells similar products in the same market | Our main [competitor] cut its prices last month.
+post-tax profit |  | lợi nhuận sau thuế | profit after tax has been deducted | [Post-tax profit] was 1.5 billion dong.
+generate | /ˈdʒenəreɪt/ | tạo ra | to produce something, such as profit or cash | The new factory will [generate] more revenue.
+
+[UNIT 17 | Cost accounting | direct vs indirect costs fixed vs variable costs breakeven explained]
+cost accounting |  | kế toán chi phí | calculating the cost of each product or service | [Cost accounting] showed that the small bottles lose money.
+direct costs |  | chi phí trực tiếp | costs that can be linked to making a particular product | Materials and production wages are [direct costs].
+indirect costs |  | chi phí gián tiếp | costs that cannot be linked to one particular product | Office rent is one of the [indirect costs].
+overheads | /ˈəʊvəhedz/ | chi phí chung (AmE: overhead) | another word for indirect costs | We moved to a smaller office to reduce [overheads].
+fixed costs |  | chi phí cố định | costs that stay the same when production changes | Rent and interest are [fixed costs].
+variable costs |  | chi phí biến đổi | costs that change with the amount produced | Raw materials are [variable costs].
+allocate | /ˈæləkeɪt/ | phân bổ | to divide costs and charge them to different products | We [allocate] factory costs according to machine hours.
+absorption costing |  | phương pháp tính giá toàn bộ | charging all production costs, and sometimes all costs, to products | Under [absorption costing], each chair carries part of the factory rent.
+activity-based costing |  | phương pháp tính chi phí theo hoạt động (ABC) | calculating all the costs of an activity such as design or delivery | [Activity-based costing] showed that delivery was very expensive.
+cost centre |  | trung tâm chi phí (AmE: cost center) | a department that has costs but does not earn profit | The legal department is treated as a [cost centre].
+breakeven analysis |  | phân tích điểm hòa vốn | comparing expected sales and costs at different production levels | A [breakeven analysis] was done before launching the product.
+breakeven point |  | điểm hòa vốn | the sales volume at which income exactly covers costs | We reach the [breakeven point] after selling 5,000 units.
+demand | /dɪˈmɑːnd/ | nhu cầu | how much of a product people want to buy | [Demand] for electric bikes is growing fast.
+objectives | /əbˈdʒektɪvz/ | mục tiêu | goals that a company wants to achieve | One of our [objectives] is to double sales in three years.
+
+[UNIT 18 | Pricing | pricing strategies penetration skimming loss leader explained]
+unit cost |  | giá thành đơn vị | the cost of producing one item | Buying in bulk reduced our [unit cost].
+mark-up pricing |  | định giá cộng lãi (cost-plus pricing) | setting a price by adding a percentage to the unit cost | With [mark-up pricing], a $10 item with a 30% mark-up sells for $13.
+market penetration pricing |  | định giá thâm nhập thị trường | launching at a low price to win a large market share | The new phone brand used [market penetration pricing].
+market share |  | thị phần | a company's part of total sales in a market | Our [market share] grew to 15%.
+economies of scale |  | lợi thế kinh tế nhờ quy mô | lower cost per unit when more units are produced | Big factories benefit from [economies of scale].
+market skimming |  | định giá hớt váng | starting with a very high price, then lowering it later | [Market skimming] is common for new gaming consoles.
+market segment |  | phân khúc thị trường | a group of customers with similar needs | Students are an important [market segment] for laptops.
+launch | /lɔːntʃ/ | tung ra (sản phẩm) | to introduce a new product onto the market | We will [launch] the new app in March.
+monopolist | /məˈnɒpəlɪst/ | nhà độc quyền | a company that is the only supplier of a product or service | A [monopolist] can raise prices without losing customers.
+prestige pricing |  | định giá uy tín | charging a high price so a product seems luxurious | Luxury watch makers use [prestige pricing].
+going-rate pricing |  | định giá theo mặt bằng thị trường | charging the same price as competitors for a similar product | Petrol stations often use [going-rate pricing].
+loss leader |  | sản phẩm bán lỗ để kéo khách | an item sold very cheaply to attract customers who then buy other things | The supermarket sells rice as a [loss leader].
+odd pricing |  | định giá số lẻ | using prices like 29.95 so they seem lower | [Odd pricing] makes $9.99 look much cheaper than $10.
+elastic | /ɪˈlæstɪk/ | co giãn | describing demand that changes a lot when the price changes | Demand for bus tickets is [elastic].
+inelastic | /ˌɪnɪˈlæstɪk/ | không co giãn | describing demand that stays the same when the price changes | Demand for salt is [inelastic].
+
+[UNIT 19 | Personal banking | personal banking vocabulary current account overdraft direct debit]
+current account |  | tài khoản thanh toán (AmE: checking account) | a bank account you can take money from at any time | My salary goes into my [current account].
+withdraw | /wɪðˈdrɔː/ | rút tiền | to take money out of a bank account | I need to [withdraw] some cash for the market.
+savings account |  | tài khoản tiết kiệm | an account that pays more interest but limits withdrawals | She keeps her emergency money in a [savings account].
+statement | /ˈsteɪtmənt/ | sao kê tài khoản | a list of money going out of and coming into an account | Check your bank [statement] every month.
+debit card |  | thẻ ghi nợ | a card that takes money directly from your account | I paid for the groceries with my [debit card].
+cash dispenser |  | máy rút tiền (AmE: ATM) | a machine that gives out cash from your account | There's a [cash dispenser] outside the supermarket.
+credit card |  | thẻ tín dụng | a card that lets you buy now and pay the bank later | Don't spend more on your [credit card] than you can repay.
+cheque | /tʃek/ | séc (AmE: check) | a written order to a bank to pay money from your account | He paid the rent by [cheque].
+bank transfer |  | chuyển khoản | moving money from one account to another | I paid the school fees by [bank transfer].
+standing order |  | lệnh chuyển tiền định kỳ cố định | an instruction to pay the same amount regularly | The rent is paid by [standing order] on the first of each month.
+direct debit |  | lệnh ghi nợ trực tiếp (số tiền thay đổi) | an instruction letting a company take varying amounts from your account | My phone bill is paid by [direct debit].
+overdraft | /ˈəʊvədrɑːft/ | khoản thấu chi | an agreement to spend more money than you have in your account, up to a limit | The bank gave me a small [overdraft] for emergencies.
+collateral | /kəˈlætərəl/ | tài sản đảm bảo | property that a lender can take if a loan is not repaid | The house acts as [collateral] for the mortgage.
+repossess | /ˌriːpəˈzes/ | thu hồi (tài sản thế chấp) | to take back property because the loan was not repaid | The bank may [repossess] the flat if payments stop.
+branch | /brɑːntʃ/ | chi nhánh | a local office of a bank | The [branch] near my office opens at eight.
+
+[UNIT 20 | Commercial and retail banking | commercial banking explained reserve requirement money creation]
+commercial bank |  | ngân hàng thương mại | a bank that takes deposits and makes loans to people and businesses | Most people keep their money in a [commercial bank].
+retail bank |  | ngân hàng bán lẻ | a bank that serves individual customers and small businesses | The [retail bank] offers personal loans and credit cards.
+deposit | /dɪˈpɒzɪt/ | gửi tiền; khoản tiền gửi | to put money into a bank account; the money put in | I [deposit] part of my salary every month.
+depositor | /dɪˈpɒzɪtə/ | người gửi tiền | a person who puts money in a bank | The bank pays interest to each [depositor].
+borrower | /ˈbɒrəʊə/ | người đi vay | a person or company that receives a loan | The [borrower] must repay the loan in two years.
+transfer | /trænsˈfɜː/ | chuyển (tiền) | to move money from one account to another | Can you [transfer] the money to my account today?
+create credit |  | tạo tín dụng | to make money available for people to borrow | By lending deposits again and again, banks [create credit].
+reserve requirement |  | tỷ lệ dự trữ bắt buộc | the percentage of deposits a bank must keep and not lend | With a 10% [reserve requirement], the bank can lend $90 of every $100.
+risk assessment |  | đánh giá rủi ro | calculating how likely a borrower is not to repay | Every loan goes through a [risk assessment].
+terms and conditions |  | điều khoản và điều kiện | the rules of an agreement, for example for repaying a loan | Read the [terms and conditions] before you sign.
+corporate customers |  | khách hàng doanh nghiệp | business clients of a bank | [Corporate customers] often need larger loans.
+maturity | /məˈtʃʊərəti/ | ngày đáo hạn | the date when a loan or bond must be repaid | The loan has a [maturity] of five years.
+yield | /jiːld/ | lợi suất | the income an investment or loan pays | Riskier loans usually offer a higher [yield].
+
+[UNIT 22 | Investment banking | what do investment banks do IPO underwriting M&A explained]
+investment bank |  | ngân hàng đầu tư | a bank that helps companies raise capital and advises on deals, but does not take deposits | The [investment bank] managed the company's share sale.
+intermediary | /ˌɪntəˈmiːdiəri/ | trung gian | a person or firm that acts between two others | The bank acts as an [intermediary] between companies and investors.
+securities | /sɪˈkjʊərətiz/ | chứng khoán | financial assets such as stocks and bonds | The firm issued new [securities] to fund its expansion.
+issue | /ˈɪʃuː/ | phát hành | to offer shares or bonds for sale | The government will [issue] ten-year bonds next month.
+underwrite | /ˌʌndəˈraɪt/ | bảo lãnh phát hành | to promise to buy any securities that other investors do not buy | Two banks agreed to [underwrite] the share issue.
+initial public offering |  | chào bán cổ phiếu lần đầu ra công chúng (IPO; BrE: flotation) | the first time a company offers its shares to the public | The tech company raised $500 million in its [initial public offering].
+institutional investors |  | nhà đầu tư tổ chức | organizations such as insurance companies and funds that invest large sums | Most of the new shares were bought by [institutional investors].
+investment fund |  | quỹ đầu tư | a company that invests the money of many small investors | She puts $100 a month into an [investment fund].
+pension fund |  | quỹ hưu trí | a fund that invests money to pay retired workers later | The [pension fund] owns 3% of the company.
+broking | /ˈbrəʊkɪŋ/ | môi giới | buying and selling shares for clients | The bank earns fees from [broking].
+dealing | /ˈdiːlɪŋ/ | tự doanh | trading shares with the bank's own money | Big profits came from the bank's [dealing] desk.
+mergers and acquisitions |  | mua bán và sáp nhập (M&A) | the joining or buying of companies | She works in the [mergers and acquisitions] team.
+divestiture | /daɪˈvestɪtʃə/ | thoái vốn | selling a subsidiary or part of a business | The [divestiture] of the hotel division raised $80 million.
+financial restructuring |  | tái cấu trúc tài chính | changing the way a business is financed | The debt was reduced through [financial restructuring].
+forecaster | /ˈfɔːkɑːstə/ | chuyên gia dự báo | a person who studies what is likely to happen in the future | The bank's [forecaster] expects interest rates to fall.
+
+[TRUE-FALSE]
+1 | A salary is usually paid weekly. | F | Salary trả theo tháng (monthly). Wages mới thường trả theo tuần.
+1 | Commission is a percentage of the income a salesperson generates. | T | Đúng: commission = % doanh thu nhân viên bán hàng tạo ra.
+1 | Most money in an economy exists in the form of cash. | F | Sai: phần lớn là bank deposits; chỉ khoảng 10% là tiền mặt.
+1 | A pension is money paid to a retired person. | T | Đúng: pension = lương hưu.
+1 | Rent is repayments of money borrowed to buy a house. | F | Đó là mortgage. Rent là tiền thuê nhà.
+2 | Bonds are loans that pay interest and are repaid at a fixed future date. | T | Đúng: bonds = trái phiếu.
+2 | A dividend is the part of profit a company pays to its suppliers. | F | Dividend trả cho shareholders (cổ đông).
+2 | The balance sheet shows revenues and expenses over a period. | F | Đó là profit and loss account. Balance sheet cho thấy assets, liabilities và capital.
+2 | Working capital is money used for everyday expenses. | T | Đúng: working capital = vốn lưu động.
+3 | Bookkeeping is the day-to-day recording of transactions. | T | Đúng.
+3 | Management accounting prepares statements mainly for creditors. | F | Management accounting phục vụ nhà quản lý ra quyết định; financial accounting mới lập báo cáo cho cổ đông và chủ nợ.
+3 | An external audit is carried out by the company's own accountants. | F | External audit do independent auditors thực hiện; internal audit mới do kế toán nội bộ.
+3 | Creative accounting usually produces an artificially high profit. | T | Đúng: đây là hành vi làm đẹp số liệu.
+4 | In double-entry bookkeeping, total debits equal total credits. | T | Đúng: mỗi giao dịch có một bút toán Nợ và một bút toán Có tương ứng.
+4 | Debits are recorded on the right side of an account. | F | Debits ở bên trái, credits ở bên phải.
+4 | A trial balance puts the balances of different accounts onto one page. | T | Đúng.
+5 | Partners in a British partnership have limited liability. | F | Partners chịu trách nhiệm vô hạn (fully liable).
+5 | A limited company can be sued if it breaks a contract. | T | Đúng: company là legal entity.
+5 | Non-executive directors work full-time for the company. | F | Họ không làm toàn thời gian, chỉ đưa ra lời khuyên chuyên môn.
+6 | Private companies (Ltd) can sell their shares on the stock exchange. | F | Private companies không được bán cổ phần trên thị trường mở.
+6 | The interim reports of quoted companies are audited. | F | Interim reports không được kiểm toán.
+6 | Net profit is gross profit less administrative expenses and tax. | T | Đúng.
+7 | The consistency principle means changing accounting methods every year. | F | Ngược lại: dùng cùng phương pháp mỗi năm, trừ khi có lý do chính đáng.
+7 | Under the historical cost principle, assets are recorded at their original purchase price. | T | Đúng.
+7 | A going concern is a company that will continue to do business. | T | Đúng.
+8 | The separate entity assumption means the owner's personal assets are part of the business. | F | Ngược lại: doanh nghiệp là một thực thể tách biệt khỏi chủ sở hữu.
+8 | Under the revenue recognition principle, revenue is recorded when it is earned, not when cash is received. | T | Đúng.
+8 | The principle of conservatism prefers methods that make profits look as high as possible. | F | Conservatism chọn phương pháp ít có khả năng làm tài sản/thu nhập bị thổi phồng.
+8 | Materiality means very small amounts need not be shown separately. | T | Đúng.
+9 | Land is usually depreciated every year. | F | Đất thường không khấu hao vì có xu hướng tăng giá (appreciate).
+9 | The straight-line method charges equal amounts every year. | T | Đúng.
+9 | Accelerated depreciation can reduce the tax a company pays in the first years. | T | Đúng: khấu hao nhanh làm giảm lợi nhuận chịu thuế.
+10 | External auditors are employees of the company they audit. | F | External auditors là kiểm toán viên độc lập, không làm việc cho công ty.
+10 | A qualified report says the accounts do not give an entirely true and fair view. | T | Đúng.
+10 | A stock take is a count of all the goods held for sale. | T | Đúng.
+11 | On a balance sheet, assets equal liabilities plus capital. | T | Đúng: A = L + C.
+11 | The balance sheet shows how much cash a company received during the year. | F | Thông tin đó nằm ở profit and loss account và cash flow statement.
+11 | Shareholders' equity is the same as net assets. | T | Đúng: tài sản trừ nợ phải trả.
+12 | Goodwill is recorded when a company buys another company above its net worth. | T | Đúng.
+12 | Patents and brand names are tangible assets. | F | Chúng là intangible assets (tài sản vô hình).
+12 | Net book value is cost minus accumulated depreciation. | T | Đúng.
+13 | Current liabilities are expected to be paid within a year. | T | Đúng.
+13 | Accrued expenses are costs that have already been paid in cash. | F | Accrued expenses là chi phí đã phát sinh nhưng chưa trả.
+13 | Share premium comes from selling shares above their face value. | T | Đúng.
+14 | A charity that has more income than expenditure calls it a surplus. | T | Đúng.
+14 | EBITDA is calculated after deducting depreciation and amortization. | F | EBITDA là lợi nhuận TRƯỚC lãi vay, thuế, khấu hao.
+14 | Buying a new factory appears under "investing" in the cash flow statement. | T | Đúng.
+15 | The quick ratio includes stock in liquid assets. | F | Quick ratio loại trừ hàng tồn kho (stock).
+15 | A high P/E ratio suggests investors expect the company to do well. | T | Đúng.
+15 | A dividend cover below 1.0 is considered very safe. | F | Dưới 1.0 nghĩa là công ty trả cổ tức bằng lợi nhuận tích lũy các năm trước — rủi ro.
+16 | Return on equity compares net profit with shareholders' equity. | T | Đúng.
+16 | Gross profit margin is net profit divided by total assets. | F | Đó là return on assets. Gross profit margin = lợi nhuận gộp / doanh thu.
+17 | Rent is a variable cost. | F | Rent là fixed cost; nguyên vật liệu mới là variable cost.
+17 | At the breakeven point, sales exactly cover costs. | T | Đúng.
+17 | A cost centre is a department that generates profit. | F | Cost centre chỉ phát sinh chi phí, không tạo lợi nhuận.
+18 | Market skimming starts with a low price to win market share. | F | Đó là market penetration. Skimming bắt đầu với giá rất cao.
+18 | A loss leader is sold cheaply to attract customers. | T | Đúng.
+18 | If demand is inelastic, sales stay about the same when the price changes. | T | Đúng.
+19 | A savings account usually pays more interest than a current account. | T | Đúng.
+19 | A standing order is used when the amount to be paid changes each time. | F | Đó là direct debit. Standing order dùng cho khoản cố định.
+19 | If a borrower does not repay a mortgage, the bank can repossess the property. | T | Đúng.
+20 | Customers' deposits are assets for a bank. | F | Tiền gửi của khách là liabilities (nợ phải trả) của ngân hàng.
+20 | Banks make a profit by charging borrowers more interest than they pay depositors. | T | Đúng.
+20 | With a 10% reserve requirement, a bank can lend 90% of a new deposit. | T | Đúng.
+22 | Investment banks mainly lend money to individual customers. | F | Ngân hàng đầu tư không cho vay mà làm trung gian giúp huy động vốn.
+22 | To underwrite an issue means to guarantee to buy securities that nobody else buys. | T | Đúng.
+22 | A divestiture is when a company sells a subsidiary. | T | Đúng.
+
+[BRE-AME]
+note / banknote | bill
+social security | welfare
+flat | apartment
+shares | stocks
+shareholder | stockholder
+stock (goods for sale) | inventory
+debtors | accounts receivable
+creditors | accounts payable
+profit and loss account | income statement
+a true and fair view | a fair presentation
+depreciation | amortization
+managing director | chief executive officer (CEO)
+fixed assets | property, plant and equipment
+stock take | count of the inventory
+balance sheet | statement of financial position
+share premium | additional paid-in capital / surplus
+net profit | net income
+overheads | overhead
+cost centre | cost center
+current account | checking account
+cash dispenser / cash machine | ATM
+cheque | check
+traveller's cheque | traveler's check
+shopping centre | shopping mall
+flotation | initial public offering (IPO)
+
+
+[PASSAGE 1 | Lan's monthly budget]
+Meet Lan, a marketing executive in Ho Chi Minh City. Her income comes mainly from a monthly salary, but she also earns a bonus when her team meets its sales target. Before the salary reaches her bank account, there are several deductions: income tax, social security charges and pension contributions. Lan keeps a simple budget. Her biggest outgoings are the rent on her flat and her living expenses, such as food and transport. She also pays bills for electricity, water and her phone. Next year she hopes to buy an apartment, so she is saving money. She knows she will need a mortgage, and she wants to be sure the monthly repayments will fit her budget.
+Q: What does Lan receive when her team meets its target? | *a bonus | commission | overtime | a pension
+Q: Why is Lan saving money? | to pay her tax | *to buy an apartment | to pay her bills | to retire early
+
+[PASSAGE 2 | Starting a coffee company]
+Two friends want to set up a coffee roasting company. They need capital to buy machines and rent a small factory. Part of the money comes from a bank loan, which they must pay back with interest. The rest comes from share capital. Ten investors buy shares and become shareholders, so they own part of the business. In its first year, the company's revenue is four billion dong. After paying the cost of sales and operating expenses, such as rent and salaries, it makes a small profit. The company pays tax, gives a small dividend to its shareholders and retains the rest of its earnings to buy a second roasting machine. At the end of the year, it publishes a balance sheet and a profit and loss account.
+Q: Where does part of the capital come from? | a government grant | *a bank loan | the suppliers | the customers
+Q: What does the company do with the rest of its earnings? | pays them to suppliers | gives them all to shareholders | *retains them to buy a machine | lends them to the bank
+
+[PASSAGE 3 | What accountants and auditors do]
+Accounting is more than bookkeeping. A bookkeeper records transactions every day, but accountants also prepare financial statements for shareholders and creditors. This is financial accounting. Inside the company, managers use the same data to make plans and decisions. This is called management accounting. Once a year, independent auditors carry out an external audit. They check the company's systems of control and look for errors or possible fraud. They also make sure there is no creative accounting, such as showing an artificially high profit. Finally, they confirm that the accounts give a true and fair view of the company's financial situation and follow the accounting standards.
+Q: Who carries out an external audit? | the managing director | internal auditors | *independent auditors | the tax authorities
+Q: What is management accounting used for? | *making plans and decisions | paying tax | finding fraud | selling shares
+
+[PASSAGE 4 | A day in the books]
+Here is a simple example of double-entry bookkeeping. A furniture company buys wood, a raw material, and agrees to pay the supplier in thirty days. The bookkeeper debits the purchases account and credits the supplier's account. A week later, the company sells a table on credit. The bookkeeper credits the sales account and debits the customer's account, because the customer is now one of the company's debtors. The table leaves the warehouse, so the level of stock goes down. Sales are first written in a day book, and a weekly summary goes into the nominal ledger. At the end of the accounting period, the bookkeeper prepares a trial balance. If everything is correct, total debits equal total credits.
+Q: When a customer buys on credit, which account is debited? | the sales account | *the customer's account | the supplier's account | the purchases account
+Q: What is prepared at the end of the accounting period? | a day book | *a trial balance | a budget | an interim report
+
+[PASSAGE 5 | From sole trader to company]
+Minh runs a small bakery as a sole trader. Business is good, but he worries about risk. As a sole trader he has unlimited liability. If the bakery cannot pay its debts, he may have to sell his own house. His accountant suggests forming a limited company. A company is a legal entity, separate from its owners. It can sign contracts, and it can be sued. The shareholders have limited liability, so they can only lose the money they invested. As the company grows, Minh becomes managing director, and his sister becomes chairman of the board of directors. They also invite a non-executive director, an experienced banker, who can offer objective advice. This is the start of good corporate governance.
+Q: What is the danger of unlimited liability for Minh? | he pays more tax | *he may have to sell his house | he cannot sign contracts | he cannot borrow money
+Q: Why do they invite a non-executive director? | to work full-time | to buy shares | *to give objective advice | to do the bookkeeping
+
+[PASSAGE 6 | Reading a company report]
+In Britain, most companies are private companies with 'Ltd' after their name. They cannot sell their shares on an open market. A much smaller number are public limited companies, or plcs, whose shares are traded on the stock exchange. Companies on the London Stock Exchange are called quoted companies. Every six months they publish an interim report, which is not audited. Once a year, every company sends its shareholders an annual report. It reviews the year's activity and includes the financial statements, notes and the auditors' report. Readers usually look first at turnover, then at gross profit, which is turnover less cost of sales, and finally at net profit, after administrative expenses and tax.
+Q: How often do quoted companies publish an interim report? | every three months | *every six months | once a year | every month
+Q: What is gross profit? | *turnover less cost of sales | net profit plus tax | revenue less dividends | assets less liabilities
+
+[PASSAGE 7 | Choosing accounting policies]
+Companies can choose their accounting policies, but they must follow the rules. In the United States, companies use GAAP. In most other countries they use IFRS. Whatever method a company chooses, it must be consistent and use the same method every year. If it changes a policy, it must disclose the change in the annual report. Policies on depreciation, the valuation of inventory and provisions can make a big difference to profit. Most countries use the historical cost principle, so assets stay at their original purchase price. This makes sense for a going concern, because it is not planning to sell its assets. In countries with high inflation, however, some companies use replacement cost accounting instead.
+Q: Where is IFRS used? | only in the United States | *in most countries outside the US | only in Britain | only in South America
+Q: Why is historical cost acceptable for a going concern? | *it is not planning to sell its assets | prices never change | it pays no tax | it has no inventory
+
+[PASSAGE 8 | The rules behind the numbers]
+Linh has just joined the accounts team of a furniture company. Her manager explains the basic rules. First, the company is a separate entity, so the owner's house is not in the accounts. Second, results are reported for fixed periods, usually a year and each quarter. When the company sells a sofa in December but the customer pays in January, the sale still belongs to December. That is revenue recognition. The salesperson's commission goes in the same month too, because of the matching principle. Finally, when there is a choice of methods, the company chooses the more careful one. This is conservatism.
+Q: Why does a December sale count in December? | the customer paid in December | *revenue is recognized when it is earned | the owner decided it | it is a small amount
+Q: Which principle puts the commission in the same month as the sale? | conservatism | materiality | *the matching principle | the full-disclosure principle
+
+[PASSAGE 9 | The delivery van]
+A bakery buys a delivery van for 500 million dong. The van will be used for five years, so it is a fixed asset. Instead of charging the whole cost against profits in the first year, the bakery depreciates it. Using the straight-line method, it deducts 100 million dong each year. After three years, the van's net book value is 200 million dong. In some countries, the bakery could use accelerated depreciation and deduct most of the cost in the first year. This would reduce its profit and its tax, which is an incentive to invest.
+Q: How much is deducted each year with the straight-line method? | 50 million dong | *100 million dong | 200 million dong | 500 million dong
+Q: What is the van's net book value after three years? | 100 million dong | *200 million dong | 300 million dong | 500 million dong
+
+[PASSAGE 10 | A difficult audit]
+Every spring, external auditors visit a large electronics retailer. This year they checked the stock take and wrote to several customers to confirm that their debts were genuine. They found some irregularities. Some expenses had been recorded in the wrong year, and the internal controls over cash were not adequate. The auditors produced a qualified report and sent a management letter to the directors explaining what needed to change. The directors promised to follow the advice before next year's audit.
+Q: Why did the auditors write to customers? | to sell them products | *to confirm their debts were genuine | to ask for payment | to offer consulting services
+Q: What did the auditors send to the directors? | an invoice | an unqualified report | *a management letter | a share certificate
+
+[PASSAGE 11 | Two halves that balance]
+A balance sheet is a picture of a company on one day. One half shows its assets, such as factories, machines and cash. The other half shows its liabilities, such as loans and money owed to suppliers, and its shareholders' equity. The two totals are always equal, because assets equal liabilities plus capital. Shareholders' equity includes share capital and retained earnings, and it is the same as the company's net assets. But the balance sheet does not show how much money came in or went out during the year. For that, you need the profit and loss account and the cash flow statement.
+Q: What is shareholders' equity the same as? | total assets | *net assets | current liabilities | revenue
+Q: Where can you see money coming in and going out during the year? | only the balance sheet | *the profit and loss account and the cash flow statement | the audit report | the share certificate
+
+[PASSAGE 12 | What is a brand worth?]
+A food company buys a smaller rival for 50 billion dong. The rival's net assets are only 35 billion dong, but it has a famous brand name, a patent for a special packaging method and many loyal customers. These intangible assets are hard to value, so they were not on its balance sheet. The difference of 15 billion dong is recorded as goodwill. The rival also had a customer who owed money and then went bankrupt. That amount was written off as a bad debt.
+Q: How much goodwill is recorded? | 35 billion dong | 50 billion dong | *15 billion dong | 85 billion dong
+Q: What happened to the debt of the bankrupt customer? | it was paid | *it was written off as a bad debt | it became goodwill | it was sold
+
+[PASSAGE 13 | What the company owes]
+At the end of the year, a software company lists its liabilities. Money owed to suppliers and short-term bank loans are current liabilities, because they must be paid within twelve months. A ten-year loan is a long-term liability. The company also includes accrued expenses: the electricity and internet bills for December have not arrived yet, but the costs belong to this year. Tax that will be paid in later years is shown as deferred taxes. On the same side, the balance sheet shows shareholders' equity, including a share premium from selling shares above face value.
+Q: Why are December's bills included now? | they were paid early | *they are accrued expenses that belong to this year | they are deferred taxes | they are long-term liabilities
+Q: Where does the share premium come from? | bank loans | *selling shares above face value | unpaid bills | depreciation
+
+[PASSAGE 14 | Reading the income statement]
+The income statement starts with sales revenue, also called turnover. Next comes the cost of goods sold, such as raw materials and factory wages. Revenue minus this cost gives gross profit. Then selling, general and administrative expenses are deducted. Analysts like to look at EBITDA, because depreciation methods differ between companies. After interest and tax, we reach the net profit, often called the bottom line. The cash flow statement then shows money from operations, investing and financing.
+Q: Why do analysts like EBITDA? | it includes tax | *depreciation methods differ between companies | it is the bottom line | it shows cash from financing
+Q: What is another name for net profit? | turnover | gross profit | *the bottom line | EBIT
+
+[PASSAGE 15 | Checking a company's health]
+Minh is thinking of lending money to a company. He first looks at its current ratio: current assets of 23 billion and current liabilities of 15 billion give a ratio of about 1.5, which is acceptable. The quick ratio, which ignores stock, is 1.15. As a possible shareholder, he also looks at earnings per share and the price/earnings ratio. A high P/E ratio means investors expect the company to grow. Finally, the dividend cover is 2.5, so the dividend looks safe.
+Q: Which ratio ignores stock? | the current ratio | *the quick ratio | the P/E ratio | dividend cover
+Q: What does a dividend cover of 2.5 suggest? | the company is bankrupt | *the dividend looks safe | the share is cheap | there is no profit
+
+[PASSAGE 16 | Comparing two coffee chains]
+An analyst compares two coffee chains. Chain A has a gross profit margin of 60%, while Chain B has 45%. Chain A is more efficient at controlling the cost of its coffee and milk. Next, the analyst looks at return on assets, which shows how well each chain uses its shops and machines to make profit. Finally, she checks return on equity, comparing net profit with shareholders' equity. Chain B has a higher return on equity, partly because it uses more borrowed money.
+Q: Which chain has the higher gross profit margin? | *Chain A | Chain B | they are the same | we don't know
+Q: What does return on equity compare net profit with? | total assets | sales | *shareholders' equity | cost of goods sold
+
+[PASSAGE 17 | How much does a T-shirt cost?]
+A clothing company wants to know the real cost of each T-shirt. Cotton and sewing wages are direct costs, so they are easy to calculate. But the company also pays rent, electricity and office salaries. These indirect costs, or overheads, must be allocated to each product. Rent is a fixed cost, while cotton is a variable cost. Before launching a new design, the company does a breakeven analysis. It needs to sell 8,000 T-shirts to cover all its costs. Every T-shirt after that makes a profit.
+Q: Which of these is a variable cost? | rent | office salaries | *cotton | insurance
+Q: What happens after the company sells 8,000 T-shirts? | it stops production | *each extra T-shirt makes a profit | the rent goes up | it reaches its objectives
+
+[PASSAGE 18 | Choosing a price]
+A company is launching a new pair of wireless earphones. The unit cost is 400,000 dong. With simple mark-up pricing, it would add 25% and sell them for 500,000 dong. But the marketing team has other ideas. One manager wants market penetration pricing: a low price to win a big market share quickly. Another prefers market skimming: a high price for early buyers, then lower prices later. Meanwhile, a supermarket nearby sells batteries as a loss leader, and many shops use odd pricing like 499,000 dong.
+Q: What would the price be with a 25% mark-up? | 400,000 dong | 450,000 dong | *500,000 dong | 525,000 dong
+Q: What is market skimming? | a low launch price | *a high price first, then lower prices later | selling at a loss to attract customers | copying competitors' prices
+
+[PASSAGE 19 | Hoa opens a bank account]
+Hoa has just started her first job, so she opens a current account at a branch near her office. She gets a debit card to withdraw cash from the cash dispenser and pay in shops. She also opens a savings account, which pays more interest. Her rent is the same every month, so she pays it by standing order. Her phone bill changes, so she uses a direct debit. The bank also offers her a small overdraft and a credit card, but she decides to wait.
+Q: Why does Hoa pay her rent by standing order? | it changes every month | *it is the same every month | the landlord asked for a cheque | it is paid in cash
+Q: Which account pays more interest? | the current account | *the savings account | the overdraft | the credit card
+
+[PASSAGE 20 | How banks make money]
+When people deposit money in a commercial bank, the bank pays them a little interest. It then lends most of that money to borrowers at a higher rate. The difference is the bank's profit. Banks must keep a percentage of deposits as reserves. With a 10% reserve requirement, a deposit of 100 million dong allows a loan of 90 million. When that money is spent and deposited in another bank, it can be lent again. In this way, the banking system creates credit. Before lending, banks carry out a risk assessment: riskier loans pay a higher yield.
+Q: How much can be lent from a 100 million deposit with a 10% reserve requirement? | 10 million | *90 million | 100 million | 110 million
+Q: Why do riskier loans have higher interest? | banks like risk | *there is a greater chance of not being repaid | the maturity is shorter | depositors ask for it
+
+[PASSAGE 22 | A day at an investment bank]
+Nam works at an investment bank. His bank does not take deposits or lend money. Instead, it helps companies raise capital by issuing shares and bonds. This month, it is managing an initial public offering for a technology company and has agreed to underwrite the issue. Most of the shares will be sold to institutional investors such as pension funds and investment funds. Another team is advising a client on an acquisition, and a third is handling the divestiture of a hotel business. The research department's analysts and forecasters support all of this work.
+Q: What does "underwrite the issue" mean? | lend money to the company | *guarantee to buy any shares that are not sold | audit the accounts | sell a subsidiary
+Q: Who will buy most of the shares? | the bank's employees | *institutional investors | the government | depositors
+
+[VIDEO]
+2 | Financial Statements Explained in One Minute: Balance Sheet, Income Statement, Cash Flow | https://www.youtube.com/watch?v=6GVVTfj7ndc | Ngắn · dễ
+2 | Financial Statements Explained – Income Statement, Balance Sheet & Cash Flow – Part 1 | https://www.youtube.com/watch?v=6j3EMn7SYG8 | Trung bình
+2 | The BALANCE SHEET for BEGINNERS (Full Example) | https://www.youtube.com/watch?v=CMv1zlZhb4Q | Trung bình
+3 | What is Auditing: Internal vs. External? | https://www.youtube.com/watch?v=4-ko4n-Hyjs | Trung bình
+3 | What are the roles and responsibilities of internal and external audit? | https://www.youtube.com/watch?v=tWXAqjJFrEM | Nâng cao
+4 | Double-Entry Accounting: a 2 Minute Tutorial | https://www.youtube.com/watch?v=cjO8qHM5Wjg | Ngắn · dễ
+4 | Double entry Bookkeeping explained in 10 minutes | https://www.youtube.com/watch?v=ijPDIy6gXxc | Trung bình
+4 | Double Entry Bookkeeping – debits and credits | https://www.youtube.com/watch?v=eQrZZi_yx4Q | Trung bình
+5 | Sole Trader or Limited Company? Watch this to decide (UK) | https://www.youtube.com/watch?v=8yrZnRSK-_c | Trung bình
+1 | Salary, wages, income, pay... What's the difference? // Vocabulary | https://www.youtube.com/watch?v=Wv0WD5TdS68 | Dễ · bài học từ vựng
+1 | Income, salary or wage? What's the difference in English? | https://www.youtube.com/watch?v=3vinbKLcwuA | Dễ · bài học từ vựng
+2 | Equity vs. debt | Stocks and bonds (Khan Academy) | https://www.youtube.com/watch?v=yQtUyBrRBx4 | Trung bình
+5 | Board Structure Explained: Models, Composition & Governance | https://www.youtube.com/watch?v=G-JZrrSLtXE | Nâng cao
+5 | Corporate Governance: How Boards Shape Financial Outcomes | https://www.youtube.com/watch?v=EqcQpD3VcXo | Nâng cao
+6 | What is a Public Limited Company (PLC)? | https://www.youtube.com/watch?v=kJq4zUnNYTU | Dễ
+6 | What's the difference between a Public Limited Company and a Private Limited Company? | https://www.youtube.com/watch?v=7xpAF675su4 | Trung bình
+6 | How to Read an Annual Report – 10k for Beginners | https://www.youtube.com/watch?v=7OjsEF04V8o | Trung bình
+7 | The Difference between GAAP and IFRS | https://www.youtube.com/watch?v=8IJ3uUYAWmQ | Trung bình
+7 | IFRS vs. US GAAP – Key Differences Explained | https://www.youtube.com/watch?v=JcdXF0AuKx4 | Nâng cao
+7 | Business English Vocabulary Lesson – Accounting: GAAP | https://www.youtube.com/watch?v=0pEAFe7ddgM | Bài học từ vựng
+0 | Business English Vocabulary Lesson – Finance & Accounting Vocabulary 2 | https://www.youtube.com/watch?v=270NOPYz3x4 | Bài học từ vựng
+0 | Financial English – English Vocabulary for Finance & Accounting (playlist) | https://www.youtube.com/playlist?list=PL59EDC142E201DFA3 | Danh sách phát
