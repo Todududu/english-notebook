@@ -1,0 +1,475 @@
+# ================================================================
+# FLYERS ENGLISH NOTEBOOK · dữ liệu học
+# Khoá học: Flyers (ICAN SpeakWell) · Unit 1–18
+# Nội dung từ vựng, câu ví dụ, bài đọc và câu hỏi do Claude tự biên soạn
+# theo chủ đề từng unit, trình độ Cambridge A2 Flyers.
+# ----------------------------------------------------------------
+# CÁCH VIẾT (mỗi cột cách nhau bằng dấu | ; dòng bắt đầu bằng # là ghi chú):
+#
+# [UNIT số | Tên unit | từ khoá tìm video (không bắt buộc)]
+# từ | phiên âm | nghĩa tiếng Việt | định nghĩa tiếng Anh | câu ví dụ có [từ cần điền]
+#   - Phiên âm có thể để trống:  hobby |  | sở thích | ...
+#   - Trong câu ví dụ, đặt từ cần điền trong [ ] để dùng cho bài tập điền từ.
+#     Nếu quên [ ], trang sẽ tự tìm từ đó trong câu.
+#
+# [TRUE-FALSE]
+# unit | câu nhận định | T hoặc F | giải thích
+#
+# [BRE-AME]
+# từ Anh-Anh | từ Anh-Mỹ
+#
+# [PASSAGE số-unit | Tiêu đề bài nghe]
+# Đoạn văn (có thể viết nhiều dòng)...
+# Q: Câu hỏi? | *đáp án đúng (có dấu *) | đáp án sai | đáp án sai | đáp án sai
+#
+# [VIDEO]
+# unit | tiêu đề | link https://... | mức độ      (unit = 0: video tổng hợp, hiện ở mọi unit)
+# ================================================================
+
+[UNIT 1 | Welcome to our Ezine | kids english vocabulary magazine internet email]
+magazine | /ˌmæɡəˈziːn/ | tạp chí | a thin book with stories and pictures that comes out every week or month | My sister reads a comic [magazine] every week.
+article | /ˈɑːtɪkl/ | bài báo, bài viết | a piece of writing in a magazine, newspaper or website | I wrote an [article] about my school trip.
+website | /ˈwebsaɪt/ | trang web | a place on the internet with pages of information | You can find the answers on our school [website].
+email | /ˈiːmeɪl/ | thư điện tử | a message you send from one computer or phone to another | I sent an [email] to my cousin in Australia.
+message | /ˈmesɪdʒ/ | tin nhắn | a short piece of written or spoken information you send to someone | Mum left a [message] on my phone.
+online | /ˌɒnˈlaɪn/ | trực tuyến | on the internet | We have our English class [online] on Wednesdays.
+page | /peɪdʒ/ | trang | one side of a sheet of paper in a book, or one screen on a website | Open your books at [page] twenty-five.
+reporter | /rɪˈpɔːtə/ | phóng viên | a person who finds news and writes or talks about it | The [reporter] asked the footballer many questions.
+interview | /ˈɪntəvjuː/ | cuộc phỏng vấn | a meeting where one person asks another person questions | Our class did an [interview] with the head teacher.
+competition | /ˌkɒmpəˈtɪʃn/ | cuộc thi | an event where people try to win something | She won first prize in the drawing [competition].
+envelope | /ˈenvələʊp/ | phong bì | a paper cover for a letter or card | Write the address on the [envelope].
+post | /pəʊst/ | gửi thư; thư từ | to send a letter or parcel; letters and parcels | I will [post] this birthday card today.
+news | /njuːz/ | tin tức | information about things that have just happened | Have you heard the [news]? We have a new teacher!
+type | /taɪp/ | đánh máy | to write using a keyboard | Can you [type] your name in this box?
+
+[UNIT 2 | Time for television | tv programmes vocabulary for kids english]
+programme | /ˈprəʊɡræm/ | chương trình (TV) | a show on television or radio | My favourite TV [programme] is about animals.
+channel | /ˈtʃænl/ | kênh | a TV station that shows programmes | Can you change the [channel], please?
+cartoon | /kɑːˈtuːn/ | phim hoạt hình | a film made with drawings that move | My little brother watches a [cartoon] every morning.
+quiz show | /ˈkwɪz ʃəʊ/ | chương trình đố vui | a TV programme where people answer questions to win prizes | She answered every question on the [quiz show].
+weather forecast | /ˈweðə ˌfɔːkɑːst/ | dự báo thời tiết | information about what the weather will be like | The [weather forecast] says it will rain tomorrow.
+documentary | /ˌdɒkjuˈmentri/ | phim tài liệu | a programme that gives facts about real life | We watched a [documentary] about whales.
+advertisement | /ədˈvɜːtɪsmənt/ | quảng cáo | a short film or picture that tries to sell something | There was an [advertisement] for a new chocolate bar.
+presenter | /prɪˈzentə/ | người dẫn chương trình | a person who introduces a TV or radio programme | The [presenter] of the show is very funny.
+comedy | /ˈkɒmədi/ | phim hài | a funny film or programme | We laughed a lot at the [comedy] last night.
+series | /ˈsɪəriːz/ | loạt phim, phim bộ | a set of programmes about the same people or subject | There are ten episodes in this [series].
+remote control | /rɪˌməʊt kənˈtrəʊl/ | điều khiển từ xa | a small machine you use to change the channel from your seat | Where is the [remote control]? I can't find it.
+switch on | /ˌswɪtʃ ˈɒn/ | bật | to make a machine start working | Please [switch on] the TV for the football match.
+switch off | /ˌswɪtʃ ˈɒf/ | tắt | to make a machine stop working | [Switch off] the TV and go to bed!
+exciting | /ɪkˈsaɪtɪŋ/ | thú vị, hồi hộp | making you feel very happy and interested | The end of the film was really [exciting].
+
+[UNIT 3 | People at work | jobs vocabulary for kids english flyers]
+job | /dʒɒb/ | công việc, nghề | the work that a person does to get money | What [job] does your dad do?
+mechanic | /məˈkænɪk/ | thợ máy | a person who repairs cars and machines | The [mechanic] fixed our car in one hour.
+engineer | /ˌendʒɪˈnɪə/ | kỹ sư | a person who designs or builds machines, roads or bridges | My aunt is an [engineer]. She builds bridges.
+pilot | /ˈpaɪlət/ | phi công | a person who flies a plane | The [pilot] said, "Welcome to Hanoi!"
+dentist | /ˈdentɪst/ | nha sĩ | a doctor who looks after your teeth | I go to the [dentist] twice a year.
+firefighter | /ˈfaɪəfaɪtə/ | lính cứu hoả | a person whose job is to stop fires | The [firefighter] climbed up the ladder.
+police officer | /pəˈliːs ˌɒfɪsə/ | cảnh sát | a person whose job is to keep people safe and catch criminals | A [police officer] helped the old man cross the road.
+businessman | /ˈbɪznəsmæn/ | doanh nhân (nam) | a man who works in business, often in an office | The [businessman] flew to Singapore for a meeting.
+secretary | /ˈsekrətri/ | thư ký | a person who writes letters, answers the phone and organises things in an office | The [secretary] answered the phone.
+waiter | /ˈweɪtə/ | bồi bàn (nam) | a man who brings food to people in a restaurant | The [waiter] brought us two bowls of soup.
+cook | /kʊk/ | đầu bếp; nấu ăn | a person who makes food; to make food | My grandmother is a wonderful [cook].
+factory | /ˈfæktri/ | nhà máy | a building where people make things with machines | They make bicycles in this [factory].
+office | /ˈɒfɪs/ | văn phòng | a room or building where people work at desks | Mum works in an [office] in the city centre.
+uniform | /ˈjuːnɪfɔːm/ | đồng phục | special clothes that people wear for work or school | Nurses wear a white [uniform].
+
+[UNIT 4 | City life | city places vocabulary for kids english]
+city centre | /ˌsɪti ˈsentə/ | trung tâm thành phố | the main part of a city with shops and offices | There are lots of shops in the [city centre].
+square | /skweə/ | quảng trường | an open place in a city with buildings on all sides | People are dancing in the town [square].
+bridge | /brɪdʒ/ | cây cầu | something built over a river or road so people can cross it | We walked across the [bridge] over the river.
+museum | /mjuˈziːəm/ | bảo tàng | a building where you can see old or interesting things | We saw dinosaur bones at the [museum].
+library | /ˈlaɪbrəri/ | thư viện | a place where you can borrow books | I borrow two books from the [library] every week.
+post office | /ˈpəʊst ˌɒfɪs/ | bưu điện | a place where you can send letters and parcels | I bought some stamps at the [post office].
+chemist | /ˈkemɪst/ | hiệu thuốc | a shop where you can buy medicine | Dad went to the [chemist] to get some medicine.
+traffic | /ˈtræfɪk/ | giao thông, xe cộ | the cars, buses and bikes on a road | There is a lot of [traffic] in the morning.
+underground | /ˈʌndəɡraʊnd/ | tàu điện ngầm | trains that travel under a city | We took the [underground] to the museum.
+crowded | /ˈkraʊdɪd/ | đông đúc | full of people | The market is always [crowded] at the weekend.
+noisy | /ˈnɔɪzi/ | ồn ào | making a lot of loud sounds | The street outside my flat is very [noisy].
+building | /ˈbɪldɪŋ/ | toà nhà | a structure with walls and a roof, like a house or office | That [building] has fifty floors.
+hotel | /həʊˈtel/ | khách sạn | a place where you pay to sleep when you travel | We stayed in a [hotel] near the beach.
+turn left | /ˌtɜːn ˈleft/ | rẽ trái | to go in the direction of your left hand | [Turn left] at the bank and the park is on your right.
+
+[UNIT 5 | Disaster | natural disasters vocabulary for kids english]
+storm | /stɔːm/ | cơn bão | very bad weather with strong wind and rain | The [storm] broke many trees in the park.
+flood | /flʌd/ | lũ lụt | a lot of water that covers land which is usually dry | After the heavy rain there was a [flood] in the village.
+earthquake | /ˈɜːθkweɪk/ | động đất | when the ground shakes very strongly | The [earthquake] made the windows shake.
+volcano | /vɒlˈkeɪnəʊ/ | núi lửa | a mountain that can send out fire and hot rocks | Smoke is coming out of the [volcano].
+lightning | /ˈlaɪtnɪŋ/ | tia chớp | a bright flash of light in the sky during a storm | The [lightning] lit up the whole sky.
+thunder | /ˈθʌndə/ | sấm | the loud noise in the sky during a storm | My dog is afraid of [thunder].
+fog | /fɒɡ/ | sương mù | thick cloud near the ground that makes it hard to see | We couldn't see the road because of the [fog].
+fire | /ˈfaɪə/ | lửa, đám cháy | the heat and flames that come when something burns | The [fire] burned the old house.
+rescue | /ˈreskjuː/ | giải cứu | to save someone from danger | The helicopter came to [rescue] the climbers.
+emergency | /ɪˈmɜːdʒənsi/ | tình huống khẩn cấp | a dangerous situation where you need help quickly | In an [emergency], call 115 for an ambulance.
+ambulance | /ˈæmbjələns/ | xe cứu thương | a vehicle that takes sick or hurt people to hospital | The [ambulance] arrived in five minutes.
+dangerous | /ˈdeɪndʒərəs/ | nguy hiểm | could hurt you | It's [dangerous] to swim in the sea during a storm.
+safe | /seɪf/ | an toàn | not in danger | Everyone in the building is [safe] now.
+escape | /ɪˈskeɪp/ | thoát ra | to get away from a dangerous place | They [escaped] through the back door.
+
+[UNIT 6 | Material things | materials vocabulary made of metal plastic glass kids]
+material | /məˈtɪəriəl/ | chất liệu | what something is made of | What [material] is this bag made of?
+made of | /ˈmeɪd əv/ | làm bằng | having something as its material | This spoon is [made of] silver.
+metal | /ˈmetl/ | kim loại | a hard material like iron, gold or silver | Bicycles are made of [metal].
+plastic | /ˈplæstɪk/ | nhựa | a light material made in factories, used for bottles and toys | Please don't use [plastic] bags.
+glass | /ɡlɑːs/ | thuỷ tinh | a hard material you can see through, used for windows | Be careful! That bowl is made of [glass].
+wood | /wʊd/ | gỗ | the hard material that trees are made of | This table is made of [wood].
+wooden | /ˈwʊdn/ | bằng gỗ | made of wood | My grandpa made me a [wooden] box.
+paper | /ˈpeɪpə/ | giấy | thin material that you write on | Cut the [paper] into four pieces.
+card | /kɑːd/ | bìa cứng, thiệp | thick, stiff paper | We made a birthday [card] for Mum.
+gold | /ɡəʊld/ | vàng | an expensive yellow metal | The winner got a [gold] medal.
+silver | /ˈsɪlvə/ | bạc | an expensive grey-white metal | Grandma has a [silver] ring.
+wool | /wʊl/ | len | the soft material that comes from sheep | My winter sweater is made of [wool].
+cotton | /ˈkɒtn/ | vải cotton | a light material from a plant, used for clothes | [Cotton] T-shirts are cool in hot weather.
+recycle | /ˌriːˈsaɪkl/ | tái chế | to use old things to make new things | We [recycle] paper and bottles at school.
+
+[UNIT 7 | Senses | five senses vocabulary for kids english]
+see | /siː/ | nhìn thấy | to know something with your eyes | I can [see] a rainbow in the sky!
+hear | /hɪə/ | nghe thấy | to know a sound with your ears | Can you [hear] the birds singing?
+smell | /smel/ | ngửi; có mùi | to know something with your nose | This soup [smells] delicious.
+taste | /teɪst/ | nếm; có vị | to know the flavour of something with your mouth | The lemon [tastes] sour.
+touch | /tʌtʃ/ | chạm | to put your hand on something | Don't [touch] the oven. It's hot!
+feel | /fiːl/ | cảm thấy; sờ thấy | to know something with your skin or body | The cat's fur [feels] soft.
+sound | /saʊnd/ | nghe có vẻ; âm thanh | to seem, when you hear it | That music [sounds] beautiful.
+soft | /sɒft/ | mềm | not hard; nice to touch | My pillow is very [soft].
+hard | /hɑːd/ | cứng | not soft; difficult to break or push | This bread is too [hard] to eat.
+sweet | /swiːt/ | ngọt | tasting of sugar | Mangoes are very [sweet].
+sour | /ˈsaʊə/ | chua | tasting like a lemon | This orange juice is a bit [sour].
+loud | /laʊd/ | to, ầm ĩ | making a strong sound | The music at the party was very [loud].
+quiet | /ˈkwaɪət/ | yên tĩnh | making very little sound | Please be [quiet] in the library.
+rough | /rʌf/ | thô ráp | not smooth to touch | The tree has [rough] bark.
+smooth | /smuːð/ | nhẵn, mịn | flat with no rough parts | The stone on the beach was [smooth].
+
+[UNIT 8 | Natural world | nature vocabulary forest desert river for kids]
+forest | /ˈfɒrɪst/ | rừng | a large area with many trees | Bears live in the [forest].
+jungle | /ˈdʒʌŋɡl/ | rừng nhiệt đới | a hot, wet forest with many plants and animals | Monkeys swing through the [jungle].
+desert | /ˈdezət/ | sa mạc | a very dry, hot place with lots of sand | Camels can walk for days in the [desert].
+river | /ˈrɪvə/ | sông | a long line of water that flows to the sea | The Mekong is a very long [river].
+lake | /leɪk/ | hồ | a large area of water with land all around it | We went fishing on the [lake].
+mountain | /ˈmaʊntən/ | núi | a very high hill | Fansipan is the highest [mountain] in Vietnam.
+hill | /hɪl/ | đồi | high land, smaller than a mountain | We walked up the [hill] to see the view.
+island | /ˈaɪlənd/ | hòn đảo | land with water all around it | Phu Quoc is a beautiful [island].
+cave | /keɪv/ | hang động | a large hole in a mountain or under the ground | Bats sleep in the dark [cave].
+waterfall | /ˈwɔːtəfɔːl/ | thác nước | water that falls from a high place | We took photos of the [waterfall].
+valley | /ˈvæli/ | thung lũng | low land between hills or mountains | There is a small village in the [valley].
+planet | /ˈplænɪt/ | hành tinh | a large round object that moves around the sun, like Earth | We must look after our [planet].
+environment | /ɪnˈvaɪrənmənt/ | môi trường | the air, water and land around us | Picking up rubbish helps the [environment].
+rock | /rɒk/ | đá, tảng đá | a large, hard piece of stone | The lizard is sitting on a [rock] in the sun.
+
+[UNIT 9 | World of sports | sports vocabulary for kids english flyers]
+team | /tiːm/ | đội | a group of people who play a sport together | There are eleven players in a football [team].
+match | /mætʃ/ | trận đấu | a game between two players or teams | We watched the tennis [match] on TV.
+win | /wɪn/ | thắng | to be the best or first in a game or race | I hope our team will [win] today.
+lose | /luːz/ | thua | to not win a game | Don't be sad if you [lose].
+score | /skɔː/ | ghi (điểm, bàn) | to get a point or goal in a game | She [scored] two goals in the first half.
+goal | /ɡəʊl/ | bàn thắng; khung thành | a point in football when the ball goes into the net | What a great [goal]!
+race | /reɪs/ | cuộc đua | a competition to see who is fastest | He came second in the running [race].
+prize | /praɪz/ | giải thưởng | something you get for winning | The [prize] for the winner is a new bike.
+champion | /ˈtʃæmpiən/ | nhà vô địch | the person or team that wins a competition | She is the school swimming [champion].
+player | /ˈpleɪə/ | cầu thủ, người chơi | a person who plays a sport or game | He is the best [player] in our class.
+coach | /kəʊtʃ/ | huấn luyện viên | a person who trains a sports team | Our [coach] makes us run every morning.
+stadium | /ˈsteɪdiəm/ | sân vận động | a large place with seats around a sports field | Thousands of fans came to the [stadium].
+skate | /skeɪt/ | trượt băng, trượt patin | to move on ice or the ground with special shoes | I'm learning to [skate] in the park.
+sailing | /ˈseɪlɪŋ/ | môn đua thuyền buồm | the sport of moving across water in a boat with sails | My uncle goes [sailing] on the lake.
+
+[UNIT 10 | High technology | technology vocabulary for kids english]
+technology | /tekˈnɒlədʒi/ | công nghệ | computers, machines and new ways of doing things | Robots are an example of new [technology].
+laptop | /ˈlæptɒp/ | máy tính xách tay | a small computer you can carry | I do my homework on my [laptop].
+mobile phone | /ˌməʊbaɪl ˈfəʊn/ | điện thoại di động | a phone you can carry with you | Mum called me on her [mobile phone].
+screen | /skriːn/ | màn hình | the flat part of a computer or TV where you see pictures | The [screen] of my tablet is broken.
+keyboard | /ˈkiːbɔːd/ | bàn phím | the part of a computer with keys for letters and numbers | Press the space key on the [keyboard].
+internet | /ˈɪntənet/ | mạng internet | the system that connects computers around the world | You can learn a lot on the [internet].
+app | /æp/ | ứng dụng | a program you use on a phone or tablet | I use an [app] to practise English.
+download | /ˌdaʊnˈləʊd/ | tải xuống | to move a file or game from the internet to your computer | Can I [download] this game?
+robot | /ˈrəʊbɒt/ | người máy | a machine that can move and do jobs by itself | The [robot] can clean the floor.
+invent | /ɪnˈvent/ | phát minh | to make something new for the first time | Who [invented] the telephone?
+battery | /ˈbætri/ | pin | a small object that gives electricity to toys and phones | My phone [battery] is almost empty.
+password | /ˈpɑːswɜːd/ | mật khẩu | a secret word you need to open a computer or app | Never tell anyone your [password].
+printer | /ˈprɪntə/ | máy in | a machine that puts words and pictures from a computer onto paper | The [printer] has no paper.
+digital camera | /ˌdɪdʒɪtl ˈkæmərə/ | máy ảnh kỹ thuật số | a camera that saves photos on a computer card | Dad took photos with his [digital camera].
+
+[UNIT 11 | Beastly tales | fairy tales vocabulary dragon giant castle for kids]
+tale | /teɪl/ | truyện kể | a story, often about magic or adventure | Grandpa told us an old [tale] about a clever fox.
+dragon | /ˈdræɡən/ | con rồng | a large animal in stories that has wings and breathes fire | The [dragon] flew over the castle.
+giant | /ˈdʒaɪənt/ | người khổng lồ | a very big, tall person in stories | The [giant] lived at the top of the beanstalk.
+castle | /ˈkɑːsl/ | lâu đài | a large old building with thick walls where kings and queens lived | The princess lived in a [castle] on a hill.
+king | /kɪŋ/ | nhà vua | a man who rules a country | The [king] wore a gold crown.
+queen | /kwiːn/ | nữ hoàng | a woman who rules a country, or the wife of a king | The [queen] gave the boy a prize.
+prince | /prɪns/ | hoàng tử | the son of a king or queen | The [prince] rode a white horse.
+magic | /ˈmædʒɪk/ | phép thuật | a power that makes impossible things happen | With [magic], the frog became a prince.
+brave | /breɪv/ | dũng cảm | not afraid of danger | The [brave] girl saved her friends.
+frightened | /ˈfraɪtnd/ | sợ hãi | feeling afraid | The little rabbit was [frightened] of the wolf.
+wing | /wɪŋ/ | cánh | the part of a bird or insect that it uses to fly | The eagle opened its [wings].
+tail | /teɪl/ | cái đuôi | the long part at the back of an animal's body | The monkey hung from the tree by its [tail].
+fur | /fɜː/ | lông thú | the soft, thick hair on some animals | The bear has thick brown [fur].
+once upon a time | /ˌwʌns əˈpɒn ə ˌtaɪm/ | ngày xửa ngày xưa | the words that start many fairy tales | [Once upon a time], there was a poor farmer.
+
+[UNIT 12 | Tomorrow's world | future vocabulary will space robots kids english]
+future | /ˈfjuːtʃə/ | tương lai | the time that will come | In the [future], cars will fly.
+space | /speɪs/ | vũ trụ | the area outside the Earth where the stars and planets are | I'd like to travel into [space].
+rocket | /ˈrɒkɪt/ | tên lửa | a vehicle that flies into space | The [rocket] took off with a loud noise.
+astronaut | /ˈæstrənɔːt/ | phi hành gia | a person who travels into space | The [astronaut] walked on the moon.
+spaceship | /ˈspeɪsʃɪp/ | tàu vũ trụ | a vehicle that carries people through space | The [spaceship] landed on Mars.
+moon | /muːn/ | mặt trăng | the round object that goes around the Earth and shines at night | The [moon] is very bright tonight.
+alien | /ˈeɪliən/ | người ngoài hành tinh | a creature from another planet | The film is about a friendly [alien].
+probably | /ˈprɒbəbli/ | có lẽ, chắc là | almost certainly | People will [probably] live on Mars one day.
+perhaps | /pəˈhæps/ | có thể | maybe | [Perhaps] we will have robot teachers.
+electric | /ɪˈlektrɪk/ | chạy bằng điện | using electricity | My uncle drives an [electric] car.
+solar panel | /ˌsəʊlə ˈpænl/ | tấm pin mặt trời | a flat object that makes electricity from sunlight | We have a [solar panel] on our roof.
+travel | /ˈtrævl/ | di chuyển, du lịch | to go from one place to another | In the future, we will [travel] by flying car.
+become | /bɪˈkʌm/ | trở thành | to start to be | I want to [become] a scientist.
+scientist | /ˈsaɪəntɪst/ | nhà khoa học | a person who studies how the world works | The [scientist] is doing an experiment.
+
+[UNIT 13 | The great outdoors | camping vocabulary for kids english]
+camping | /ˈkæmpɪŋ/ | cắm trại | sleeping outside in a tent for fun | We went [camping] by the lake last summer.
+tent | /tent/ | cái lều | a small shelter made of material that you sleep in outside | We put up our [tent] under a big tree.
+campsite | /ˈkæmpsaɪt/ | khu cắm trại | a place where people can camp | The [campsite] has hot showers.
+sleeping bag | /ˈsliːpɪŋ bæɡ/ | túi ngủ | a warm bag that you sleep in when you camp | My [sleeping bag] is warm and soft.
+torch | /tɔːtʃ/ | đèn pin | a small light you carry in your hand | It's dark. Where's my [torch]?
+map | /mæp/ | bản đồ | a drawing of an area that shows roads, rivers and towns | Let's look at the [map] to find the path.
+compass | /ˈkʌmpəs/ | la bàn | a tool that shows you where north is | Use the [compass] to find the way home.
+backpack | /ˈbækpæk/ | ba lô | a bag you carry on your back | I put my water bottle in my [backpack].
+picnic | /ˈpɪknɪk/ | chuyến dã ngoại, bữa ăn ngoài trời | a meal you eat outside | We had a [picnic] by the river.
+path | /pɑːθ/ | lối mòn | a narrow way for people to walk on | Follow the [path] through the forest.
+climb | /klaɪm/ | leo, trèo | to go up something using your hands and feet | We [climbed] to the top of the hill.
+explore | /ɪkˈsplɔː/ | khám phá | to travel around a place to learn about it | Let's [explore] the island!
+adventure | /ədˈventʃə/ | cuộc phiêu lưu | an exciting and unusual experience | Our trip to the jungle was a great [adventure].
+insect | /ˈɪnsekt/ | côn trùng | a very small animal with six legs, like an ant or a bee | An [insect] landed on my sandwich.
+
+[UNIT 14 | Food, glorious food | food and cooking vocabulary for kids english]
+recipe | /ˈresəpi/ | công thức nấu ăn | instructions that tell you how to cook something | Grandma gave me her [recipe] for spring rolls.
+ingredient | /ɪnˈɡriːdiənt/ | nguyên liệu | one of the foods you use to make a dish | Flour and eggs are the main [ingredients].
+flour | /ˈflaʊə/ | bột mì | a white powder from wheat, used to make bread and cakes | You need two cups of [flour] for this cake.
+butter | /ˈbʌtə/ | bơ | a soft yellow food made from milk | Put some [butter] on your toast.
+jam | /dʒæm/ | mứt | a sweet food made from fruit and sugar | I like strawberry [jam] on bread.
+sauce | /sɔːs/ | nước sốt | a thick liquid you put on food | Would you like tomato [sauce] with your chips?
+pepper | /ˈpepə/ | hạt tiêu; ớt chuông | a powder that makes food hot; a red, green or yellow vegetable | Add a little salt and [pepper].
+pancake | /ˈpænkeɪk/ | bánh kếp | a thin, round cake cooked in a pan | We had [pancakes] with honey for breakfast.
+soup | /suːp/ | súp, canh | a hot liquid food made from vegetables or meat | This chicken [soup] is delicious.
+bake | /beɪk/ | nướng (bằng lò) | to cook in an oven | Let's [bake] a cake for Dad's birthday.
+boil | /bɔɪl/ | luộc, đun sôi | to cook something in very hot water | [Boil] the eggs for ten minutes.
+fry | /fraɪ/ | chiên, rán | to cook something in hot oil | Mum [fries] fish for dinner on Fridays.
+delicious | /dɪˈlɪʃəs/ | ngon | tasting very good | These noodles are [delicious]!
+menu | /ˈmenjuː/ | thực đơn | a list of the food you can order in a restaurant | Can I see the [menu], please?
+
+[UNIT 15 | Under the sea | sea animals vocabulary for kids english]
+octopus | /ˈɒktəpəs/ | bạch tuộc | a sea animal with eight long arms | The [octopus] hid behind a rock.
+dolphin | /ˈdɒlfɪn/ | cá heo | a clever grey sea animal that likes to jump and play | A [dolphin] jumped out of the water.
+shark | /ʃɑːk/ | cá mập | a big fish with sharp teeth | Some [sharks] can be dangerous.
+whale | /weɪl/ | cá voi | the largest animal in the sea | The blue [whale] is bigger than a bus.
+jellyfish | /ˈdʒelifɪʃ/ | con sứa | a soft sea animal that can sting you | Don't touch the [jellyfish]!
+seaweed | /ˈsiːwiːd/ | rong biển | a plant that grows in the sea | Some people eat [seaweed] with rice.
+shell | /ʃel/ | vỏ sò, vỏ ốc | the hard outside part of some sea animals | I found a pink [shell] on the beach.
+coral | /ˈkɒrəl/ | san hô | a hard, colourful thing in warm seas, made by tiny animals | Many fish live around the [coral].
+diver | /ˈdaɪvə/ | thợ lặn | a person who swims under the water with special equipment | The [diver] took photos of the fish.
+submarine | /ˌsʌbməˈriːn/ | tàu ngầm | a ship that can travel under the water | We saw the bottom of the sea from a [submarine].
+wave | /weɪv/ | con sóng | a line of water that moves across the sea | The [waves] are very big today.
+fin | /fɪn/ | vây cá | a thin, flat part of a fish that helps it swim | We saw a shark's [fin] above the water.
+underwater | /ˌʌndəˈwɔːtə/ | dưới nước | below the top of the water | Can you swim [underwater]?
+beach | /biːtʃ/ | bãi biển | the sand next to the sea | We played football on the [beach].
+
+[UNIT 16 | Free time | hobbies vocabulary for kids english]
+free time | /ˌfriː ˈtaɪm/ | thời gian rảnh | time when you don't have to work or study | What do you do in your [free time]?
+hobby | /ˈhɒbi/ | sở thích | something you enjoy doing in your free time | My [hobby] is drawing.
+collect | /kəˈlekt/ | sưu tầm | to get and keep things of the same kind | My brother [collects] stamps.
+stamp | /stæmp/ | tem thư | a small piece of paper you stick on a letter before you post it | This [stamp] is from Japan.
+chess | /tʃes/ | cờ vua | a game for two players on a board with black and white squares | Dad taught me how to play [chess].
+puzzle | /ˈpʌzl/ | trò xếp hình, câu đố | a game or toy that you have to think about to finish | This [puzzle] has a thousand pieces.
+board game | /ˈbɔːd ɡeɪm/ | trò chơi bàn cờ | a game you play on a board, often with dice | We played a [board game] when it rained.
+club | /klʌb/ | câu lạc bộ | a group of people who meet to do an activity together | I joined the school chess [club].
+concert | /ˈkɒnsət/ | buổi hoà nhạc | a show where people play music | We went to a [concert] in the park.
+instrument | /ˈɪnstrəmənt/ | nhạc cụ | something you play to make music, like a piano | Can you play a musical [instrument]?
+violin | /ˌvaɪəˈlɪn/ | đàn vi-ô-lông | a wooden instrument with strings that you play with a bow | She practises the [violin] every day.
+drum | /drʌm/ | cái trống | an instrument that you hit with sticks | My cousin plays the [drums] in a band.
+skateboard | /ˈskeɪtbɔːd/ | ván trượt | a board with wheels that you stand on | He rides his [skateboard] in the park.
+relax | /rɪˈlæks/ | thư giãn | to rest and feel calm | On Sundays I [relax] and read comics.
+
+[UNIT 17 | Dress senses | clothes vocabulary for kids english flyers]
+clothes | /kləʊðz/ | quần áo | the things you wear, like shirts and trousers | I need new [clothes] for the party.
+jacket | /ˈdʒækɪt/ | áo khoác | a short coat | Take your [jacket]. It's cold outside.
+sweater | /ˈswetə/ | áo len | a warm top with long sleeves, often made of wool | Grandma knitted me a red [sweater].
+scarf | /skɑːf/ | khăn quàng cổ | a long piece of material you wear around your neck | Wear your [scarf] in winter.
+gloves | /ɡlʌvz/ | găng tay | clothes that cover your hands and fingers | My hands are cold. Where are my [gloves]?
+belt | /belt/ | thắt lưng | a strip of leather or material you wear around your waist | These trousers need a [belt].
+boots | /buːts/ | ủng, bốt | strong shoes that cover your foot and part of your leg | Put on your [boots]. It's muddy.
+pocket | /ˈpɒkɪt/ | túi (quần, áo) | a small bag sewn into clothes | I have some money in my [pocket].
+button | /ˈbʌtn/ | cúc áo | a small round thing that closes a shirt or coat | A [button] fell off my shirt.
+striped | /straɪpt/ | có sọc | with lines of different colours | He's wearing a [striped] T-shirt.
+spotted | /ˈspɒtɪd/ | có chấm bi | with small round marks | She has a [spotted] dress.
+fashion | /ˈfæʃn/ | thời trang | the style of clothes that is popular at a time | My sister loves [fashion] magazines.
+try on | /ˌtraɪ ˈɒn/ | mặc thử | to put on clothes to see if they fit | Can I [try on] these jeans?
+wear | /weə/ | mặc, đội, mang | to have clothes on your body | Students [wear] a uniform at my school.
+
+[UNIT 18 | Around the world | countries travel vocabulary for kids english]
+country | /ˈkʌntri/ | quốc gia | an area of land with its own government | Vietnam is a [country] in Asia.
+capital | /ˈkæpɪtl/ | thủ đô | the most important city of a country | Hanoi is the [capital] of Vietnam.
+passport | /ˈpɑːspɔːt/ | hộ chiếu | a small book you need to travel to other countries | Don't forget your [passport] at the airport!
+tourist | /ˈtʊərɪst/ | khách du lịch | a person who visits a place on holiday | Lots of [tourists] visit Hoi An every year.
+journey | /ˈdʒɜːni/ | hành trình, chuyến đi | travelling from one place to another | The [journey] to Da Lat took six hours.
+flag | /flæɡ/ | lá cờ | a piece of cloth with colours and a picture that shows a country | The Vietnamese [flag] is red with a yellow star.
+language | /ˈlæŋɡwɪdʒ/ | ngôn ngữ | the words people in a country use to speak and write | How many [languages] can you speak?
+suitcase | /ˈsuːtkeɪs/ | va li | a large bag for carrying clothes when you travel | My [suitcase] is too heavy!
+holiday | /ˈhɒlədeɪ/ | kỳ nghỉ | a time when you don't go to school or work and often travel | We went to Nha Trang for our summer [holiday].
+abroad | /əˈbrɔːd/ | ở nước ngoài | in or to another country | My cousin is studying [abroad] in Canada.
+foreign | /ˈfɒrən/ | (thuộc) nước ngoài | from another country | English is a [foreign] language for me.
+international | /ˌɪntəˈnæʃnəl/ | quốc tế | between many countries | We went to an [international] food festival.
+souvenir | /ˌsuːvəˈnɪə/ | quà lưu niệm | something you buy to remember a place | I bought a small [souvenir] for my teacher.
+visit | /ˈvɪzɪt/ | thăm | to go to see a place or a person | I'd like to [visit] Japan one day.
+
+[TRUE-FALSE]
+1 | A reporter is a person who finds news and writes or talks about it. | T | Đúng: reporter = phóng viên.
+1 | You put a letter inside a magazine before you post it. | F | Bạn cho thư vào envelope (phong bì), không phải magazine.
+2 | A documentary is a funny programme with invented stories. | F | Documentary đưa ra sự thật về đời thực. Chương trình hài là comedy.
+2 | You use a remote control to change the channel. | T | Đúng.
+3 | A dentist looks after your teeth. | T | Đúng: dentist = nha sĩ.
+3 | A mechanic flies planes. | F | Mechanic sửa xe và máy móc. Người lái máy bay là pilot.
+4 | A chemist is a shop where you can buy medicine. | T | Đúng (Anh-Anh). Anh-Mỹ gọi là drugstore/pharmacy.
+4 | A crowded place has very few people. | F | Crowded = đông đúc, nhiều người.
+5 | Thunder is the bright flash of light in the sky. | F | Tia sáng là lightning. Thunder là tiếng sấm.
+5 | An ambulance takes sick or hurt people to hospital. | T | Đúng.
+6 | Wool comes from sheep. | T | Đúng.
+6 | "Wooden" means made of glass. | F | Wooden = làm bằng gỗ (wood).
+7 | We use our nose to smell. | T | Đúng.
+7 | Lemons taste sweet. | F | Chanh có vị sour (chua).
+8 | An island has water all around it. | T | Đúng.
+8 | A desert is a hot, wet forest. | F | Đó là jungle. Desert là sa mạc, rất khô.
+9 | A coach is a person who trains a sports team. | T | Đúng: coach = huấn luyện viên.
+9 | The champion is the person who loses the competition. | F | Champion là người thắng cuộc (nhà vô địch).
+10 | You should tell your friends your password. | F | Không bao giờ nói mật khẩu cho người khác.
+10 | A printer puts words from a computer onto paper. | T | Đúng.
+11 | A giant is a very small person in stories. | F | Giant = người khổng lồ, rất to cao.
+11 | "Once upon a time" is how many fairy tales begin. | T | Đúng.
+12 | An astronaut is a person who travels into space. | T | Đúng.
+12 | "Perhaps" means "certainly". | F | Perhaps = có thể (maybe), không chắc chắn.
+13 | You use a compass to find which way is north. | T | Đúng.
+13 | A torch is a bag you carry on your back. | F | Túi đeo lưng là backpack. Torch là đèn pin.
+14 | To bake means to cook in an oven. | T | Đúng.
+14 | Flour is made from milk. | F | Flour (bột mì) làm từ lúa mì. Butter mới làm từ sữa.
+15 | An octopus has eight arms. | T | Đúng.
+15 | A submarine is a ship that flies in the sky. | F | Submarine là tàu ngầm, đi dưới nước.
+16 | Chess is a game for two players. | T | Đúng.
+16 | A violin is an instrument you hit with sticks. | F | Nhạc cụ đánh bằng dùi là drum. Violin chơi bằng vĩ (bow).
+17 | You wear gloves on your feet. | F | Gloves đeo ở tay. Chân đi boots/shoes/socks.
+17 | "Try on" means to put on clothes to see if they fit. | T | Đúng.
+18 | Hanoi is the capital of Vietnam. | T | Đúng.
+18 | You need a passport to travel inside your own town. | F | Passport dùng khi đi nước ngoài (abroad).
+
+[BRE-AME]
+autumn | fall
+holiday | vacation
+film | movie
+programme | program
+mobile phone | cell phone
+flat | apartment
+underground | subway
+chemist | drugstore / pharmacy
+city centre | downtown
+pavement | sidewalk
+trousers | pants
+jumper | sweater
+rubber | eraser
+biscuit | cookie
+sweets | candy
+chips | French fries
+crisps | chips
+torch | flashlight
+rubbish | garbage / trash
+post | mail
+shop | store
+lift | elevator
+football | soccer
+colour | color
+
+[PASSAGE 1 | Our class ezine]
+Hi! My name is Nam and I'm the editor of our class ezine. An ezine is a magazine on the internet. Every month, students in our class write articles about school, sport and hobbies. Last month, Mai was our reporter. She did an interview with the school cook about healthy food. We also have a drawing competition on the last page. To enter, you send your picture by email. The winner gets a book prize. You can read our ezine on the school website.
+Q: What is an ezine? | a paper book | *a magazine on the internet | a TV programme | a letter
+Q: Who did Mai interview? | the head teacher | *the school cook | a footballer | a pilot
+
+[PASSAGE 2 | Family TV night]
+On Friday evenings, my family watches TV together. First, we watch the news and the weather forecast because Dad wants to know if it will rain at the weekend. Then my little sister wants a cartoon, but my brother wants a quiz show. Mum usually chooses a documentary about animals. Last Friday we watched one about penguins. It was really exciting! We don't like the advertisements, so we talk and eat popcorn when they come on. At nine o'clock, Mum switches off the TV and we go to bed.
+Q: Why does Dad watch the weather forecast? | to see a cartoon | *to know if it will rain | to win a prize | to learn about penguins
+Q: What do they do when the advertisements come on? | *talk and eat popcorn | go to bed | change the channel | switch off the TV
+
+[PASSAGE 3 | Jobs in my family]
+There are many different jobs in my family. My dad is an engineer. He designs bridges and roads. My mum is a dentist, so she always tells me to brush my teeth. My uncle is a pilot and flies big planes to Europe. My aunt works in an office in the city centre. She is a secretary and answers the phone all day. My grandfather was a mechanic. He can still fix any bicycle! When I grow up, I want to be a firefighter because I'd like to help people.
+Q: What does the writer's mum do? | engineer | *dentist | pilot | secretary
+Q: Why does the writer want to be a firefighter? | to fly planes | to fix bikes | *to help people | to work in an office
+
+[PASSAGE 4 | A day in the city]
+Last Saturday, Linh and her grandma took the underground to the city centre. The trains were very crowded. First they went to the museum and saw an old boat and some dinosaur bones. Then they walked across the bridge to the big square. There was a lot of traffic and it was very noisy, but they found a quiet café. After lunch, Grandma went to the post office to send a parcel, and Linh borrowed two books from the library. They were tired but happy when they got home.
+Q: How did they travel to the city centre? | by bus | by taxi | *by underground | on foot
+Q: What did Linh do after lunch? | went to the museum | *borrowed books from the library | sent a parcel | walked across the bridge
+
+[PASSAGE 5 | The big storm]
+Last year there was a terrible storm in our town. The wind was very strong, and there was lots of thunder and lightning. It rained for two days, and the river flooded the streets near my school. Some families had to leave their homes. Firefighters used boats to rescue people and their pets. My family was safe because our house is on a hill. After the storm, everyone helped to clean the streets. Now our school teaches us what to do in an emergency.
+Q: Why was the writer's family safe? | they left the town | *their house is on a hill | they had a boat | they were at school
+Q: How did firefighters rescue people? | by helicopter | by ambulance | *with boats | on bikes
+
+[PASSAGE 6 | Our recycling project]
+This month our class is doing a recycling project. We are collecting things made of different materials. Paper and card go in the blue box. Plastic bottles go in the yellow box. Glass jars go in the green box, and metal cans go in the grey box. Last week we made a robot from old boxes and bottles. Its arms are made of card and its eyes are two metal bottle tops. Our teacher says recycling helps the environment, so we should never throw plastic in the rubbish.
+Q: Which box is for glass jars? | blue | yellow | *green | grey
+Q: What are the robot's eyes made of? | plastic | card | *metal bottle tops | wood
+
+[PASSAGE 7 | The mystery box game]
+In our English lesson today we played a game with our five senses. The teacher put things in a mystery box. We couldn't see them, so we had to touch, smell and taste. First I touched something rough. It was a pineapple! Then my friend smelled something that smelled of flowers. It was soap. After that, we tasted two drinks. One was sweet and the other was sour. Finally, the teacher played a loud sound and we had to guess the animal. It was an elephant!
+Q: What did the writer touch first? | soap | *a pineapple | a drink | an elephant
+Q: How many drinks did they taste? | one | *two | three | four
+
+[PASSAGE 8 | A trip to the mountains]
+In the summer, my family went to the mountains in the north of Vietnam. We stayed in a small village in a green valley. Every morning we walked up a hill to see the view. One day, we visited a big cave. It was dark inside, and we saw bats sleeping on the rocks. Then we swam in a lake near a waterfall. The water was very cold! On the last day, our guide told us how to look after the forest and the environment.
+Q: Where did the family stay? | on an island | *in a village in a valley | in the desert | in a city
+Q: What did they see in the cave? | fish | monkeys | *bats | birds
+
+[PASSAGE 9 | Sports day]
+Our school had its sports day last Friday. There were races, football matches and a basketball competition. I ran in the one-hundred-metre race and came third. My best friend Huy was the star of the day. He scored three goals in the football match, and our team won five to two! At the end, the head teacher gave the prizes. The champion of the long race got a gold medal. Our coach said we played very well, even the teams that lost.
+Q: What position did the writer come in the race? | first | second | *third | last
+Q: How many goals did Huy score? | two | *three | five | one
+
+[PASSAGE 10 | Grandpa learns technology]
+My grandpa is seventy, but he loves new technology. Last month he bought a laptop. At first, he couldn't use the keyboard very well, so I helped him. Now he sends emails to his friends and reads the news on the internet. He also downloaded an app to learn English! Yesterday he wanted to print some photos, but the printer didn't work. The problem was simple: there was no paper in it. Grandpa laughed and said, "Technology is easy when you have a clever grandson!"
+Q: What did Grandpa download? | a game | *an app to learn English | a film | a photo
+Q: Why didn't the printer work? | it was broken | the battery was empty | *there was no paper | the laptop was off
+
+[PASSAGE 11 | The dragon and the girl]
+Once upon a time, a dragon lived in a cave near a castle. Everyone in the village was frightened of it. The king said, "The person who stops the dragon will get a bag of gold." Many brave men tried, but they all ran away. Then a girl called Lan went to the cave. She did not have a sword. She took some warm soup. The dragon was not angry. It was cold and hungry! After that, the dragon and Lan became friends, and the dragon kept the village warm every winter.
+Q: Where did the dragon live? | in the castle | *in a cave | in the village | in a forest
+Q: What did Lan take to the dragon? | a sword | a bag of gold | *some warm soup | a blanket
+
+[PASSAGE 12 | School in the year 2080]
+What will school be like in the future? I think students will probably study at home with robots and tablets. Perhaps classrooms will have big screens on every wall. Some lessons will happen in space. Children will travel in electric rockets to a space station and learn about the moon and the planets. Every school will have solar panels on the roof, so it won't need other electricity. But I hope one thing won't change: I want to have lunch with my friends every day!
+Q: Where will some lessons happen? | under the sea | *in space | in the desert | in a castle
+Q: Why won't schools need other electricity? | they will be closed | *they will have solar panels | robots will make it | they will use batteries
+
+[PASSAGE 13 | Camping by the lake]
+Last weekend, my scout club went camping by a lake. We carried our backpacks for two hours along a forest path. When we arrived at the campsite, we put up our tents. In the afternoon, our leader showed us how to use a map and a compass. Then we explored the forest and saw many insects and a beautiful butterfly. In the evening, we cooked sausages and told stories. At night it was very dark, so we used our torches. I slept well in my warm sleeping bag.
+Q: What did the leader teach them? | how to swim | *how to use a map and a compass | how to cook | how to climb
+Q: Why did they use torches? | to cook | to find insects | *it was very dark | to read a map
+
+[PASSAGE 14 | Pancake day]
+On Sunday, Dad and I made pancakes. First, we read the recipe and got the ingredients: flour, eggs, milk and a little salt. I mixed everything in a big bowl. Then Dad put some butter in a hot pan and fried the pancakes. I tried to throw one in the air, but it landed on the floor! We ate our pancakes with jam, honey and fruit. Mum said they were delicious. Next week, we want to bake a chocolate cake.
+Q: Which of these was NOT in the pancakes? | flour | eggs | milk | *chocolate
+Q: What happened when the writer threw a pancake in the air? | Dad caught it | *it landed on the floor | it went in the bowl | Mum ate it
+
+[PASSAGE 15 | Diving with my aunt]
+My aunt is a diver. Last summer she took me snorkelling near an island. We swam over beautiful coral. There were so many colourful fish! I saw a big octopus hiding under a rock and a turtle eating seaweed. Suddenly, my aunt pointed at a fin in the water. I was frightened because I thought it was a shark. But it wasn't. It was a friendly dolphin! After that, we sat on the beach and I collected some shells to take home.
+Q: What was the turtle eating? | fish | coral | *seaweed | shells
+Q: What animal was the fin from? | a shark | a whale | *a dolphin | an octopus
+
+[PASSAGE 16 | What we do in our free time]
+Our teacher asked us about our hobbies. Minh collects stamps from different countries. He has more than five hundred! Hoa plays the violin in the school orchestra and practises every evening. Tuan loves board games and chess. He is in the chess club and often wins. I like making models and doing puzzles. My favourite puzzle has two thousand pieces and it took me a month! On Sundays, we all like to relax in the park with our skateboards.
+Q: What does Minh collect? | shells | *stamps | cards | puzzles
+Q: Which club is Tuan in? | music club | *chess club | art club | football club
+
+[PASSAGE 17 | Shopping for the school trip]
+Next week our class is going to the mountains, and it will be cold. So on Saturday, Mum and I went shopping for clothes. First, I tried on a warm jacket with big pockets. It was perfect. Then Mum found a striped wool scarf and some gloves. I also needed new boots because my old ones were too small. I wanted a spotted hat, but it was too expensive. In the end, I got a blue one, and I think it's very fashionable!
+Q: Why did the writer need new boots? | they were broken | *the old ones were too small | they were dirty | they lost them
+Q: Why didn't the writer buy the spotted hat? | it was too big | *it was too expensive | it was ugly | it was pink
+
+[PASSAGE 18 | My dream journey]
+One day, I'd like to travel around the world. First, I will visit Japan because I want to see the cherry trees. Then I will go to France and see the Eiffel Tower in Paris, the capital. After that, I'd like to go to Brazil and watch a football match. I will need a big suitcase and my passport, of course! I want to learn a little of each language, too. And in every country, I will buy a small souvenir for my family.
+Q: Why does the writer want to visit Japan? | to watch football | *to see the cherry trees | to learn French | to buy a suitcase
+Q: What is the capital of France in the passage? | Tokyo | *Paris | Brasília | Hanoi
+
+[VIDEO]
+# Chưa thêm link video cụ thể. Trang sẽ hiện nút tìm video trên YouTube cho từng unit
+# (dùng từ khoá ở dòng [UNIT ...]). Muốn thêm video, viết theo mẫu:
+# 3 | Tên video | https://www.youtube.com/watch?v=... | Dễ

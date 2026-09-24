@@ -1,0 +1,426 @@
+# ================================================================
+# MOVERS ENGLISH NOTEBOOK · dữ liệu học
+# Trình độ: Cambridge A1 Movers · Unit 1–18
+# Chủ đề unit, từ vựng, câu ví dụ, bài đọc và câu hỏi do Claude tự biên soạn
+# theo các chủ đề thường gặp ở trình độ Movers.
+# ----------------------------------------------------------------
+# CÁCH VIẾT (mỗi cột cách nhau bằng dấu | ; dòng bắt đầu bằng # là ghi chú):
+#
+# [UNIT số | Tên unit | từ khoá tìm video (không bắt buộc)]
+# từ | phiên âm | nghĩa tiếng Việt | định nghĩa tiếng Anh | câu ví dụ có [từ cần điền]
+#
+# [TRUE-FALSE]
+# unit | câu nhận định | T hoặc F | giải thích
+#
+# [BRE-AME]
+# từ Anh-Anh | từ Anh-Mỹ
+#
+# [PASSAGE số-unit | Tiêu đề bài nghe]
+# Đoạn văn...
+# Q: Câu hỏi? | *đáp án đúng | đáp án sai | đáp án sai | đáp án sai
+#
+# [VIDEO]
+# unit | tiêu đề | link https://... | mức độ
+# ================================================================
+
+[UNIT 1 | My family and friends | family members vocabulary for kids english movers]
+aunt | /ɑːnt/ | cô, dì, bác gái | the sister of your mum or dad | My [aunt] lives in Da Nang with her two children.
+uncle | /ˈʌŋkl/ | chú, cậu, bác trai | the brother of your mum or dad | My [uncle] can play the guitar.
+cousin | /ˈkʌzn/ | anh chị em họ | the child of your aunt or uncle | My [cousin] Minh is the same age as me.
+grandparents | /ˈɡrænpeərənts/ | ông bà | the parents of your mum or dad | I visit my [grandparents] every Sunday.
+parents | /ˈpeərənts/ | bố mẹ | your mum and dad | My [parents] work in a hospital.
+daughter | /ˈdɔːtə/ | con gái | a girl child of a mother and father | Mrs Lan has one [daughter] and two sons.
+son | /sʌn/ | con trai | a boy child of a mother and father | Their [son] is five years old.
+grown-up | /ˈɡrəʊn ʌp/ | người lớn | an adult; not a child | Ask a [grown-up] to help you with the scissors.
+baby | /ˈbeɪbi/ | em bé | a very young child | The [baby] is sleeping, so please be quiet.
+friend | /frend/ | bạn bè | a person you like and have fun with | Hoa is my best [friend].
+surname | /ˈsɜːneɪm/ | họ | your family name | My [surname] is Nguyen.
+same | /seɪm/ | giống nhau | not different | My sister and I go to the [same] school.
+
+[UNIT 2 | My body and health | body parts illness vocabulary for kids english]
+back | /bæk/ | lưng | the part of your body behind you, from your neck to your legs | I carry my school bag on my [back].
+neck | /nek/ | cổ | the part of your body between your head and shoulders | Giraffes have very long [necks].
+shoulder | /ˈʃəʊldə/ | vai | the part of your body between your neck and arm | My little brother sat on Dad's [shoulders].
+stomach | /ˈstʌmək/ | bụng, dạ dày | the part of your body where food goes | My [stomach] is full after lunch.
+tooth | /tuːθ/ | răng (số nhiều: teeth) | one of the hard white things in your mouth | I lost a [tooth] yesterday!
+headache | /ˈhedeɪk/ | đau đầu | a pain in your head | I have a [headache] because the music is too loud.
+toothache | /ˈtuːθeɪk/ | đau răng | a pain in your tooth | He ate too many sweets and now he has [toothache].
+stomach-ache | /ˈstʌmək eɪk/ | đau bụng | a pain in your stomach | I ate too much ice cream and got a [stomach-ache].
+cold | /kəʊld/ | cảm lạnh | a small illness that makes your nose run | I've got a [cold], so I'm staying at home.
+cough | /kɒf/ | ho; cơn ho | to push air out of your throat with a loud noise | She has a bad [cough].
+temperature | /ˈtemprətʃə/ | sốt, nhiệt độ | when your body is hotter than usual because you are ill | The doctor said I have a [temperature].
+matter | /ˈmætə/ | vấn đề (What's the matter?) | used to ask what is wrong | What's the [matter]? Are you OK?
+
+[UNIT 3 | Around the house | house rooms vocabulary upstairs downstairs for kids]
+upstairs | /ˌʌpˈsteəz/ | tầng trên | on or to a higher floor of a building | My bedroom is [upstairs].
+downstairs | /ˌdaʊnˈsteəz/ | tầng dưới | on or to a lower floor of a building | The kitchen is [downstairs].
+stairs | /steəz/ | cầu thang | steps that go up or down inside a building | Don't run on the [stairs]!
+balcony | /ˈbælkəni/ | ban công | a small place outside an upstairs window where you can stand | We have flowers on our [balcony].
+roof | /ruːf/ | mái nhà | the top of a building | A cat is sitting on the [roof].
+lift | /lɪft/ | thang máy | a machine that takes people up and down in a building | We took the [lift] to the tenth floor.
+blanket | /ˈblæŋkɪt/ | chăn | a warm cover for a bed | I need a [blanket] because it's cold tonight.
+towel | /ˈtaʊəl/ | khăn tắm | a piece of cloth you use to dry your body | Here's a clean [towel] for your shower.
+shower | /ˈʃaʊə/ | vòi sen; tắm vòi sen | a place where water comes down on you to wash your body | I have a [shower] every evening.
+toothbrush | /ˈtuːθbrʌʃ/ | bàn chải đánh răng | a small brush for cleaning your teeth | My new [toothbrush] is blue.
+toothpaste | /ˈtuːθpeɪst/ | kem đánh răng | the stuff you put on a toothbrush | We need to buy some [toothpaste].
+floor | /flɔː/ | sàn nhà; tầng | the part of a room you walk on; a level in a building | Don't leave your toys on the [floor].
+
+[UNIT 4 | At school | school vocabulary homework classroom for kids]
+classroom | /ˈklɑːsruːm/ | lớp học | a room in a school where students learn | Our [classroom] has big windows.
+homework | /ˈhəʊmwɜːk/ | bài tập về nhà | school work you do at home | I do my [homework] after dinner.
+break | /breɪk/ | giờ ra chơi | a short time between lessons when you can rest or play | We play football at [break].
+lesson | /ˈlesn/ | tiết học | a time when you learn something at school | Our English [lesson] starts at nine o'clock.
+learn | /lɜːn/ | học | to get new knowledge or a new skill | I want to [learn] to swim.
+spell | /spel/ | đánh vần | to say or write the letters of a word | How do you [spell] your name?
+test | /test/ | bài kiểm tra | questions to see what you know | We have a maths [test] tomorrow.
+easy | /ˈiːzi/ | dễ | not difficult | This question is [easy]!
+difficult | /ˈdɪfɪkəlt/ | khó | not easy | Maths is [difficult] for me.
+clever | /ˈklevə/ | thông minh | quick at learning and understanding | Mai is very [clever]. She knows all the answers.
+dictionary | /ˈdɪkʃənri/ | từ điển | a book that tells you what words mean | Look up the new word in your [dictionary].
+teach | /tiːtʃ/ | dạy | to help someone learn something | Mr Hung [teaches] us music.
+
+[UNIT 5 | Food and drink | food drink vocabulary hungry thirsty for kids]
+hungry | /ˈhʌŋɡri/ | đói | wanting to eat | I'm [hungry]. Can I have a sandwich?
+thirsty | /ˈθɜːsti/ | khát | wanting to drink | After football I'm always [thirsty].
+breakfast | /ˈbrekfəst/ | bữa sáng | the first meal of the day | I have bread and milk for [breakfast].
+lunch | /lʌntʃ/ | bữa trưa | the meal you eat in the middle of the day | We have [lunch] at school.
+dinner | /ˈdɪnə/ | bữa tối | the meal you eat in the evening | My family eats [dinner] together at seven.
+cheese | /tʃiːz/ | pho mát | a yellow or white food made from milk | I'd like a [cheese] sandwich, please.
+salad | /ˈsæləd/ | rau trộn, salad | cold vegetables mixed together | Mum made a tomato [salad].
+soup | /suːp/ | súp, canh | a hot, watery food made from vegetables or meat | This vegetable [soup] is hot!
+pasta | /ˈpæstə/ | mì Ý | a food from Italy made from flour and water | We had [pasta] with tomato sauce.
+milkshake | /ˈmɪlkʃeɪk/ | sữa lắc | a cold drink made with milk and fruit or ice cream | Can I have a banana [milkshake]?
+vegetables | /ˈvedʒtəblz/ | rau củ | plants that you eat, like carrots and beans | [Vegetables] are good for you.
+bottle | /ˈbɒtl/ | cái chai | a tall glass or plastic container for drinks | Take a [bottle] of water to the park.
+
+[UNIT 6 | Animals | animals vocabulary for kids english movers]
+kangaroo | /ˌkæŋɡəˈruː/ | chuột túi | an Australian animal that jumps and carries its baby in a pocket | The [kangaroo] can jump very far.
+panda | /ˈpændə/ | gấu trúc | a black and white bear from China | The [panda] is eating bamboo.
+parrot | /ˈpærət/ | con vẹt | a colourful bird that can copy words | Our [parrot] can say "hello".
+penguin | /ˈpeŋɡwɪn/ | chim cánh cụt | a black and white bird that swims but can't fly | [Penguins] live in very cold places.
+dolphin | /ˈdɒlfɪn/ | cá heo | a clever grey sea animal | The [dolphin] jumped out of the water.
+whale | /weɪl/ | cá voi | a very big animal that lives in the sea | A [whale] is bigger than a boat.
+shark | /ʃɑːk/ | cá mập | a big fish with sharp teeth | The [shark] has big teeth.
+lion | /ˈlaɪən/ | sư tử | a big wild cat with yellow fur | The [lion] is sleeping under a tree.
+bat | /bæt/ | con dơi | a small animal that flies at night | [Bats] sleep in the day.
+snail | /sneɪl/ | con ốc sên | a small, slow animal with a shell on its back | The [snail] is very slow.
+cage | /keɪdʒ/ | cái lồng | a box with bars to keep a bird or animal in | The bird is singing in its [cage].
+fly | /flaɪ/ | con ruồi; bay | a small insect with wings; to move through the air | There's a [fly] on my cake!
+
+[UNIT 7 | In the town | places in town vocabulary for kids english]
+supermarket | /ˈsuːpəmɑːkɪt/ | siêu thị | a big shop that sells food and other things | We buy fruit at the [supermarket].
+market | /ˈmɑːkɪt/ | chợ | a place outside where people sell food and other things | Grandma goes to the [market] every morning.
+cinema | /ˈsɪnəmə/ | rạp chiếu phim | a place where you watch films | Let's go to the [cinema] on Saturday.
+hospital | /ˈhɒspɪtl/ | bệnh viện | a place where doctors and nurses help ill people | My mum is a nurse at the [hospital].
+library | /ˈlaɪbrəri/ | thư viện | a place where you can borrow books | I read comics at the [library].
+swimming pool | /ˈswɪmɪŋ puːl/ | bể bơi | a place with water where you can swim | The [swimming pool] is open until eight.
+sports centre | /ˈspɔːts ˌsentə/ | trung tâm thể thao | a building where you can play sports | I play badminton at the [sports centre].
+bank | /bæŋk/ | ngân hàng | a place where people keep their money | Dad went to the [bank].
+car park | /ˈkɑː pɑːk/ | bãi đỗ xe | a place where people leave their cars | The [car park] is behind the shop.
+café | /ˈkæfeɪ/ | quán cà phê | a small restaurant where you can have drinks and snacks | We had a drink at the [café].
+circus | /ˈsɜːkəs/ | rạp xiếc | a show with clowns and people who do tricks | We saw clowns at the [circus].
+shopping centre | /ˈʃɒpɪŋ ˌsentə/ | trung tâm mua sắm | a building with many shops | There's a new [shopping centre] near my house.
+
+[UNIT 8 | Getting around | transport directions vocabulary for kids english]
+bus station | /ˈbʌs ˌsteɪʃn/ | bến xe buýt | a place where many buses start and stop | Meet me at the [bus station].
+bus stop | /ˈbʌs stɒp/ | trạm xe buýt | a place where a bus stops for people | I wait at the [bus stop] every morning.
+ticket | /ˈtɪkɪt/ | vé | a piece of paper that shows you paid to travel or see something | I bought a train [ticket].
+driver | /ˈdraɪvə/ | tài xế | a person who drives a car, bus or taxi | The bus [driver] is very kind.
+ride | /raɪd/ | đi, cưỡi (xe đạp, ngựa) | to sit on a bike or horse and make it move | I [ride] my bike to school.
+motorbike | /ˈməʊtəbaɪk/ | xe máy | a big, heavy bike with an engine | My dad goes to work by [motorbike].
+straight on | /ˌstreɪt ˈɒn/ | đi thẳng | forward without turning | Go [straight on] and the park is on your left.
+left | /left/ | bên trái | on the side of your body where your heart is | Turn [left] at the cinema.
+right | /raɪt/ | bên phải | the opposite of left | The bank is on the [right].
+near | /nɪə/ | gần | not far | My school is [near] my house.
+far | /fɑː/ | xa | a long way | Is the zoo [far] from here?
+map | /mæp/ | bản đồ | a drawing of a place that shows roads and towns | Let's look at the [map].
+
+[UNIT 9 | The weather | weather vocabulary for kids english]
+weather | /ˈweðə/ | thời tiết | how hot, cold, sunny or rainy it is | What's the [weather] like today?
+sunny | /ˈsʌni/ | có nắng | with a lot of sun | It's [sunny], so let's go to the beach.
+cloudy | /ˈklaʊdi/ | nhiều mây | with a lot of clouds in the sky | It's [cloudy] but it isn't raining.
+windy | /ˈwɪndi/ | có gió | with a lot of wind | It's [windy]. Let's fly a kite!
+rain | /reɪn/ | mưa | water that falls from clouds | Take an umbrella. It's going to [rain].
+snow | /snəʊ/ | tuyết | soft white ice that falls from the sky when it is very cold | The children are playing in the [snow].
+rainbow | /ˈreɪnbəʊ/ | cầu vồng | a line of colours in the sky after rain | Look! There's a [rainbow].
+cloud | /klaʊd/ | đám mây | a white or grey thing in the sky | That [cloud] looks like a rabbit.
+wind | /wɪnd/ | gió | air that moves | The [wind] blew my hat away.
+hot | /hɒt/ | nóng | very warm | It's very [hot] in summer.
+cold | /kəʊld/ | lạnh | not warm | Put on your coat. It's [cold] outside.
+umbrella | /ʌmˈbrelə/ | ô, dù | a thing you hold over your head when it rains | Don't forget your [umbrella]!
+
+[UNIT 10 | Sports and games | sports vocabulary for kids english movers]
+kick | /kɪk/ | đá | to hit something with your foot | [Kick] the ball to me!
+catch | /kætʃ/ | bắt | to take something that is moving in the air with your hands | Can you [catch] the ball?
+throw | /θrəʊ/ | ném | to send something through the air with your hand | [Throw] the ball to your friend.
+hop | /hɒp/ | nhảy lò cò | to jump on one foot | Can you [hop] on one leg?
+skip | /skɪp/ | nhảy dây | to jump over a rope that turns | Girls often [skip] at break.
+dive | /daɪv/ | lặn, nhảy cắm đầu | to jump into water with your head first | He can [dive] into the pool.
+swim | /swɪm/ | bơi | to move through water | I [swim] every Saturday.
+team | /tiːm/ | đội | a group of people who play together | Our [team] has eleven players.
+win | /wɪn/ | thắng | to be first in a game | Who will [win] the game?
+score | /skɔː/ | ghi (bàn, điểm) | to get a goal or point in a game | She [scored] a goal!
+basketball | /ˈbɑːskɪtbɔːl/ | bóng rổ | a game where you throw a ball into a high net | My brother plays [basketball] after school.
+ice skating | /ˈaɪs ˌskeɪtɪŋ/ | trượt băng | moving on ice with special shoes | We went [ice skating] at the shopping centre.
+
+[UNIT 11 | Free time | hobbies free time vocabulary for kids english]
+hobby | /ˈhɒbi/ | sở thích | something you like doing in your free time | Drawing is my favourite [hobby].
+band | /bænd/ | ban nhạc | a group of people who play music together | My cousin plays in a [band].
+drum | /drʌm/ | cái trống | a music instrument you hit | He plays the [drums] very loudly.
+picture | /ˈpɪktʃə/ | bức tranh | a drawing or painting | I drew a [picture] of my cat.
+comic | /ˈkɒmɪk/ | truyện tranh | a magazine with stories told in pictures | I read a funny [comic] last night.
+DVD | /ˌdiː viː ˈdiː/ | đĩa DVD | a disc with a film on it | Let's watch a [DVD] tonight.
+email | /ˈiːmeɪl/ | thư điện tử | a message you send on a computer | I sent an [email] to my friend.
+text | /tekst/ | tin nhắn; nhắn tin | a message you send on a phone | Mum sent me a [text].
+dance | /dɑːns/ | nhảy múa | to move your body to music | My sister loves to [dance].
+sing | /sɪŋ/ | hát | to make music with your voice | We [sing] songs in our English class.
+film | /fɪlm/ | bộ phim | a story you watch at the cinema or on TV | The [film] was very funny.
+fun | /fʌn/ | vui | enjoyable | Camping is great [fun]!
+
+[UNIT 12 | Jobs | jobs vocabulary for kids english movers]
+doctor | /ˈdɒktə/ | bác sĩ | a person who helps ill people get better | The [doctor] gave me some medicine.
+nurse | /nɜːs/ | y tá | a person who looks after ill people in a hospital | The [nurse] was very kind.
+dentist | /ˈdentɪst/ | nha sĩ | a doctor for your teeth | I go to the [dentist] every six months.
+farmer | /ˈfɑːmə/ | nông dân | a person who works on a farm | The [farmer] has cows and chickens.
+pilot | /ˈpaɪlət/ | phi công | a person who flies a plane | The [pilot] flew the plane to Hanoi.
+cook | /kʊk/ | đầu bếp | a person who makes food | The [cook] made a big pizza.
+clown | /klaʊn/ | chú hề | a funny person with a red nose in a circus | The [clown] made us laugh.
+vet | /vet/ | bác sĩ thú y | a doctor for animals | We took our dog to the [vet].
+police officer | /pəˈliːs ˌɒfɪsə/ | cảnh sát | a person whose job is to keep people safe | The [police officer] helped the lost boy.
+singer | /ˈsɪŋə/ | ca sĩ | a person who sings | She is a famous [singer].
+work | /wɜːk/ | làm việc | to do a job | My mum [works] in a bank.
+medicine | /ˈmedsn/ | thuốc | something you take when you are ill | Take this [medicine] three times a day.
+
+[UNIT 13 | Clothes | clothes vocabulary for kids english]
+coat | /kəʊt/ | áo khoác dài | a long, warm thing you wear over your clothes | Wear your [coat]. It's snowing.
+sweater | /ˈswetə/ | áo len | a warm top | My [sweater] is made of wool.
+scarf | /skɑːf/ | khăn quàng cổ | a long piece of cloth you wear around your neck | I wear a [scarf] in winter.
+glasses | /ˈɡlɑːsɪz/ | kính mắt | two pieces of glass you wear to help you see | Grandpa wears [glasses] to read.
+helmet | /ˈhelmɪt/ | mũ bảo hiểm | a hard hat that keeps your head safe | Always wear a [helmet] on your bike.
+swimsuit | /ˈswɪmsuːt/ | đồ bơi | clothes you wear to swim | Don't forget your [swimsuit] for the pool.
+shirt | /ʃɜːt/ | áo sơ mi | a top with buttons and a collar | Dad wears a white [shirt] to work.
+trousers | /ˈtraʊzəz/ | quần dài | clothes that cover both legs | These [trousers] are too long.
+shorts | /ʃɔːts/ | quần soóc | short trousers | I wear [shorts] in summer.
+boots | /buːts/ | đôi ủng | big shoes that cover part of your legs | Put on your [boots]. It's raining.
+put on | /ˌpʊt ˈɒn/ | mặc vào | to start wearing clothes | [Put on] your hat. It's sunny.
+take off | /ˌteɪk ˈɒf/ | cởi ra | to remove clothes | [Take off] your shoes before you come in.
+
+[UNIT 14 | The world around us | nature vocabulary forest river mountain for kids]
+forest | /ˈfɒrɪst/ | khu rừng | a place with lots of trees | There are many birds in the [forest].
+jungle | /ˈdʒʌŋɡl/ | rừng rậm nhiệt đới | a hot forest with lots of plants | Monkeys live in the [jungle].
+river | /ˈrɪvə/ | dòng sông | a long line of water | We swam in the [river].
+lake | /leɪk/ | hồ nước | water with land all around it | There are ducks on the [lake].
+mountain | /ˈmaʊntən/ | ngọn núi | a very high hill | There's snow on the [mountain].
+island | /ˈaɪlənd/ | hòn đảo | land with water all around it | We went to an [island] by boat.
+waterfall | /ˈwɔːtəfɔːl/ | thác nước | water that falls from a high place | The [waterfall] is very big.
+field | /fiːld/ | cánh đồng | an area of grass on a farm | The cows are in the [field].
+village | /ˈvɪlɪdʒ/ | ngôi làng | a very small town in the country | My grandma lives in a [village].
+leaf | /liːf/ | chiếc lá (số nhiều: leaves) | a flat green part of a tree or plant | A yellow [leaf] fell from the tree.
+star | /stɑː/ | ngôi sao | a small light in the sky at night | I can see a bright [star].
+sky | /skaɪ/ | bầu trời | the space above the Earth where you see clouds | The [sky] is blue today.
+
+[UNIT 15 | How do you feel? | feelings adjectives vocabulary for kids english]
+happy | /ˈhæpi/ | vui vẻ | feeling good | I'm [happy] because it's my birthday!
+sad | /sæd/ | buồn | not happy | She's [sad] because she lost her toy.
+angry | /ˈæŋɡri/ | tức giận | feeling very unhappy with someone | Dad was [angry] because I broke the window.
+bored | /bɔːd/ | chán | not interested; with nothing to do | I'm [bored]. Let's play a game.
+tired | /ˈtaɪəd/ | mệt | wanting to rest or sleep | I'm [tired] after the long walk.
+scared | /skeəd/ | sợ | afraid | My little sister is [scared] of the dark.
+excited | /ɪkˈsaɪtɪd/ | háo hức | very happy about something that will happen | We're [excited] about the school trip.
+strong | /strɒŋ/ | khoẻ | able to carry heavy things | My dad is very [strong].
+weak | /wiːk/ | yếu | not strong | I felt [weak] when I was ill.
+loud | /laʊd/ | ồn, to | making a lot of noise | The music is too [loud]!
+quiet | /ˈkwaɪət/ | yên lặng | making very little noise | Be [quiet]. The baby is sleeping.
+well | /wel/ | khoẻ (không ốm) | healthy; not ill | I'm not very [well] today.
+
+[UNIT 16 | Every day | daily routine time adverbs always never sometimes for kids]
+always | /ˈɔːlweɪz/ | luôn luôn | every time | I [always] brush my teeth before bed.
+usually | /ˈjuːʒuəli/ | thường thường | most times | I [usually] walk to school.
+often | /ˈɒfn/ | thường, hay | many times | We [often] play football after school.
+sometimes | /ˈsʌmtaɪmz/ | thỉnh thoảng | not always, but some times | I [sometimes] eat noodles for breakfast.
+never | /ˈnevə/ | không bao giờ | not at any time | My cat [never] drinks milk.
+week | /wiːk/ | tuần | seven days | I have English three times a [week].
+weekend | /ˌwiːkˈend/ | cuối tuần | Saturday and Sunday | What do you do at the [weekend]?
+get up | /ˌɡet ˈʌp/ | thức dậy | to get out of bed | I [get up] at six o'clock.
+wash | /wɒʃ/ | rửa, giặt | to clean with water | [Wash] your hands before dinner.
+brush | /brʌʃ/ | chải, đánh (răng) | to clean with a brush | I [brush] my teeth twice a day.
+o'clock | /əˈklɒk/ | giờ đúng | used to say the exact hour | School starts at seven [o'clock].
+before | /bɪˈfɔː/ | trước khi | earlier than | Do your homework [before] you watch TV.
+
+[UNIT 17 | Holidays and trips | holiday trip vocabulary for kids english]
+holiday | /ˈhɒlədeɪ/ | kỳ nghỉ | a time when you don't go to school and often travel | We went to the beach for our [holiday].
+trip | /trɪp/ | chuyến đi | a short journey to a place and back | Our class went on a [trip] to the zoo.
+beach | /biːtʃ/ | bãi biển | sand next to the sea | We built a sandcastle on the [beach].
+camp | /kæmp/ | cắm trại | to sleep in a tent | We [camp] in the forest every summer.
+tent | /tent/ | cái lều | a small cloth house you sleep in outside | Our [tent] is green.
+picnic | /ˈpɪknɪk/ | buổi dã ngoại | a meal you eat outside | Let's have a [picnic] in the park.
+photo | /ˈfəʊtəʊ/ | bức ảnh | a picture you take with a camera | Can I take a [photo] of you?
+suitcase | /ˈsuːtkeɪs/ | va li | a big bag for your clothes when you travel | My [suitcase] is very heavy.
+hotel | /həʊˈtel/ | khách sạn | a place where you pay to sleep on holiday | Our [hotel] is next to the sea.
+sea | /siː/ | biển | a big area of salty water | The [sea] is warm in summer.
+towel | /ˈtaʊəl/ | khăn tắm | a cloth for drying your body | Take a [towel] to the beach.
+visit | /ˈvɪzɪt/ | thăm | to go and see a place or person | We [visited] our aunt in Hue.
+
+[UNIT 18 | Last weekend | past simple irregular verbs for kids english movers]
+went | /went/ | đã đi (quá khứ của go) | past of "go" | Yesterday I [went] to the park.
+saw | /sɔː/ | đã nhìn thấy (quá khứ của see) | past of "see" | We [saw] a big elephant at the zoo.
+ate | /et/ | đã ăn (quá khứ của eat) | past of "eat" | I [ate] a pizza for lunch.
+had | /hæd/ | đã có (quá khứ của have) | past of "have" | We [had] a great time at the party.
+took | /tʊk/ | đã lấy, chụp (quá khứ của take) | past of "take" | Mum [took] lots of photos.
+gave | /ɡeɪv/ | đã cho (quá khứ của give) | past of "give" | My friend [gave] me a present.
+bought | /bɔːt/ | đã mua (quá khứ của buy) | past of "buy" | Dad [bought] a new bike.
+made | /meɪd/ | đã làm (quá khứ của make) | past of "make" | We [made] a cake for Grandma.
+drank | /dræŋk/ | đã uống (quá khứ của drink) | past of "drink" | I [drank] a glass of orange juice.
+came | /keɪm/ | đã đến (quá khứ của come) | past of "come" | My cousins [came] to my house.
+yesterday | /ˈjestədeɪ/ | hôm qua | the day before today | It rained [yesterday].
+last | /lɑːst/ | vừa qua, trước | the one before this one | [Last] weekend we went swimming.
+
+[TRUE-FALSE]
+1 | Your aunt is the sister of your mum or dad. | T | Đúng.
+1 | Your cousin is your mum's mother. | F | Mẹ của mẹ là grandmother. Cousin là con của cô, dì, chú, bác.
+2 | You go to the dentist when you have toothache. | T | Đúng.
+2 | Your neck is between your legs and your feet. | F | Neck (cổ) nằm giữa đầu và vai.
+3 | A lift takes people up and down in a building. | T | Đúng.
+3 | You use a towel to clean your teeth. | F | Đánh răng dùng toothbrush và toothpaste. Towel dùng để lau khô.
+4 | "Difficult" means the same as "easy". | F | Difficult (khó) ngược nghĩa với easy (dễ).
+4 | You use a dictionary to find what a word means. | T | Đúng.
+5 | When you are thirsty, you want to drink. | T | Đúng.
+5 | Breakfast is the meal you eat in the evening. | F | Breakfast là bữa sáng. Bữa tối là dinner.
+6 | Penguins can fly. | F | Chim cánh cụt biết bơi nhưng không biết bay.
+6 | A kangaroo can jump very far. | T | Đúng.
+7 | You watch films at the cinema. | T | Đúng.
+7 | You borrow books at the swimming pool. | F | Mượn sách ở library (thư viện).
+8 | You wait for a bus at a bus stop. | T | Đúng.
+8 | "Far" means "not a long way". | F | Far = xa. "Not far" mới là gần (near).
+9 | You can often see a rainbow after rain. | T | Đúng.
+9 | Snow falls when it is very hot. | F | Tuyết rơi khi trời rất lạnh.
+10 | To hop means to jump on one foot. | T | Đúng.
+10 | You kick a ball with your hand. | F | Kick dùng chân. Dùng tay là throw hoặc catch.
+11 | A comic tells stories in pictures. | T | Đúng.
+11 | You send a text on a phone. | T | Đúng.
+12 | A vet is a doctor for animals. | T | Đúng.
+12 | A farmer works in a hospital. | F | Farmer làm việc ở nông trại (farm).
+13 | You wear a helmet on your feet. | F | Helmet đội trên đầu.
+13 | "Take off" means to remove your clothes. | T | Đúng.
+14 | An island has water all around it. | T | Đúng.
+14 | A village is bigger than a city. | F | Village (làng) nhỏ hơn thành phố.
+15 | When you are bored, you have nothing interesting to do. | T | Đúng.
+15 | "Strong" means the same as "weak". | F | Strong (khoẻ) ngược nghĩa với weak (yếu).
+16 | "Never" means "at no time". | T | Đúng.
+16 | The weekend is Monday and Tuesday. | F | Weekend là thứ Bảy và Chủ nhật.
+17 | You sleep in a tent when you camp. | T | Đúng.
+17 | A picnic is a meal you eat inside a restaurant. | F | Picnic là bữa ăn ngoài trời.
+18 | "Went" is the past of "go". | T | Đúng.
+18 | "Bought" is the past of "bring". | F | Bought là quá khứ của buy. Quá khứ của bring là brought.
+
+[BRE-AME]
+mum | mom
+holiday | vacation
+film | movie
+cinema | movie theater
+car park | parking lot
+lift | elevator
+trousers | pants
+sweets | candy
+biscuit | cookie
+shop | store
+football | soccer
+colour | color
+favourite | favorite
+rubbish | trash / garbage
+flat | apartment
+
+[PASSAGE 1 | My big family]
+Hi, I'm Lan. I live with my parents and my baby brother. My grandparents live next door. On Sundays, my aunt and uncle visit us with their daughter, Mai. Mai is my cousin. She is the same age as me, and we are best friends. We play in the garden while the grown-ups talk and cook lunch.
+Q: Who lives next door to Lan? | her aunt | *her grandparents | her cousin | her friend
+Q: Who is Mai? | Lan's sister | *Lan's cousin | Lan's aunt | Lan's teacher
+
+[PASSAGE 2 | At the doctor's]
+Yesterday Nam didn't go to school. He had a headache and a bad cough. His mum took him to the doctor. "What's the matter?" asked the doctor. "My head hurts and I feel hot," said Nam. The doctor said, "You've got a temperature and a cold. Take this medicine and stay in bed for two days." Now Nam feels better.
+Q: What was wrong with Nam? | toothache | *a headache and a cough | a stomach-ache | a broken leg
+Q: What did the doctor tell him to do? | go to school | play outside | *stay in bed | eat ice cream
+
+[PASSAGE 3 | Our new flat]
+We live in a new flat on the eighth floor. We usually take the lift, but I like running up the stairs. Our flat has a big balcony with lots of flowers. My bedroom is next to the bathroom. In the bathroom there's a shower, and I have a blue toothbrush and a green towel. From my window I can see the roof of my school.
+Q: Which floor is the flat on? | the second | *the eighth | the tenth | the first
+Q: What colour is the writer's towel? | blue | *green | red | yellow
+
+[PASSAGE 4 | My school day]
+School starts at seven thirty. Our first lesson is English, and it's my favourite. The teacher helps us spell new words, and we use a dictionary. At break, I play with my friends in the playground. Maths is difficult for me, but my friend Hoa is very clever and she helps me. In the evening I do my homework.
+Q: What is the writer's favourite lesson? | maths | *English | music | art
+Q: Who helps the writer with maths? | the teacher | Mum | *Hoa | the writer's brother
+
+[PASSAGE 5 | A picnic lunch]
+On Saturday, my family had a picnic by the lake. We were very hungry after the long walk. Mum made cheese sandwiches and a big salad. Dad brought some pasta and a bottle of water. I was thirsty, so I drank a banana milkshake. My little sister doesn't like vegetables, so she only ate bread!
+Q: Where was the picnic? | in the garden | *by the lake | at school | on the beach
+Q: What did the writer drink? | water | orange juice | *a banana milkshake | milk
+
+[PASSAGE 6 | A day at the zoo]
+Last month our class went to the zoo. First we saw the pandas. They were eating bamboo. Then we watched the penguins swimming in cold water. My favourite animal was the kangaroo because it jumped so high. We also saw a big green parrot in a cage. It said "Hello!" to us. Everyone laughed.
+Q: What were the pandas doing? | sleeping | swimming | *eating bamboo | jumping
+Q: Which animal said "Hello"? | the kangaroo | *the parrot | the penguin | the panda
+
+[PASSAGE 7 | Saturday in town]
+On Saturday morning, I went into town with my dad. First, he went to the bank. Then we went to the supermarket to buy some fruit. After lunch at a café, we went to the cinema to see a funny film. We didn't go to the swimming pool because it was closed. We were home at six o'clock.
+Q: Where did they go first? | the supermarket | the cinema | *the bank | the café
+Q: Why didn't they go to the swimming pool? | it was raining | *it was closed | they were tired | Dad didn't like it
+
+[PASSAGE 8 | How I go to school]
+My school is not far from my house, so I usually ride my bike. I always wear my helmet. When it rains, I take the bus. The bus stop is near the park. The bus driver is very friendly and always says "good morning". From the bus stop, I go straight on and then turn left. My school is on the right.
+Q: How does the writer usually go to school? | by bus | by car | *by bike | on foot
+Q: Where is the bus stop? | near the school | *near the park | near the bank | near the cinema
+
+[PASSAGE 9 | A strange day]
+Yesterday the weather was very strange! In the morning it was sunny and hot, so I wore my shorts. At lunchtime it was cloudy and windy. Then, in the afternoon, it started to rain. I didn't have my umbrella, so I got very wet! After the rain, we saw a beautiful rainbow over the school.
+Q: What was the weather like in the morning? | rainy | *sunny and hot | windy | cold
+Q: What did they see after the rain? | snow | a star | *a rainbow | a cloud like a rabbit
+
+[PASSAGE 10 | Our football match]
+Last Sunday my team played football against a team from another school. It was a difficult game. At first, they scored a goal. Then my friend Tuan kicked the ball very hard and scored! In the last minute, I caught the ball and threw it to Tuan again. He scored another goal, and we won two to one!
+Q: Who scored the goals for the writer's team? | the writer | *Tuan | the teacher | nobody
+Q: What was the score? | one to one | *two to one | three to one | two to two
+
+[PASSAGE 11 | What I do in my free time]
+I have lots of hobbies. I love drawing pictures of animals. I also read comics, and my favourite is about a funny dog. My brother plays the drums in a band, and he is very loud! On Friday evenings, we watch a DVD together. My sister likes to sing and dance. We always have fun at home.
+Q: What does the writer's brother play? | the guitar | the piano | *the drums | football
+Q: When do they watch a DVD? | on Sunday mornings | *on Friday evenings | every day | at school
+
+[PASSAGE 12 | People in my street]
+Many interesting people live in my street. Mr Hai is a vet. He looks after cats and dogs. Mrs Mai is a nurse at the hospital. She works at night. My neighbour Tom is a cook in a big hotel. He makes great pizza. And my uncle is a clown! He works at the circus and makes children laugh.
+Q: What does Mr Hai do? | he is a doctor | *he is a vet | he is a cook | he is a clown
+Q: Where does the writer's uncle work? | in a hotel | in a hospital | *at the circus | in a bank
+
+[PASSAGE 13 | Getting ready for the snow]
+My family is going to the mountains, and there will be snow! Mum says we need warm clothes. I'm taking my red coat, a wool sweater and a long scarf. I'm also taking my boots because the snow is deep. My little brother wants to take his swimsuit, but Mum says, "No! It's too cold to swim!"
+Q: What colour is the writer's coat? | blue | *red | green | black
+Q: Why can't the brother take his swimsuit? | it is too small | *it is too cold to swim | it is dirty | he lost it
+
+[PASSAGE 14 | My grandma's village]
+My grandma lives in a small village near a river. There are big green fields with cows and ducks. Behind the village there is a mountain and a beautiful waterfall. At night, the sky is very dark and you can see hundreds of stars. I love visiting her because it is quiet and the air is clean.
+Q: Where is the village? | on an island | *near a river | in the jungle | in the city
+Q: What can you see at night? | a rainbow | the sun | *hundreds of stars | clouds
+
+[PASSAGE 15 | A bad day and a good day]
+On Monday I was tired because I went to bed late. At school I was bored in maths, and my friend was angry with me because I lost his pen. I felt sad. But on Tuesday everything was better. I found the pen, and my friend was happy again. We were excited because our teacher said we are going on a trip!
+Q: Why was the writer tired on Monday? | he was ill | *he went to bed late | he played football | he had a test
+Q: Why were they excited on Tuesday? | it was a holiday | they found a dog | *they are going on a trip | they won a prize
+
+[PASSAGE 16 | My morning]
+I always get up at six o'clock. First I wash my face and brush my teeth. Then I have breakfast with my family. I usually eat noodles, but sometimes I have bread and eggs. I never drink coffee. At the weekend, I don't go to school, so I often get up at eight o'clock.
+Q: What time does the writer get up on school days? | *six o'clock | seven o'clock | eight o'clock | nine o'clock
+Q: What does the writer never drink? | milk | juice | water | *coffee
+
+[PASSAGE 17 | Our summer holiday]
+Last summer we went on holiday to the beach. We stayed in a hotel next to the sea. Every day we swam, played in the sand and took lots of photos. One day we had a picnic on a small island. We went there by boat. On the last night, we camped on the beach in a big tent. It was the best holiday!
+Q: Where did they stay? | in a tent every night | *in a hotel next to the sea | at Grandma's house | on a boat
+Q: How did they go to the island? | by plane | by bus | *by boat | they swam
+
+[PASSAGE 18 | Last weekend]
+Last weekend was great! On Saturday, my cousins came to my house. We made a chocolate cake and ate it all! On Sunday, we went to the zoo. We saw lions and a baby elephant. Dad took lots of photos, and Mum bought me a small toy panda. In the evening, we were very tired, so we went to bed early.
+Q: What did they make on Saturday? | pizza | *a chocolate cake | a sandwich | a salad
+Q: What did Mum buy for the writer? | a book | a photo | *a toy panda | a cake
+
+[VIDEO]
+# Chưa thêm link video cụ thể. Trang sẽ hiện nút tìm video trên YouTube cho từng unit.
+# Muốn thêm video, viết theo mẫu:
+# 3 | Tên video | https://www.youtube.com/watch?v=... | Dễ

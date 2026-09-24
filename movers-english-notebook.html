@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Movers English Notebook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Spectral:ital,wght@0,600;0,700;1,500&display=swap">
+<style>html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>
+:root{
+  --paper:#F3F5F0; --surface:#FFFFFF; --ink:#1B2623; --muted:#5B6964; --rule:#D8DFD9; --rule-soft:#E7ECE8;
+  --accent:#1C6A4F; --accent-ink:#FFFFFF; --accent-soft:#DFEDE5;
+  --red:#B03A2A; --red-soft:#F6E2DD; --gold:#9A6B12;
+  --display:"Spectral", Georgia, "Times New Roman", serif;
+  --body:"Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --paper:#101614; --surface:#172019; --ink:#E3EBE6; --muted:#93A39C; --rule:#2B3833; --rule-soft:#212C28;
+    --accent:#5CC196; --accent-ink:#0C1511; --accent-soft:#1B3328;
+    --red:#EB8471; --red-soft:#3A221D; --gold:#E0B25A;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#101614; --surface:#172019; --ink:#E3EBE6; --muted:#93A39C; --rule:#2B3833; --rule-soft:#212C28;
+  --accent:#5CC196; --accent-ink:#0C1511; --accent-soft:#1B3328;
+  --red:#EB8471; --red-soft:#3A221D; --gold:#E0B25A;
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55}
+.wrap{max-width:980px;margin:0 auto;padding-inline:16px;padding-block:28px 60px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.2}
+h1{font-size:clamp(28px,5vw,40px);font-weight:700;letter-spacing:-.01em}
+h2{font-size:22px;font-weight:600}
+h3{font-size:18px;font-weight:600}
+p{margin:0}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.muted{color:var(--muted)}
+button,select,input{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* header */
+.top{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:flex-end;justify-content:space-between;border-bottom:2px solid var(--ink);padding-bottom:14px}
+.top .sub{margin-top:6px;color:var(--muted);max-width:60ch}
+.stat{font-family:var(--mono);font-size:13px;text-align:right;font-variant-numeric:tabular-nums}
+.stat b{font-size:22px;color:var(--accent);font-weight:500}
+.units{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+@media (max-width:620px){#units{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px}#units .chip{white-space:nowrap}.stat{text-align:left}}
+.chip{border:1px solid var(--rule);background:var(--surface);border-radius:999px;padding:5px 12px;font-size:13px}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.chip .n{font-family:var(--mono);font-size:11px;opacity:.7;margin-left:4px}
+.tabs{display:flex;gap:2px;margin-top:18px;overflow-x:auto;border-bottom:1px solid var(--rule)}
+.tab{border:0;background:none;padding:10px 14px;font-weight:500;color:var(--muted);border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-block:18px}
+.bar .grow{flex:1}
+.btn{border:1px solid var(--rule);background:var(--surface);border-radius:8px;padding:7px 12px;font-size:14px;display:inline-flex;gap:6px;align-items:center}
+.btn:hover{border-color:var(--muted)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:600}
+.btn.bad{border-color:var(--red);color:var(--red)}
+.btn.good{border-color:var(--accent);color:var(--accent)}
+.icon{width:16px;height:16px;flex:none}
+.say{border:0;background:var(--accent-soft);color:var(--accent);border-radius:999px;width:30px;height:30px;display:inline-grid;place-items:center;flex:none}
+.say:hover{filter:brightness(.95)}
+select.sel{border:1px solid var(--rule);background:var(--surface);border-radius:8px;padding:6px 8px;font-size:14px}
+label.tog{display:inline-flex;gap:6px;align-items:center;font-size:14px;color:var(--muted)}
+.note{font-size:13px;color:var(--muted)}
+.panel{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:20px}
+
+/* flashcard */
+.stage{perspective:1400px;max-width:640px;margin:0 auto}
+.card{display:grid;width:100%;border:0;padding:0;background:none;text-align:left}
+.face{grid-area:1/1;min-height:300px;border:1px solid var(--rule);border-radius:12px;padding:26px 26px 22px 58px;
+  background:
+    linear-gradient(90deg,transparent 40px,var(--red) 40px,var(--red) 41px,transparent 41px),
+    repeating-linear-gradient(180deg,var(--surface) 0 31px,var(--rule-soft) 31px 32px);
+  background-color:var(--surface);
+  backface-visibility:hidden;transition:transform .45s ease;display:flex;flex-direction:column;gap:10px}
+.back{transform:rotateY(180deg)}
+.card.flip .front{transform:rotateY(-180deg)}
+.card.flip .back{transform:rotateY(0)}
+.face .term{font-family:var(--display);font-size:clamp(28px,6vw,40px);font-weight:700;line-height:1.1}
+.face .ipa{font-family:var(--mono);color:var(--muted);font-size:14px}
+.face .vi{font-size:20px;font-weight:600;color:var(--accent)}
+.face .def{font-size:16px}
+.face .ex{font-family:var(--display);font-style:italic;font-size:17px;color:var(--ink);border-top:1px dashed var(--rule);padding-top:10px}
+.face .hint{margin-top:auto;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.face .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.tag{font-family:var(--mono);font-size:11px;letter-spacing:.06em;border:1px solid var(--rule);border-radius:4px;padding:1px 6px;color:var(--muted);background:var(--surface)}
+.tag.k{color:var(--accent);border-color:var(--accent)}
+mark{background:var(--accent-soft);color:inherit;padding:0 2px;border-radius:3px;font-style:normal;font-weight:600}
+.progress{height:4px;background:var(--rule-soft);border-radius:2px;overflow:hidden;max-width:640px;margin:14px auto 0}
+.progress i{display:block;height:100%;background:var(--accent);transition:width .3s}
+.fcnav{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px}
+.count{font-family:var(--mono);font-size:13px;text-align:center;margin-top:10px;color:var(--muted);font-variant-numeric:tabular-nums}
+
+/* vocab list */
+.search{flex:1;min-width:180px;border:1px solid var(--rule);background:var(--surface);border-radius:8px;padding:8px 12px}
+.ledger{border-top:2px solid var(--ink)}
+.entry{display:grid;grid-template-columns:34px minmax(150px,1.1fr) 2fr 26px;gap:4px 14px;padding:12px 0;border-bottom:1px solid var(--rule);align-items:start}
+.entry .t{font-weight:600;font-size:16px}
+.entry .i{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.entry .v{color:var(--accent);font-weight:500}
+.entry .d{font-size:14px}
+.entry .e{font-family:var(--display);font-style:italic;font-size:15px;color:var(--muted)}
+.entry .u{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.entry input{margin-top:6px;accent-color:var(--accent);width:16px;height:16px}
+.unithead{font-family:var(--display);font-size:19px;font-weight:600;padding:22px 0 6px;border-bottom:1px solid var(--ink)}
+.unithead span{font-family:var(--mono);font-size:12px;font-weight:400;color:var(--muted);margin-right:8px}
+@media (max-width:620px){
+  .entry{grid-template-columns:34px 1fr 26px}
+  .entry .col2{grid-column:2/3}
+  .entry .chk{grid-row:1;grid-column:3}
+}
+
+/* exercises */
+.subtabs{display:flex;flex-wrap:wrap;gap:6px}
+.q{font-family:var(--display);font-size:clamp(19px,3.5vw,23px);line-height:1.45;margin-block:8px 18px}
+.blank{display:inline-block;min-width:110px;border-bottom:2px solid var(--ink);text-align:center;font-family:var(--body);font-size:.85em;font-weight:600}
+.opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px}
+.opt{border:1px solid var(--rule);background:var(--surface);border-radius:8px;padding:11px 14px;text-align:left;font-size:15px}
+.opt:hover:not(:disabled){border-color:var(--ink)}
+.opt.ok{background:var(--accent-soft);border-color:var(--accent);color:var(--ink)}
+.opt.no{background:var(--red-soft);border-color:var(--red);color:var(--ink)}
+.opt:disabled{cursor:default}
+.fb{margin-top:14px;padding:12px 14px;border-radius:8px;font-size:14px;display:flex;gap:10px;align-items:flex-start}
+.fb.ok{background:var(--accent-soft)}
+.fb.no{background:var(--red-soft)}
+.score{font-family:var(--mono);font-size:13px;font-variant-numeric:tabular-nums}
+.match{display:grid;grid-template-columns:1fr 1.6fr;gap:10px}
+.match .col{display:flex;flex-direction:column;gap:8px}
+.mi{border:1px solid var(--rule);background:var(--surface);border-radius:8px;padding:10px 12px;text-align:left;font-size:14px}
+.mi.sel{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.mi.done{background:var(--accent-soft);border-color:transparent;color:var(--muted)}
+.mi.shake{background:var(--red-soft);border-color:var(--red)}
+.mi.t{font-weight:600}
+@media (max-width:560px){.match{grid-template-columns:1fr}}
+.result{text-align:center;padding:24px 0}
+.result .big{font-family:var(--display);font-size:48px;font-weight:700;color:var(--accent)}
+
+/* listening */
+.passages{display:flex;flex-direction:column;gap:16px}
+.pas h3{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.pas .ctrl{display:flex;flex-wrap:wrap;gap:8px;margin-block:12px}
+.trans{font-size:16px;line-height:1.75;max-width:68ch;border-left:3px solid var(--rule);padding-left:14px}
+.trans span.on{background:var(--accent-soft);border-radius:3px}
+.trans b{font-weight:600;color:var(--accent)}
+.lq{margin-top:14px;display:flex;flex-direction:column;gap:14px}
+.lq .qq{font-weight:600;margin-bottom:6px}
+.dict input{width:100%;border:1px solid var(--rule);background:var(--paper);border-radius:8px;padding:10px 12px;font-size:16px}
+.diff{margin-top:12px;font-size:16px;line-height:1.8}
+.diff .m{color:var(--accent)}
+.diff .x{color:var(--red);text-decoration:underline;text-decoration-thickness:2px}
+
+/* immersion */
+.imm{text-align:center;padding:36px 20px;min-height:340px;display:flex;flex-direction:column;justify-content:center;gap:14px;
+  background:linear-gradient(180deg,var(--surface),var(--paper));border:1px solid var(--rule);border-radius:12px}
+.imm .term{font-family:var(--display);font-size:clamp(34px,8vw,60px);font-weight:700;line-height:1.05}
+.imm .vi{font-size:20px;color:var(--accent);font-weight:600}
+.imm .def{font-size:17px;max-width:52ch;margin:0 auto}
+.imm .ex{font-family:var(--display);font-style:italic;font-size:19px;max-width:52ch;margin:0 auto;color:var(--muted)}
+.imm .now{opacity:1}
+.imm [data-part]{transition:opacity .3s}
+.imm.running [data-part]:not(.lit){opacity:.45}
+.imm .lit{opacity:1}
+.eq{display:inline-flex;gap:3px;align-items:flex-end;height:16px}
+.eq i{width:3px;background:var(--accent);height:30%;border-radius:1px}
+.running .eq i{animation:eq 1s infinite ease-in-out}
+.eq i:nth-child(2){animation-delay:.2s!important}.eq i:nth-child(3){animation-delay:.4s!important}.eq i:nth-child(4){animation-delay:.1s!important}
+@keyframes eq{0%,100%{height:25%}50%{height:100%}}
+
+/* video */
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.vcard{display:flex;flex-direction:column;gap:8px;padding:16px;border:1px solid var(--rule);border-radius:10px;background:var(--surface);text-decoration:none;color:inherit}
+.vcard:hover{border-color:var(--accent)}
+.vcard .vt{font-weight:600;line-height:1.35}
+.vcard .go{margin-top:auto;font-family:var(--mono);font-size:12px;color:var(--accent)}
+.tips{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:8px}
+.tips div{border-top:2px solid var(--ink);padding-top:8px;font-size:14px}
+.tips b{display:block;font-family:var(--display);font-size:16px;margin-bottom:2px}
+.warn{background:var(--red-soft);border-radius:8px;padding:10px 14px;font-size:14px;margin-top:12px}
+.data{margin-top:14px;border:1px solid var(--rule);border-radius:10px;background:var(--surface)}
+.data summary{cursor:pointer;padding:10px 14px;font-weight:500;font-size:14px}
+.datain{padding:0 14px 14px}
+.datain textarea{width:100%;border:1px solid var(--rule);background:var(--paper);color:var(--ink);border-radius:8px;padding:10px;font-family:var(--mono);font-size:12.5px;line-height:1.5;resize:vertical}
+.datain input[type=file]{font-size:13px;max-width:100%}
+#impMsg.err{color:var(--red)}
+#impMsg.ok{color:var(--accent)}
+.vlinks{display:flex;flex-wrap:wrap;gap:6px;margin-block:8px 2px}
+.vlinks a{display:inline-flex;gap:6px;align-items:center;font-size:13px;color:var(--ink);text-decoration:none;border:1px solid var(--rule);border-radius:999px;padding:4px 10px 4px 8px;background:var(--surface);max-width:100%}
+.vlinks a span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.vlinks a .icon{color:var(--red)}
+.vlinks a:hover{border-color:var(--red)}
+.vlinks a.more{color:var(--muted)}
+details.rel{margin-top:12px}
+details.rel summary{cursor:pointer;font-size:14px;color:var(--muted)}
+.tq-term{font-family:var(--display);font-size:clamp(30px,6vw,44px);font-weight:700;line-height:1.1}
+.tq-vi{font-size:clamp(20px,4vw,26px);font-weight:600;color:var(--accent)}
+.tq-in{width:100%;border:1px solid var(--rule);background:var(--paper);border-radius:8px;padding:12px 14px;font-size:18px}
+.wrong{width:100%;border-collapse:collapse;font-size:14px}
+.wrong th,.wrong td{text-align:left;padding:8px 10px 8px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+.wrong th{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.wrong td.x{color:var(--red)}
+.hist{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.grade{font-family:var(--display);font-size:20px;font-weight:600}
+@media (prefers-reduced-motion:reduce){.face{transition:none}.running .eq i{animation:none}}
+</style>
+</head>
+<body>
+
+
+<div class="wrap">
+  <header class="top">
+    <div>
+      <div class="eyebrow">Cambridge A1 Movers · Units 1–18</div>
+      <h1>Movers English Notebook</h1>
+      <p class="sub">Flashcard, từ vựng, bài tập, luyện nghe và chế độ “tắm ngôn ngữ” cho nội dung bạn đang học.</p>
+    </div>
+    <div class="stat"><b id="knownN">0</b> / <span id="totalN">0</span><br><span class="muted">từ đã thuộc</span></div>
+  </header>
+
+  <details class="data" id="dataBox">
+    <summary>Dữ liệu học: nhập file .txt <span class="note" id="dataSrc"></span></summary>
+    <div class="datain">
+      <p class="note">Chọn file .txt hoặc dán nội dung vào ô bên dưới. “Thay thế” sẽ dùng dữ liệu mới thay cho toàn bộ dữ liệu hiện tại. “Gộp thêm” sẽ thêm unit, từ và bài mới; từ trùng tên trong cùng unit sẽ được cập nhật.</p>
+      <div class="bar" style="margin-block:8px">
+        <input type="file" id="txtFile" accept=".txt,text/plain" aria-label="Chọn file txt">
+      </div>
+      <textarea id="txtArea" rows="7" spellcheck="false" placeholder="[UNIT 19 | At the zoo]&#10;giraffe | /dʒəˈrɑːf/ | hươu cao cổ | a tall animal with a very long neck | The [giraffe] is eating leaves."></textarea>
+      <div class="bar">
+        <button class="btn primary" id="impReplace">Thay thế</button>
+        <button class="btn" id="impMerge">Gộp thêm</button>
+        <button class="btn" id="copyTxt">Sao chép dữ liệu hiện tại (txt)</button>
+        <span class="grow"></span>
+        <button class="btn bad" id="impReset">Về dữ liệu gốc</button>
+      </div>
+      <div id="impMsg" class="note" role="status"></div>
+    </div>
+  </details>
+
+  <div class="units" id="units" role="group" aria-label="Chọn unit"></div>
+
+  <nav class="tabs" role="tablist" id="tabs">
+    <button class="tab" role="tab" data-tab="flash">Flashcard</button>
+    <button class="tab" role="tab" data-tab="vocab">Từ vựng</button>
+    <button class="tab" role="tab" data-tab="ex">Bài tập</button>
+    <button class="tab" role="tab" data-tab="test">Kiểm tra</button>
+    <button class="tab" role="tab" data-tab="listen">Luyện nghe</button>
+    <button class="tab" role="tab" data-tab="imm">Tắm ngôn ngữ</button>
+    <button class="tab" role="tab" data-tab="video">Video</button>
+  </nav>
+
+  <div class="bar" style="margin-bottom:0">
+    <span class="note">Giọng đọc</span>
+    <select class="sel" id="voiceSel" aria-label="Giọng đọc"></select>
+    <span class="note">Tốc độ</span>
+    <select class="sel" id="rateSel" aria-label="Tốc độ đọc">
+      <option value="0.7">0.7×</option><option value="0.85">0.85×</option><option value="1" selected>1×</option><option value="1.15">1.15×</option>
+    </select>
+  </div>
+  <div id="ttsWarn" class="warn" hidden>Trình duyệt này chưa hỗ trợ đọc to (Text-to-Speech). Hãy mở trang bằng Chrome, Edge hoặc Safari để nghe phát âm.</div>
+
+  <main id="view"></main>
+</div>
+
+<script>
+/* ============ DATA ============ */
+let UNITS={"1": "My family and friends", "2": "My body and health", "3": "Around the house", "4": "At school", "5": "Food and drink", "6": "Animals", "7": "In the town", "8": "Getting around", "9": "The weather", "10": "Sports and games", "11": "Free time", "12": "Jobs", "13": "Clothes", "14": "The world around us", "15": "How do you feel?", "16": "Every day", "17": "Holidays and trips", "18": "Last weekend"};
+// [unit, term, ipa, vietnamese, english definition, example with [target]]
+let V=[
+[1, "aunt", "/ɑːnt/", "cô, dì, bác gái", "the sister of your mum or dad", "My [aunt] lives in Da Nang with her two children."],
+[1, "uncle", "/ˈʌŋkl/", "chú, cậu, bác trai", "the brother of your mum or dad", "My [uncle] can play the guitar."],
+[1, "cousin", "/ˈkʌzn/", "anh chị em họ", "the child of your aunt or uncle", "My [cousin] Minh is the same age as me."],
+[1, "grandparents", "/ˈɡrænpeərənts/", "ông bà", "the parents of your mum or dad", "I visit my [grandparents] every Sunday."],
+[1, "parents", "/ˈpeərənts/", "bố mẹ", "your mum and dad", "My [parents] work in a hospital."],
+[1, "daughter", "/ˈdɔːtə/", "con gái", "a girl child of a mother and father", "Mrs Lan has one [daughter] and two sons."],
+[1, "son", "/sʌn/", "con trai", "a boy child of a mother and father", "Their [son] is five years old."],
+[1, "grown-up", "/ˈɡrəʊn ʌp/", "người lớn", "an adult; not a child", "Ask a [grown-up] to help you with the scissors."],
+[1, "baby", "/ˈbeɪbi/", "em bé", "a very young child", "The [baby] is sleeping, so please be quiet."],
+[1, "friend", "/frend/", "bạn bè", "a person you like and have fun with", "Hoa is my best [friend]."],
+[1, "surname", "/ˈsɜːneɪm/", "họ", "your family name", "My [surname] is Nguyen."],
+[1, "same", "/seɪm/", "giống nhau", "not different", "My sister and I go to the [same] school."],
+[2, "back", "/bæk/", "lưng", "the part of your body behind you, from your neck to your legs", "I carry my school bag on my [back]."],
+[2, "neck", "/nek/", "cổ", "the part of your body between your head and shoulders", "Giraffes have very long [necks]."],
+[2, "shoulder", "/ˈʃəʊldə/", "vai", "the part of your body between your neck and arm", "My little brother sat on Dad's [shoulders]."],
+[2, "stomach", "/ˈstʌmək/", "bụng, dạ dày", "the part of your body where food goes", "My [stomach] is full after lunch."],
+[2, "tooth", "/tuːθ/", "răng (số nhiều: teeth)", "one of the hard white things in your mouth", "I lost a [tooth] yesterday!"],
+[2, "headache", "/ˈhedeɪk/", "đau đầu", "a pain in your head", "I have a [headache] because the music is too loud."],
+[2, "toothache", "/ˈtuːθeɪk/", "đau răng", "a pain in your tooth", "He ate too many sweets and now he has [toothache]."],
+[2, "stomach-ache", "/ˈstʌmək eɪk/", "đau bụng", "a pain in your stomach", "I ate too much ice cream and got a [stomach-ache]."],
+[2, "cold", "/kəʊld/", "cảm lạnh", "a small illness that makes your nose run", "I've got a [cold], so I'm staying at home."],
+[2, "cough", "/kɒf/", "ho; cơn ho", "to push air out of your throat with a loud noise", "She has a bad [cough]."],
+[2, "temperature", "/ˈtemprətʃə/", "sốt, nhiệt độ", "when your body is hotter than usual because you are ill", "The doctor said I have a [temperature]."],
+[2, "matter", "/ˈmætə/", "vấn đề (What's the matter?)", "used to ask what is wrong", "What's the [matter]? Are you OK?"],
+[3, "upstairs", "/ˌʌpˈsteəz/", "tầng trên", "on or to a higher floor of a building", "My bedroom is [upstairs]."],
+[3, "downstairs", "/ˌdaʊnˈsteəz/", "tầng dưới", "on or to a lower floor of a building", "The kitchen is [downstairs]."],
+[3, "stairs", "/steəz/", "cầu thang", "steps that go up or down inside a building", "Don't run on the [stairs]!"],
+[3, "balcony", "/ˈbælkəni/", "ban công", "a small place outside an upstairs window where you can stand", "We have flowers on our [balcony]."],
+[3, "roof", "/ruːf/", "mái nhà", "the top of a building", "A cat is sitting on the [roof]."],
+[3, "lift", "/lɪft/", "thang máy", "a machine that takes people up and down in a building", "We took the [lift] to the tenth floor."],
+[3, "blanket", "/ˈblæŋkɪt/", "chăn", "a warm cover for a bed", "I need a [blanket] because it's cold tonight."],
+[3, "towel", "/ˈtaʊəl/", "khăn tắm", "a piece of cloth you use to dry your body", "Here's a clean [towel] for your shower."],
+[3, "shower", "/ˈʃaʊə/", "vòi sen; tắm vòi sen", "a place where water comes down on you to wash your body", "I have a [shower] every evening."],
+[3, "toothbrush", "/ˈtuːθbrʌʃ/", "bàn chải đánh răng", "a small brush for cleaning your teeth", "My new [toothbrush] is blue."],
+[3, "toothpaste", "/ˈtuːθpeɪst/", "kem đánh răng", "the stuff you put on a toothbrush", "We need to buy some [toothpaste]."],
+[3, "floor", "/flɔː/", "sàn nhà; tầng", "the part of a room you walk on; a level in a building", "Don't leave your toys on the [floor]."],
+[4, "classroom", "/ˈklɑːsruːm/", "lớp học", "a room in a school where students learn", "Our [classroom] has big windows."],
+[4, "homework", "/ˈhəʊmwɜːk/", "bài tập về nhà", "school work you do at home", "I do my [homework] after dinner."],
+[4, "break", "/breɪk/", "giờ ra chơi", "a short time between lessons when you can rest or play", "We play football at [break]."],
+[4, "lesson", "/ˈlesn/", "tiết học", "a time when you learn something at school", "Our English [lesson] starts at nine o'clock."],
+[4, "learn", "/lɜːn/", "học", "to get new knowledge or a new skill", "I want to [learn] to swim."],
+[4, "spell", "/spel/", "đánh vần", "to say or write the letters of a word", "How do you [spell] your name?"],
+[4, "test", "/test/", "bài kiểm tra", "questions to see what you know", "We have a maths [test] tomorrow."],
+[4, "easy", "/ˈiːzi/", "dễ", "not difficult", "This question is [easy]!"],
+[4, "difficult", "/ˈdɪfɪkəlt/", "khó", "not easy", "Maths is [difficult] for me."],
+[4, "clever", "/ˈklevə/", "thông minh", "quick at learning and understanding", "Mai is very [clever]. She knows all the answers."],
+[4, "dictionary", "/ˈdɪkʃənri/", "từ điển", "a book that tells you what words mean", "Look up the new word in your [dictionary]."],
+[4, "teach", "/tiːtʃ/", "dạy", "to help someone learn something", "Mr Hung [teaches] us music."],
+[5, "hungry", "/ˈhʌŋɡri/", "đói", "wanting to eat", "I'm [hungry]. Can I have a sandwich?"],
+[5, "thirsty", "/ˈθɜːsti/", "khát", "wanting to drink", "After football I'm always [thirsty]."],
+[5, "breakfast", "/ˈbrekfəst/", "bữa sáng", "the first meal of the day", "I have bread and milk for [breakfast]."],
+[5, "lunch", "/lʌntʃ/", "bữa trưa", "the meal you eat in the middle of the day", "We have [lunch] at school."],
+[5, "dinner", "/ˈdɪnə/", "bữa tối", "the meal you eat in the evening", "My family eats [dinner] together at seven."],
+[5, "cheese", "/tʃiːz/", "pho mát", "a yellow or white food made from milk", "I'd like a [cheese] sandwich, please."],
+[5, "salad", "/ˈsæləd/", "rau trộn, salad", "cold vegetables mixed together", "Mum made a tomato [salad]."],
+[5, "soup", "/suːp/", "súp, canh", "a hot, watery food made from vegetables or meat", "This vegetable [soup] is hot!"],
+[5, "pasta", "/ˈpæstə/", "mì Ý", "a food from Italy made from flour and water", "We had [pasta] with tomato sauce."],
+[5, "milkshake", "/ˈmɪlkʃeɪk/", "sữa lắc", "a cold drink made with milk and fruit or ice cream", "Can I have a banana [milkshake]?"],
+[5, "vegetables", "/ˈvedʒtəblz/", "rau củ", "plants that you eat, like carrots and beans", "[Vegetables] are good for you."],
+[5, "bottle", "/ˈbɒtl/", "cái chai", "a tall glass or plastic container for drinks", "Take a [bottle] of water to the park."],
+[6, "kangaroo", "/ˌkæŋɡəˈruː/", "chuột túi", "an Australian animal that jumps and carries its baby in a pocket", "The [kangaroo] can jump very far."],
+[6, "panda", "/ˈpændə/", "gấu trúc", "a black and white bear from China", "The [panda] is eating bamboo."],
+[6, "parrot", "/ˈpærət/", "con vẹt", "a colourful bird that can copy words", "Our [parrot] can say \"hello\"."],
+[6, "penguin", "/ˈpeŋɡwɪn/", "chim cánh cụt", "a black and white bird that swims but can't fly", "[Penguins] live in very cold places."],
+[6, "dolphin", "/ˈdɒlfɪn/", "cá heo", "a clever grey sea animal", "The [dolphin] jumped out of the water."],
+[6, "whale", "/weɪl/", "cá voi", "a very big animal that lives in the sea", "A [whale] is bigger than a boat."],
+[6, "shark", "/ʃɑːk/", "cá mập", "a big fish with sharp teeth", "The [shark] has big teeth."],
+[6, "lion", "/ˈlaɪən/", "sư tử", "a big wild cat with yellow fur", "The [lion] is sleeping under a tree."],
+[6, "bat", "/bæt/", "con dơi", "a small animal that flies at night", "[Bats] sleep in the day."],
+[6, "snail", "/sneɪl/", "con ốc sên", "a small, slow animal with a shell on its back", "The [snail] is very slow."],
+[6, "cage", "/keɪdʒ/", "cái lồng", "a box with bars to keep a bird or animal in", "The bird is singing in its [cage]."],
+[6, "fly", "/flaɪ/", "con ruồi; bay", "a small insect with wings; to move through the air", "There's a [fly] on my cake!"],
+[7, "supermarket", "/ˈsuːpəmɑːkɪt/", "siêu thị", "a big shop that sells food and other things", "We buy fruit at the [supermarket]."],
+[7, "market", "/ˈmɑːkɪt/", "chợ", "a place outside where people sell food and other things", "Grandma goes to the [market] every morning."],
+[7, "cinema", "/ˈsɪnəmə/", "rạp chiếu phim", "a place where you watch films", "Let's go to the [cinema] on Saturday."],
+[7, "hospital", "/ˈhɒspɪtl/", "bệnh viện", "a place where doctors and nurses help ill people", "My mum is a nurse at the [hospital]."],
+[7, "library", "/ˈlaɪbrəri/", "thư viện", "a place where you can borrow books", "I read comics at the [library]."],
+[7, "swimming pool", "/ˈswɪmɪŋ puːl/", "bể bơi", "a place with water where you can swim", "The [swimming pool] is open until eight."],
+[7, "sports centre", "/ˈspɔːts ˌsentə/", "trung tâm thể thao", "a building where you can play sports", "I play badminton at the [sports centre]."],
+[7, "bank", "/bæŋk/", "ngân hàng", "a place where people keep their money", "Dad went to the [bank]."],
+[7, "car park", "/ˈkɑː pɑːk/", "bãi đỗ xe", "a place where people leave their cars", "The [car park] is behind the shop."],
+[7, "café", "/ˈkæfeɪ/", "quán cà phê", "a small restaurant where you can have drinks and snacks", "We had a drink at the [café]."],
+[7, "circus", "/ˈsɜːkəs/", "rạp xiếc", "a show with clowns and people who do tricks", "We saw clowns at the [circus]."],
+[7, "shopping centre", "/ˈʃɒpɪŋ ˌsentə/", "trung tâm mua sắm", "a building with many shops", "There's a new [shopping centre] near my house."],
+[8, "bus station", "/ˈbʌs ˌsteɪʃn/", "bến xe buýt", "a place where many buses start and stop", "Meet me at the [bus station]."],
+[8, "bus stop", "/ˈbʌs stɒp/", "trạm xe buýt", "a place where a bus stops for people", "I wait at the [bus stop] every morning."],
+[8, "ticket", "/ˈtɪkɪt/", "vé", "a piece of paper that shows you paid to travel or see something", "I bought a train [ticket]."],
+[8, "driver", "/ˈdraɪvə/", "tài xế", "a person who drives a car, bus or taxi", "The bus [driver] is very kind."],
+[8, "ride", "/raɪd/", "đi, cưỡi (xe đạp, ngựa)", "to sit on a bike or horse and make it move", "I [ride] my bike to school."],
+[8, "motorbike", "/ˈməʊtəbaɪk/", "xe máy", "a big, heavy bike with an engine", "My dad goes to work by [motorbike]."],
+[8, "straight on", "/ˌstreɪt ˈɒn/", "đi thẳng", "forward without turning", "Go [straight on] and the park is on your left."],
+[8, "left", "/left/", "bên trái", "on the side of your body where your heart is", "Turn [left] at the cinema."],
+[8, "right", "/raɪt/", "bên phải", "the opposite of left", "The bank is on the [right]."],
+[8, "near", "/nɪə/", "gần", "not far", "My school is [near] my house."],
+[8, "far", "/fɑː/", "xa", "a long way", "Is the zoo [far] from here?"],
+[8, "map", "/mæp/", "bản đồ", "a drawing of a place that shows roads and towns", "Let's look at the [map]."],
+[9, "weather", "/ˈweðə/", "thời tiết", "how hot, cold, sunny or rainy it is", "What's the [weather] like today?"],
+[9, "sunny", "/ˈsʌni/", "có nắng", "with a lot of sun", "It's [sunny], so let's go to the beach."],
+[9, "cloudy", "/ˈklaʊdi/", "nhiều mây", "with a lot of clouds in the sky", "It's [cloudy] but it isn't raining."],
+[9, "windy", "/ˈwɪndi/", "có gió", "with a lot of wind", "It's [windy]. Let's fly a kite!"],
+[9, "rain", "/reɪn/", "mưa", "water that falls from clouds", "Take an umbrella. It's going to [rain]."],
+[9, "snow", "/snəʊ/", "tuyết", "soft white ice that falls from the sky when it is very cold", "The children are playing in the [snow]."],
+[9, "rainbow", "/ˈreɪnbəʊ/", "cầu vồng", "a line of colours in the sky after rain", "Look! There's a [rainbow]."],
+[9, "cloud", "/klaʊd/", "đám mây", "a white or grey thing in the sky", "That [cloud] looks like a rabbit."],
+[9, "wind", "/wɪnd/", "gió", "air that moves", "The [wind] blew my hat away."],
+[9, "hot", "/hɒt/", "nóng", "very warm", "It's very [hot] in summer."],
+[9, "cold", "/kəʊld/", "lạnh", "not warm", "Put on your coat. It's [cold] outside."],
+[9, "umbrella", "/ʌmˈbrelə/", "ô, dù", "a thing you hold over your head when it rains", "Don't forget your [umbrella]!"],
+[10, "kick", "/kɪk/", "đá", "to hit something with your foot", "[Kick] the ball to me!"],
+[10, "catch", "/kætʃ/", "bắt", "to take something that is moving in the air with your hands", "Can you [catch] the ball?"],
+[10, "throw", "/θrəʊ/", "ném", "to send something through the air with your hand", "[Throw] the ball to your friend."],
+[10, "hop", "/hɒp/", "nhảy lò cò", "to jump on one foot", "Can you [hop] on one leg?"],
+[10, "skip", "/skɪp/", "nhảy dây", "to jump over a rope that turns", "Girls often [skip] at break."],
+[10, "dive", "/daɪv/", "lặn, nhảy cắm đầu", "to jump into water with your head first", "He can [dive] into the pool."],
+[10, "swim", "/swɪm/", "bơi", "to move through water", "I [swim] every Saturday."],
+[10, "team", "/tiːm/", "đội", "a group of people who play together", "Our [team] has eleven players."],
+[10, "win", "/wɪn/", "thắng", "to be first in a game", "Who will [win] the game?"],
+[10, "score", "/skɔː/", "ghi (bàn, điểm)", "to get a goal or point in a game", "She [scored] a goal!"],
+[10, "basketball", "/ˈbɑːskɪtbɔːl/", "bóng rổ", "a game where you throw a ball into a high net", "My brother plays [basketball] after school."],
+[10, "ice skating", "/ˈaɪs ˌskeɪtɪŋ/", "trượt băng", "moving on ice with special shoes", "We went [ice skating] at the shopping centre."],
+[11, "hobby", "/ˈhɒbi/", "sở thích", "something you like doing in your free time", "Drawing is my favourite [hobby]."],
+[11, "band", "/bænd/", "ban nhạc", "a group of people who play music together", "My cousin plays in a [band]."],
+[11, "drum", "/drʌm/", "cái trống", "a music instrument you hit", "He plays the [drums] very loudly."],
+[11, "picture", "/ˈpɪktʃə/", "bức tranh", "a drawing or painting", "I drew a [picture] of my cat."],
+[11, "comic", "/ˈkɒmɪk/", "truyện tranh", "a magazine with stories told in pictures", "I read a funny [comic] last night."],
+[11, "DVD", "/ˌdiː viː ˈdiː/", "đĩa DVD", "a disc with a film on it", "Let's watch a [DVD] tonight."],
+[11, "email", "/ˈiːmeɪl/", "thư điện tử", "a message you send on a computer", "I sent an [email] to my friend."],
+[11, "text", "/tekst/", "tin nhắn; nhắn tin", "a message you send on a phone", "Mum sent me a [text]."],
+[11, "dance", "/dɑːns/", "nhảy múa", "to move your body to music", "My sister loves to [dance]."],
+[11, "sing", "/sɪŋ/", "hát", "to make music with your voice", "We [sing] songs in our English class."],
+[11, "film", "/fɪlm/", "bộ phim", "a story you watch at the cinema or on TV", "The [film] was very funny."],
+[11, "fun", "/fʌn/", "vui", "enjoyable", "Camping is great [fun]!"],
+[12, "doctor", "/ˈdɒktə/", "bác sĩ", "a person who helps ill people get better", "The [doctor] gave me some medicine."],
+[12, "nurse", "/nɜːs/", "y tá", "a person who looks after ill people in a hospital", "The [nurse] was very kind."],
+[12, "dentist", "/ˈdentɪst/", "nha sĩ", "a doctor for your teeth", "I go to the [dentist] every six months."],
+[12, "farmer", "/ˈfɑːmə/", "nông dân", "a person who works on a farm", "The [farmer] has cows and chickens."],
+[12, "pilot", "/ˈpaɪlət/", "phi công", "a person who flies a plane", "The [pilot] flew the plane to Hanoi."],
+[12, "cook", "/kʊk/", "đầu bếp", "a person who makes food", "The [cook] made a big pizza."],
+[12, "clown", "/klaʊn/", "chú hề", "a funny person with a red nose in a circus", "The [clown] made us laugh."],
+[12, "vet", "/vet/", "bác sĩ thú y", "a doctor for animals", "We took our dog to the [vet]."],
+[12, "police officer", "/pəˈliːs ˌɒfɪsə/", "cảnh sát", "a person whose job is to keep people safe", "The [police officer] helped the lost boy."],
+[12, "singer", "/ˈsɪŋə/", "ca sĩ", "a person who sings", "She is a famous [singer]."],
+[12, "work", "/wɜːk/", "làm việc", "to do a job", "My mum [works] in a bank."],
+[12, "medicine", "/ˈmedsn/", "thuốc", "something you take when you are ill", "Take this [medicine] three times a day."],
+[13, "coat", "/kəʊt/", "áo khoác dài", "a long, warm thing you wear over your clothes", "Wear your [coat]. It's snowing."],
+[13, "sweater", "/ˈswetə/", "áo len", "a warm top", "My [sweater] is made of wool."],
+[13, "scarf", "/skɑːf/", "khăn quàng cổ", "a long piece of cloth you wear around your neck", "I wear a [scarf] in winter."],
+[13, "glasses", "/ˈɡlɑːsɪz/", "kính mắt", "two pieces of glass you wear to help you see", "Grandpa wears [glasses] to read."],
+[13, "helmet", "/ˈhelmɪt/", "mũ bảo hiểm", "a hard hat that keeps your head safe", "Always wear a [helmet] on your bike."],
+[13, "swimsuit", "/ˈswɪmsuːt/", "đồ bơi", "clothes you wear to swim", "Don't forget your [swimsuit] for the pool."],
+[13, "shirt", "/ʃɜːt/", "áo sơ mi", "a top with buttons and a collar", "Dad wears a white [shirt] to work."],
+[13, "trousers", "/ˈtraʊzəz/", "quần dài", "clothes that cover both legs", "These [trousers] are too long."],
+[13, "shorts", "/ʃɔːts/", "quần soóc", "short trousers", "I wear [shorts] in summer."],
+[13, "boots", "/buːts/", "đôi ủng", "big shoes that cover part of your legs", "Put on your [boots]. It's raining."],
+[13, "put on", "/ˌpʊt ˈɒn/", "mặc vào", "to start wearing clothes", "[Put on] your hat. It's sunny."],
+[13, "take off", "/ˌteɪk ˈɒf/", "cởi ra", "to remove clothes", "[Take off] your shoes before you come in."],
+[14, "forest", "/ˈfɒrɪst/", "khu rừng", "a place with lots of trees", "There are many birds in the [forest]."],
+[14, "jungle", "/ˈdʒʌŋɡl/", "rừng rậm nhiệt đới", "a hot forest with lots of plants", "Monkeys live in the [jungle]."],
+[14, "river", "/ˈrɪvə/", "dòng sông", "a long line of water", "We swam in the [river]."],
+[14, "lake", "/leɪk/", "hồ nước", "water with land all around it", "There are ducks on the [lake]."],
+[14, "mountain", "/ˈmaʊntən/", "ngọn núi", "a very high hill", "There's snow on the [mountain]."],
+[14, "island", "/ˈaɪlənd/", "hòn đảo", "land with water all around it", "We went to an [island] by boat."],
+[14, "waterfall", "/ˈwɔːtəfɔːl/", "thác nước", "water that falls from a high place", "The [waterfall] is very big."],
+[14, "field", "/fiːld/", "cánh đồng", "an area of grass on a farm", "The cows are in the [field]."],
+[14, "village", "/ˈvɪlɪdʒ/", "ngôi làng", "a very small town in the country", "My grandma lives in a [village]."],
+[14, "leaf", "/liːf/", "chiếc lá (số nhiều: leaves)", "a flat green part of a tree or plant", "A yellow [leaf] fell from the tree."],
+[14, "star", "/stɑː/", "ngôi sao", "a small light in the sky at night", "I can see a bright [star]."],
+[14, "sky", "/skaɪ/", "bầu trời", "the space above the Earth where you see clouds", "The [sky] is blue today."],
+[15, "happy", "/ˈhæpi/", "vui vẻ", "feeling good", "I'm [happy] because it's my birthday!"],
+[15, "sad", "/sæd/", "buồn", "not happy", "She's [sad] because she lost her toy."],
+[15, "angry", "/ˈæŋɡri/", "tức giận", "feeling very unhappy with someone", "Dad was [angry] because I broke the window."],
+[15, "bored", "/bɔːd/", "chán", "not interested; with nothing to do", "I'm [bored]. Let's play a game."],
+[15, "tired", "/ˈtaɪəd/", "mệt", "wanting to rest or sleep", "I'm [tired] after the long walk."],
+[15, "scared", "/skeəd/", "sợ", "afraid", "My little sister is [scared] of the dark."],
+[15, "excited", "/ɪkˈsaɪtɪd/", "háo hức", "very happy about something that will happen", "We're [excited] about the school trip."],
+[15, "strong", "/strɒŋ/", "khoẻ", "able to carry heavy things", "My dad is very [strong]."],
+[15, "weak", "/wiːk/", "yếu", "not strong", "I felt [weak] when I was ill."],
+[15, "loud", "/laʊd/", "ồn, to", "making a lot of noise", "The music is too [loud]!"],
+[15, "quiet", "/ˈkwaɪət/", "yên lặng", "making very little noise", "Be [quiet]. The baby is sleeping."],
+[15, "well", "/wel/", "khoẻ (không ốm)", "healthy; not ill", "I'm not very [well] today."],
+[16, "always", "/ˈɔːlweɪz/", "luôn luôn", "every time", "I [always] brush my teeth before bed."],
+[16, "usually", "/ˈjuːʒuəli/", "thường thường", "most times", "I [usually] walk to school."],
+[16, "often", "/ˈɒfn/", "thường, hay", "many times", "We [often] play football after school."],
+[16, "sometimes", "/ˈsʌmtaɪmz/", "thỉnh thoảng", "not always, but some times", "I [sometimes] eat noodles for breakfast."],
+[16, "never", "/ˈnevə/", "không bao giờ", "not at any time", "My cat [never] drinks milk."],
+[16, "week", "/wiːk/", "tuần", "seven days", "I have English three times a [week]."],
+[16, "weekend", "/ˌwiːkˈend/", "cuối tuần", "Saturday and Sunday", "What do you do at the [weekend]?"],
+[16, "get up", "/ˌɡet ˈʌp/", "thức dậy", "to get out of bed", "I [get up] at six o'clock."],
+[16, "wash", "/wɒʃ/", "rửa, giặt", "to clean with water", "[Wash] your hands before dinner."],
+[16, "brush", "/brʌʃ/", "chải, đánh (răng)", "to clean with a brush", "I [brush] my teeth twice a day."],
+[16, "o'clock", "/əˈklɒk/", "giờ đúng", "used to say the exact hour", "School starts at seven [o'clock]."],
+[16, "before", "/bɪˈfɔː/", "trước khi", "earlier than", "Do your homework [before] you watch TV."],
+[17, "holiday", "/ˈhɒlədeɪ/", "kỳ nghỉ", "a time when you don't go to school and often travel", "We went to the beach for our [holiday]."],
+[17, "trip", "/trɪp/", "chuyến đi", "a short journey to a place and back", "Our class went on a [trip] to the zoo."],
+[17, "beach", "/biːtʃ/", "bãi biển", "sand next to the sea", "We built a sandcastle on the [beach]."],
+[17, "camp", "/kæmp/", "cắm trại", "to sleep in a tent", "We [camp] in the forest every summer."],
+[17, "tent", "/tent/", "cái lều", "a small cloth house you sleep in outside", "Our [tent] is green."],
+[17, "picnic", "/ˈpɪknɪk/", "buổi dã ngoại", "a meal you eat outside", "Let's have a [picnic] in the park."],
+[17, "photo", "/ˈfəʊtəʊ/", "bức ảnh", "a picture you take with a camera", "Can I take a [photo] of you?"],
+[17, "suitcase", "/ˈsuːtkeɪs/", "va li", "a big bag for your clothes when you travel", "My [suitcase] is very heavy."],
+[17, "hotel", "/həʊˈtel/", "khách sạn", "a place where you pay to sleep on holiday", "Our [hotel] is next to the sea."],
+[17, "sea", "/siː/", "biển", "a big area of salty water", "The [sea] is warm in summer."],
+[17, "towel", "/ˈtaʊəl/", "khăn tắm", "a cloth for drying your body", "Take a [towel] to the beach."],
+[17, "visit", "/ˈvɪzɪt/", "thăm", "to go and see a place or person", "We [visited] our aunt in Hue."],
+[18, "went", "/went/", "đã đi (quá khứ của go)", "past of \"go\"", "Yesterday I [went] to the park."],
+[18, "saw", "/sɔː/", "đã nhìn thấy (quá khứ của see)", "past of \"see\"", "We [saw] a big elephant at the zoo."],
+[18, "ate", "/et/", "đã ăn (quá khứ của eat)", "past of \"eat\"", "I [ate] a pizza for lunch."],
+[18, "had", "/hæd/", "đã có (quá khứ của have)", "past of \"have\"", "We [had] a great time at the party."],
+[18, "took", "/tʊk/", "đã lấy, chụp (quá khứ của take)", "past of \"take\"", "Mum [took] lots of photos."],
+[18, "gave", "/ɡeɪv/", "đã cho (quá khứ của give)", "past of \"give\"", "My friend [gave] me a present."],
+[18, "bought", "/bɔːt/", "đã mua (quá khứ của buy)", "past of \"buy\"", "Dad [bought] a new bike."],
+[18, "made", "/meɪd/", "đã làm (quá khứ của make)", "past of \"make\"", "We [made] a cake for Grandma."],
+[18, "drank", "/dræŋk/", "đã uống (quá khứ của drink)", "past of \"drink\"", "I [drank] a glass of orange juice."],
+[18, "came", "/keɪm/", "đã đến (quá khứ của come)", "past of \"come\"", "My cousins [came] to my house."],
+[18, "yesterday", "/ˈjestədeɪ/", "hôm qua", "the day before today", "It rained [yesterday]."],
+[18, "last", "/lɑːst/", "vừa qua, trước", "the one before this one", "[Last] weekend we went swimming."]
+].map(([u,t,ipa,vi,en,ex])=>({u,t,ipa,vi,en,ex}));
+
+let TF=[
+[1, "Your aunt is the sister of your mum or dad.", true, "Đúng."],
+[1, "Your cousin is your mum's mother.", false, "Mẹ của mẹ là grandmother. Cousin là con của cô, dì, chú, bác."],
+[2, "You go to the dentist when you have toothache.", true, "Đúng."],
+[2, "Your neck is between your legs and your feet.", false, "Neck (cổ) nằm giữa đầu và vai."],
+[3, "A lift takes people up and down in a building.", true, "Đúng."],
+[3, "You use a towel to clean your teeth.", false, "Đánh răng dùng toothbrush và toothpaste. Towel dùng để lau khô."],
+[4, "\"Difficult\" means the same as \"easy\".", false, "Difficult (khó) ngược nghĩa với easy (dễ)."],
+[4, "You use a dictionary to find what a word means.", true, "Đúng."],
+[5, "When you are thirsty, you want to drink.", true, "Đúng."],
+[5, "Breakfast is the meal you eat in the evening.", false, "Breakfast là bữa sáng. Bữa tối là dinner."],
+[6, "Penguins can fly.", false, "Chim cánh cụt biết bơi nhưng không biết bay."],
+[6, "A kangaroo can jump very far.", true, "Đúng."],
+[7, "You watch films at the cinema.", true, "Đúng."],
+[7, "You borrow books at the swimming pool.", false, "Mượn sách ở library (thư viện)."],
+[8, "You wait for a bus at a bus stop.", true, "Đúng."],
+[8, "\"Far\" means \"not a long way\".", false, "Far = xa. \"Not far\" mới là gần (near)."],
+[9, "You can often see a rainbow after rain.", true, "Đúng."],
+[9, "Snow falls when it is very hot.", false, "Tuyết rơi khi trời rất lạnh."],
+[10, "To hop means to jump on one foot.", true, "Đúng."],
+[10, "You kick a ball with your hand.", false, "Kick dùng chân. Dùng tay là throw hoặc catch."],
+[11, "A comic tells stories in pictures.", true, "Đúng."],
+[11, "You send a text on a phone.", true, "Đúng."],
+[12, "A vet is a doctor for animals.", true, "Đúng."],
+[12, "A farmer works in a hospital.", false, "Farmer làm việc ở nông trại (farm)."],
+[13, "You wear a helmet on your feet.", false, "Helmet đội trên đầu."],
+[13, "\"Take off\" means to remove your clothes.", true, "Đúng."],
+[14, "An island has water all around it.", true, "Đúng."],
+[14, "A village is bigger than a city.", false, "Village (làng) nhỏ hơn thành phố."],
+[15, "When you are bored, you have nothing interesting to do.", true, "Đúng."],
+[15, "\"Strong\" means the same as \"weak\".", false, "Strong (khoẻ) ngược nghĩa với weak (yếu)."],
+[16, "\"Never\" means \"at no time\".", true, "Đúng."],
+[16, "The weekend is Monday and Tuesday.", false, "Weekend là thứ Bảy và Chủ nhật."],
+[17, "You sleep in a tent when you camp.", true, "Đúng."],
+[17, "A picnic is a meal you eat inside a restaurant.", false, "Picnic là bữa ăn ngoài trời."],
+[18, "\"Went\" is the past of \"go\".", true, "Đúng."],
+[18, "\"Bought\" is the past of \"bring\".", false, "Bought là quá khứ của buy. Quá khứ của bring là brought."]
+].map(([u,s,a,why])=>({u,s,a,why}));
+
+let BRAME=[["mum", "mom"], ["holiday", "vacation"], ["film", "movie"], ["cinema", "movie theater"], ["car park", "parking lot"], ["lift", "elevator"], ["trousers", "pants"], ["sweets", "candy"], ["biscuit", "cookie"], ["shop", "store"], ["football", "soccer"], ["colour", "color"], ["favourite", "favorite"], ["rubbish", "trash / garbage"], ["flat", "apartment"]];
+
+let PASS=[
+{"u": 1, "title": "My big family", "text": "Hi, I'm Lan. I live with my parents and my baby brother. My grandparents live next door. On Sundays, my aunt and uncle visit us with their daughter, Mai. Mai is my cousin. She is the same age as me, and we are best friends. We play in the garden while the grown-ups talk and cook lunch.", "qs": [["Who lives next door to Lan?", ["her aunt", "her grandparents", "her cousin", "her friend"], 1], ["Who is Mai?", ["Lan's sister", "Lan's cousin", "Lan's aunt", "Lan's teacher"], 1]]},
+{"u": 2, "title": "At the doctor's", "text": "Yesterday Nam didn't go to school. He had a headache and a bad cough. His mum took him to the doctor. \"What's the matter?\" asked the doctor. \"My head hurts and I feel hot,\" said Nam. The doctor said, \"You've got a temperature and a cold. Take this medicine and stay in bed for two days.\" Now Nam feels better.", "qs": [["What was wrong with Nam?", ["toothache", "a headache and a cough", "a stomach-ache", "a broken leg"], 1], ["What did the doctor tell him to do?", ["go to school", "play outside", "stay in bed", "eat ice cream"], 2]]},
+{"u": 3, "title": "Our new flat", "text": "We live in a new flat on the eighth floor. We usually take the lift, but I like running up the stairs. Our flat has a big balcony with lots of flowers. My bedroom is next to the bathroom. In the bathroom there's a shower, and I have a blue toothbrush and a green towel. From my window I can see the roof of my school.", "qs": [["Which floor is the flat on?", ["the second", "the eighth", "the tenth", "the first"], 1], ["What colour is the writer's towel?", ["blue", "green", "red", "yellow"], 1]]},
+{"u": 4, "title": "My school day", "text": "School starts at seven thirty. Our first lesson is English, and it's my favourite. The teacher helps us spell new words, and we use a dictionary. At break, I play with my friends in the playground. Maths is difficult for me, but my friend Hoa is very clever and she helps me. In the evening I do my homework.", "qs": [["What is the writer's favourite lesson?", ["maths", "English", "music", "art"], 1], ["Who helps the writer with maths?", ["the teacher", "Mum", "Hoa", "the writer's brother"], 2]]},
+{"u": 5, "title": "A picnic lunch", "text": "On Saturday, my family had a picnic by the lake. We were very hungry after the long walk. Mum made cheese sandwiches and a big salad. Dad brought some pasta and a bottle of water. I was thirsty, so I drank a banana milkshake. My little sister doesn't like vegetables, so she only ate bread!", "qs": [["Where was the picnic?", ["in the garden", "by the lake", "at school", "on the beach"], 1], ["What did the writer drink?", ["water", "orange juice", "a banana milkshake", "milk"], 2]]},
+{"u": 6, "title": "A day at the zoo", "text": "Last month our class went to the zoo. First we saw the pandas. They were eating bamboo. Then we watched the penguins swimming in cold water. My favourite animal was the kangaroo because it jumped so high. We also saw a big green parrot in a cage. It said \"Hello!\" to us. Everyone laughed.", "qs": [["What were the pandas doing?", ["sleeping", "swimming", "eating bamboo", "jumping"], 2], ["Which animal said \"Hello\"?", ["the kangaroo", "the parrot", "the penguin", "the panda"], 1]]},
+{"u": 7, "title": "Saturday in town", "text": "On Saturday morning, I went into town with my dad. First, he went to the bank. Then we went to the supermarket to buy some fruit. After lunch at a café, we went to the cinema to see a funny film. We didn't go to the swimming pool because it was closed. We were home at six o'clock.", "qs": [["Where did they go first?", ["the supermarket", "the cinema", "the bank", "the café"], 2], ["Why didn't they go to the swimming pool?", ["it was raining", "it was closed", "they were tired", "Dad didn't like it"], 1]]},
+{"u": 8, "title": "How I go to school", "text": "My school is not far from my house, so I usually ride my bike. I always wear my helmet. When it rains, I take the bus. The bus stop is near the park. The bus driver is very friendly and always says \"good morning\". From the bus stop, I go straight on and then turn left. My school is on the right.", "qs": [["How does the writer usually go to school?", ["by bus", "by car", "by bike", "on foot"], 2], ["Where is the bus stop?", ["near the school", "near the park", "near the bank", "near the cinema"], 1]]},
+{"u": 9, "title": "A strange day", "text": "Yesterday the weather was very strange! In the morning it was sunny and hot, so I wore my shorts. At lunchtime it was cloudy and windy. Then, in the afternoon, it started to rain. I didn't have my umbrella, so I got very wet! After the rain, we saw a beautiful rainbow over the school.", "qs": [["What was the weather like in the morning?", ["rainy", "sunny and hot", "windy", "cold"], 1], ["What did they see after the rain?", ["snow", "a star", "a rainbow", "a cloud like a rabbit"], 2]]},
+{"u": 10, "title": "Our football match", "text": "Last Sunday my team played football against a team from another school. It was a difficult game. At first, they scored a goal. Then my friend Tuan kicked the ball very hard and scored! In the last minute, I caught the ball and threw it to Tuan again. He scored another goal, and we won two to one!", "qs": [["Who scored the goals for the writer's team?", ["the writer", "Tuan", "the teacher", "nobody"], 1], ["What was the score?", ["one to one", "two to one", "three to one", "two to two"], 1]]},
+{"u": 11, "title": "What I do in my free time", "text": "I have lots of hobbies. I love drawing pictures of animals. I also read comics, and my favourite is about a funny dog. My brother plays the drums in a band, and he is very loud! On Friday evenings, we watch a DVD together. My sister likes to sing and dance. We always have fun at home.", "qs": [["What does the writer's brother play?", ["the guitar", "the piano", "the drums", "football"], 2], ["When do they watch a DVD?", ["on Sunday mornings", "on Friday evenings", "every day", "at school"], 1]]},
+{"u": 12, "title": "People in my street", "text": "Many interesting people live in my street. Mr Hai is a vet. He looks after cats and dogs. Mrs Mai is a nurse at the hospital. She works at night. My neighbour Tom is a cook in a big hotel. He makes great pizza. And my uncle is a clown! He works at the circus and makes children laugh.", "qs": [["What does Mr Hai do?", ["he is a doctor", "he is a vet", "he is a cook", "he is a clown"], 1], ["Where does the writer's uncle work?", ["in a hotel", "in a hospital", "at the circus", "in a bank"], 2]]},
+{"u": 13, "title": "Getting ready for the snow", "text": "My family is going to the mountains, and there will be snow! Mum says we need warm clothes. I'm taking my red coat, a wool sweater and a long scarf. I'm also taking my boots because the snow is deep. My little brother wants to take his swimsuit, but Mum says, \"No! It's too cold to swim!\"", "qs": [["What colour is the writer's coat?", ["blue", "red", "green", "black"], 1], ["Why can't the brother take his swimsuit?", ["it is too small", "it is too cold to swim", "it is dirty", "he lost it"], 1]]},
+{"u": 14, "title": "My grandma's village", "text": "My grandma lives in a small village near a river. There are big green fields with cows and ducks. Behind the village there is a mountain and a beautiful waterfall. At night, the sky is very dark and you can see hundreds of stars. I love visiting her because it is quiet and the air is clean.", "qs": [["Where is the village?", ["on an island", "near a river", "in the jungle", "in the city"], 1], ["What can you see at night?", ["a rainbow", "the sun", "hundreds of stars", "clouds"], 2]]},
+{"u": 15, "title": "A bad day and a good day", "text": "On Monday I was tired because I went to bed late. At school I was bored in maths, and my friend was angry with me because I lost his pen. I felt sad. But on Tuesday everything was better. I found the pen, and my friend was happy again. We were excited because our teacher said we are going on a trip!", "qs": [["Why was the writer tired on Monday?", ["he was ill", "he went to bed late", "he played football", "he had a test"], 1], ["Why were they excited on Tuesday?", ["it was a holiday", "they found a dog", "they are going on a trip", "they won a prize"], 2]]},
+{"u": 16, "title": "My morning", "text": "I always get up at six o'clock. First I wash my face and brush my teeth. Then I have breakfast with my family. I usually eat noodles, but sometimes I have bread and eggs. I never drink coffee. At the weekend, I don't go to school, so I often get up at eight o'clock.", "qs": [["What time does the writer get up on school days?", ["six o'clock", "seven o'clock", "eight o'clock", "nine o'clock"], 0], ["What does the writer never drink?", ["milk", "juice", "water", "coffee"], 3]]},
+{"u": 17, "title": "Our summer holiday", "text": "Last summer we went on holiday to the beach. We stayed in a hotel next to the sea. Every day we swam, played in the sand and took lots of photos. One day we had a picnic on a small island. We went there by boat. On the last night, we camped on the beach in a big tent. It was the best holiday!", "qs": [["Where did they stay?", ["in a tent every night", "in a hotel next to the sea", "at Grandma's house", "on a boat"], 1], ["How did they go to the island?", ["by plane", "by bus", "by boat", "they swam"], 2]]},
+{"u": 18, "title": "Last weekend", "text": "Last weekend was great! On Saturday, my cousins came to my house. We made a chocolate cake and ate it all! On Sunday, we went to the zoo. We saw lions and a baby elephant. Dad took lots of photos, and Mum bought me a small toy panda. In the evening, we were very tired, so we went to bed early.", "qs": [["What did they make on Saturday?", ["pizza", "a chocolate cake", "a sandwich", "a salad"], 1], ["What did Mum buy for the writer?", ["a book", "a photo", "a toy panda", "a cake"], 2]]}
+];
+
+let VIDEOS=[];
+let VSEARCH={"1": "family members vocabulary for kids english movers", "2": "body parts illness vocabulary for kids english", "3": "house rooms vocabulary upstairs downstairs for kids", "4": "school vocabulary homework classroom for kids", "5": "food drink vocabulary hungry thirsty for kids", "6": "animals vocabulary for kids english movers", "7": "places in town vocabulary for kids english", "8": "transport directions vocabulary for kids english", "9": "weather vocabulary for kids english", "10": "sports vocabulary for kids english movers", "11": "hobbies free time vocabulary for kids english", "12": "jobs vocabulary for kids english movers", "13": "clothes vocabulary for kids english", "14": "nature vocabulary forest river mountain for kids", "15": "feelings adjectives vocabulary for kids english", "16": "daily routine time adverbs always never sometimes for kids", "17": "holiday trip vocabulary for kids english", "18": "past simple irregular verbs for kids english movers"};
+
+/* ============ STATE & UTILS ============ */
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
+const exPlain=e=>e.replace(/\[|\]/g,"");
+const exAns=e=>(e.match(/\[(.+?)\]/)||[,""])[1];
+const exMark=e=>esc(e).replace(/\[(.+?)\]/,"<mark>$1</mark>");
+const store={get(k,d){try{const v=localStorage.getItem("mov-"+k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem("mov-"+k,JSON.stringify(v))}catch(e){}}};
+let unit=store.get("unit","all");
+let known=new Set(store.get("known",[]));
+let tab="flash";
+const pool=()=>unit==="all"?V:V.filter(v=>v.u===unit);
+function saveKnown(){store.set("known",[...known]);updateStat()}
+function updateStat(){const p=pool();$("#knownN").textContent=p.filter(v=>known.has(v.t)).length;$("#totalN").textContent=p.length}
+
+/* ============ SPEECH ============ */
+const tts="speechSynthesis" in window;
+let voices=[],voice=null,rate=+store.get("rate",1),runId=0;
+function loadVoices(){
+  if(!tts)return;
+  voices=speechSynthesis.getVoices().filter(v=>/^en/i.test(v.lang));
+  const sel=$("#voiceSel");
+  if(!voices.length){sel.innerHTML='<option>Mặc định (English)</option>';return}
+  const score=v=>(v.lang==="en-GB"?4:v.lang==="en-US"?2:1)+(/Google|Natural|Neural|Sonia|Libby|Ryan|Daniel|Serena/i.test(v.name)?3:0);
+  voices.sort((a,b)=>score(b)-score(a));
+  const saved=store.get("voice",null);
+  voice=voices.find(v=>v.name===saved)||voices[0];
+  sel.innerHTML=voices.map((v,i)=>`<option value="${i}" ${v===voice?"selected":""}>${esc(v.name)} (${v.lang})</option>`).join("");
+}
+if(tts){loadVoices();speechSynthesis.onvoiceschanged=loadVoices}else{$("#ttsWarn").hidden=false}
+$("#voiceSel").onchange=e=>{voice=voices[+e.target.value]||null;if(voice)store.set("voice",voice.name)};
+$("#rateSel").value=String(rate);$("#rateSel").onchange=e=>{rate=+e.target.value;store.set("rate",rate)};
+function speak(text,r){
+  return new Promise(res=>{
+    if(!tts)return res();
+    const u=new SpeechSynthesisUtterance(text);
+    if(voice){u.voice=voice;u.lang=voice.lang}else u.lang="en-GB";
+    u.rate=(r||1)*rate;u.onend=u.onerror=()=>res();
+    speechSynthesis.speak(u);
+  });
+}
+function stopAll(){runId++;if(tts)speechSynthesis.cancel();document.querySelectorAll(".running").forEach(e=>e.classList.remove("running"))}
+function sayNow(t){stopAll();speak(t)}
+const wait=ms=>new Promise(r=>setTimeout(r,ms));
+const SPK='<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a10 10 0 0 1 0 14"/></svg>';
+const sayBtn=(t,label)=>`<button class="say" data-say="${esc(t)}" aria-label="Nghe: ${esc(label||t)}" title="Nghe">${SPK}</button>`;
+document.addEventListener("click",e=>{const b=e.target.closest("[data-say]");if(b){e.stopPropagation();sayNow(b.dataset.say)}},true);
+const sentences=t=>t.match(/[^.!?]+[.!?]+['"]?\s*/g)||[t];
+
+const YT='<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3z" fill="currentColor"/></svg>';
+function vidLinks(u,max){
+  const list=VIDEOS.filter(v=>v.u===u).slice(0,max||3);
+  const q=VSEARCH[u]||(UNITS[u]||"")+" explained english";
+  return `<div class="vlinks">${list.map(v=>`<a href="${esc(v.url)}" target="_blank" rel="noopener">${YT}<span>${esc(v.t)}</span></a>`).join("")}<a href="https://www.youtube.com/results?search_query=${encodeURIComponent(q)}" target="_blank" rel="noopener" class="more">${YT}<span>Tìm thêm video Unit ${u} trên YouTube</span></a></div>`;
+}
+/* ============ UNITS & TABS ============ */
+function renderUnits(){
+  const counts={};V.forEach(v=>counts[v.u]=(counts[v.u]||0)+1);
+  $("#units").innerHTML=`<button class="chip" data-u="all" aria-pressed="${unit==="all"}">Tất cả<span class="n">${V.length}</span></button>`+
+    Object.keys(UNITS).map(k=>`<button class="chip" data-u="${k}" aria-pressed="${unit===+k}" title="${UNITS[k]}">Unit ${k} · ${UNITS[k]}<span class="n">${counts[k]}</span></button>`).join("");
+}
+$("#units").onclick=e=>{const b=e.target.closest("[data-u]");if(!b)return;unit=b.dataset.u==="all"?"all":+b.dataset.u;store.set("unit",unit);renderUnits();updateStat();render()};
+$("#tabs").onclick=e=>{const b=e.target.closest("[data-tab]");if(!b)return;setTab(b.dataset.tab)};
+function setTab(t){tab=t;try{history.replaceState(null,"","#"+t)}catch(e){}render()}
+function render(){
+  stopAll();
+  document.querySelectorAll(".tab").forEach(b=>b.setAttribute("aria-selected",b.dataset.tab===tab));
+  ({flash:renderFlash,vocab:renderVocab,ex:renderEx,test:renderTest,listen:renderListen,imm:renderImm,video:renderVideo}[tab])();
+}
+
+/* ============ FLASHCARDS ============ */
+let deck=[],di=0,flipped=false,dir=store.get("dir","en"),onlyNew=false;
+function buildDeck(){deck=shuffle(pool().filter(v=>!onlyNew||!known.has(v.t)));di=0;flipped=false}
+function renderFlash(){
+  buildDeck();
+  $("#view").innerHTML=`
+  <div class="bar">
+    <select class="sel" id="fcDir" aria-label="Chiều thẻ"><option value="en">Mặt trước: tiếng Anh</option><option value="vi">Mặt trước: tiếng Việt</option></select>
+    <label class="tog"><input type="checkbox" id="fcNew"> Chỉ thẻ chưa thuộc</label>
+    <label class="tog"><input type="checkbox" id="fcAuto" checked> Tự đọc khi lật</label>
+    <span class="grow"></span>
+    <button class="btn" id="fcShuf">Trộn lại</button>
+  </div>
+  <div id="fcBox"></div>
+  <p class="note" style="text-align:center;margin-top:14px">Phím tắt: <b>Space</b> lật thẻ · <b>←</b> chưa nhớ · <b>→</b> nhớ rồi · <b>S</b> nghe</p>`;
+  $("#fcDir").value=dir;$("#fcNew").checked=onlyNew;
+  $("#fcDir").onchange=e=>{dir=e.target.value;store.set("dir",dir);flipped=false;drawCard()};
+  $("#fcNew").onchange=e=>{onlyNew=e.target.checked;buildDeck();drawCard()};
+  $("#fcShuf").onclick=()=>{buildDeck();drawCard()};
+  drawCard();
+}
+function drawCard(){
+  const box=$("#fcBox");if(!box)return;
+  if(!deck.length){box.innerHTML=`<div class="panel result"><div class="big">✓</div><p>Bạn đã thuộc hết các thẻ trong phần này.</p><p class="note" style="margin-top:6px">Bỏ chọn “Chỉ thẻ chưa thuộc” để ôn lại toàn bộ.</p></div>`;return}
+  if(di>=deck.length){box.innerHTML=`<div class="panel result"><div class="big">${deck.filter(v=>known.has(v.t)).length}/${deck.length}</div><p>Hết một lượt. Số thẻ đã thuộc trong lượt này.</p><div class="fcnav"><button class="btn primary" id="again">Ôn lượt mới</button></div></div>`;$("#again").onclick=()=>{buildDeck();drawCard()};return}
+  const v=deck[di],k=known.has(v.t);
+  const en=`<div class="row"><span class="tag">Unit ${v.u}</span>${k?'<span class="tag k">đã thuộc</span>':""}</div>
+    <div class="row"><div class="term">${esc(v.t)}</div>${sayBtn(v.t)}</div>${v.ipa?`<div class="ipa">${esc(v.ipa)}</div>`:""}`;
+  const vi=`<div class="row"><span class="tag">Unit ${v.u}</span></div><div class="vi" style="font-size:26px">${esc(v.vi)}</div><div class="def">${esc(v.en)}</div>`;
+  const full=`<div class="row"><div class="term" style="font-size:28px">${esc(v.t)}</div>${sayBtn(v.t)}${v.ipa?`<span class="ipa">${esc(v.ipa)}</span>`:""}</div>
+    <div class="vi">${esc(v.vi)}</div><div class="def">${esc(v.en)}</div>
+    <div class="ex row" style="flex-wrap:nowrap;align-items:flex-start"><span>${exMark(v.ex)}</span>${sayBtn(exPlain(v.ex),"câu ví dụ")}</div>`;
+  box.innerHTML=`<div class="stage"><div class="card ${flipped?"flip":""}" id="card" role="button" tabindex="0" aria-label="Lật thẻ">
+      <div class="face front">${dir==="en"?en:vi}<div class="hint">Chạm để lật</div></div>
+      <div class="face back">${full}</div></div></div>
+    <div class="progress"><i style="width:${(di/deck.length*100).toFixed(1)}%"></i></div>
+    <div class="count">${di+1} / ${deck.length}</div>
+    <div class="fcnav">
+      <button class="btn" id="prev">← Trước</button>
+      <button class="btn bad" id="no">Chưa nhớ</button>
+      <button class="btn good" id="yes">Nhớ rồi</button>
+      <button class="btn" id="next">Sau →</button>
+    </div>`;
+  $("#card").onclick=flip;
+  $("#card").onkeydown=e=>{if(e.key==="Enter"){e.preventDefault();flip()}};
+  $("#prev").onclick=()=>{if(di>0){di--;flipped=false;drawCard()}};
+  $("#next").onclick=()=>{di++;flipped=false;drawCard()};
+  $("#no").onclick=miss;$("#yes").onclick=hit;
+}
+function flip(){flipped=!flipped;$("#card").classList.toggle("flip",flipped);const v=deck[di];if($("#fcAuto")&&$("#fcAuto").checked){stopAll();const id=runId;(async()=>{if(flipped){await speak(v.t);if(id===runId)await speak(exPlain(v.ex))}else if(dir==="en")await speak(v.t)})()}}
+function miss(){const v=deck[di];known.delete(v.t);saveKnown();deck.splice(Math.min(di+4,deck.length),0,v);di++;flipped=false;drawCard()}
+function hit(){known.add(deck[di].t);saveKnown();di++;flipped=false;drawCard()}
+document.addEventListener("keydown",e=>{
+  if(tab!=="flash"||/INPUT|SELECT|TEXTAREA/.test(e.target.tagName)||!$("#card"))return;
+  if(e.key===" "){e.preventDefault();flip()}else if(e.key==="ArrowRight")hit();else if(e.key==="ArrowLeft")miss();else if(e.key.toLowerCase()==="s")sayNow(deck[di].t);
+});
+
+/* ============ VOCAB LIST ============ */
+function renderVocab(){
+  $("#view").innerHTML=`<div class="bar"><input class="search" id="q" type="search" placeholder="Tìm từ tiếng Anh hoặc tiếng Việt…" aria-label="Tìm từ"><span class="note" id="qn"></span></div><div id="list"></div>`;
+  const draw=()=>{
+    const q=$("#q").value.trim().toLowerCase();
+    const items=pool().filter(v=>!q||(v.t+" "+v.vi+" "+v.en).toLowerCase().includes(q));
+    $("#qn").textContent=items.length+" mục";
+    let html="",cur=0;
+    items.forEach(v=>{
+      if(v.u!==cur){cur=v.u;html+=`<div class="unithead"><span>UNIT ${v.u}</span>${UNITS[v.u]}</div>${vidLinks(v.u,2)}`}
+      html+=`<div class="entry">${sayBtn(v.t)}
+        <div><div class="t">${esc(v.t)}</div>${v.ipa?`<div class="i">${esc(v.ipa)}</div>`:""}<div class="v">${esc(v.vi)}</div></div>
+        <div class="col2"><div class="d">${esc(v.en)}</div><div class="e">${exMark(v.ex)} <button class="say" style="width:24px;height:24px;vertical-align:middle" data-say="${esc(exPlain(v.ex))}" aria-label="Nghe câu ví dụ">${SPK}</button></div></div>
+        <input class="chk" type="checkbox" id="k-${esc(v.t).replace(/\W/g,"_")}" data-k="${esc(v.t)}" ${known.has(v.t)?"checked":""} title="Đánh dấu đã thuộc" aria-label="Đã thuộc ${esc(v.t)}">
+      </div>`;
+    });
+    $("#list").innerHTML=`<div class="ledger">${html||'<p class="muted" style="padding:16px 0">Không tìm thấy từ nào.</p>'}</div>`;
+  };
+  $("#q").oninput=draw;
+  $("#view").onchange=e=>{const c=e.target.closest("[data-k]");if(c){c.checked?known.add(c.dataset.k):known.delete(c.dataset.k);saveKnown()}};
+  draw();
+}
+
+/* ============ EXERCISES ============ */
+let exMode="gap";
+function renderEx(){
+  $("#view").onchange=null;
+  $("#view").innerHTML=`<div class="bar"><div class="subtabs" id="exTabs">
+    <button class="chip" data-m="gap">Điền từ vào câu</button>
+    <button class="chip" data-m="match">Nối từ – định nghĩa</button>
+    <button class="chip" data-m="tf">Đúng / Sai</button>
+    <button class="chip" data-m="bra">Anh-Anh ↔ Anh-Mỹ</button></div></div><div id="exBox" class="panel"></div>`;
+  $("#exTabs").onclick=e=>{const b=e.target.closest("[data-m]");if(b){exMode=b.dataset.m;paintEx()}};
+  paintEx();
+}
+function paintEx(){
+  document.querySelectorAll("#exTabs .chip").forEach(b=>b.setAttribute("aria-pressed",b.dataset.m===exMode));
+  ({gap:exGap,match:exMatch,tf:exTF,bra:exBra}[exMode])();
+}
+function quizRunner(qs,drawQ,label){
+  let i=0,score=0;
+  const box=$("#exBox");
+  const step=()=>{
+    if(i>=qs.length){box.innerHTML=`<div class="result"><div class="eyebrow">${label}</div><div class="big">${score}/${qs.length}</div><p>${score===qs.length?"Xuất sắc! Không sai câu nào.":score>=qs.length*.7?"Tốt lắm. Ôn lại vài từ còn sai nhé.":"Cần ôn thêm. Hãy xem lại flashcard rồi làm lại."}</p><div class="fcnav"><button class="btn primary" id="redo">Làm lượt mới</button></div></div>`;$("#redo").onclick=paintEx;return}
+    drawQ(qs[i],i,qs.length,ok=>{if(ok)score++;},()=>{i++;step()},()=>score);
+  };
+  step();
+}
+function optsHTML(opts){return `<div class="opts">${opts.map((o,j)=>`<button class="opt" data-j="${j}">${esc(o)}</button>`).join("")}</div>`}
+function head(i,n,label,score){return `<div class="bar" style="margin-top:0"><span class="eyebrow">${label}</span><span class="grow"></span><span class="score">Câu ${i+1}/${n} · Điểm ${score}</span></div>`}
+function bindOpts(correctIdx,onAnswer,after){
+  const bs=[...document.querySelectorAll("#exBox .opt")];
+  bs.forEach(b=>b.onclick=()=>{
+    const j=+b.dataset.j,ok=j===correctIdx;
+    bs.forEach(x=>x.disabled=true);bs[correctIdx].classList.add("ok");if(!ok)b.classList.add("no");
+    onAnswer(ok);after(ok);
+  });
+}
+function exGap(){
+  const p=pool().filter(v=>exAns(v.ex));if(p.length<2){$("#exBox").innerHTML='<p class="muted">Cần ít nhất 2 từ có câu ví dụ đánh dấu [ ] để làm bài này.</p>';return}const qs=shuffle(p).slice(0,Math.min(10,p.length));
+  quizRunner(qs,(v,i,n,mark,next,sc)=>{
+    const same=p.length>=4?p:V.filter(v=>exAns(v.ex));
+    const others=shuffle(same.filter(o=>exAns(o.ex).toLowerCase()!==exAns(v.ex).toLowerCase())).slice(0,3).map(o=>exAns(o.ex));
+    const ans=exAns(v.ex);const opts=shuffle([ans,...others]);
+    const box=$("#exBox");
+    box.innerHTML=head(i,n,"Điền từ vào câu",sc())+`<p class="q">${esc(v.ex).replace(/\[(.+?)\]/,'<span class="blank">?</span>')}</p>`+optsHTML(opts)+`<div id="fbx"></div>`;
+    bindOpts(opts.indexOf(ans),mark,ok=>{
+      $("#fbx").innerHTML=`<div class="fb ${ok?"ok":"no"}">${sayBtn(exPlain(v.ex),"câu")}<div><b>${ok?"Chính xác.":"Chưa đúng."}</b> ${exMark(v.ex)}<br><span class="muted">${esc(v.t)} = ${esc(v.vi)}</span></div></div><div class="fcnav"><button class="btn primary" id="nx">Câu tiếp →</button></div>`;
+      $("#nx").onclick=next;$("#nx").focus();speak(exPlain(v.ex));
+    });
+  },"Điền từ vào câu");
+}
+function exMatch(){
+  const p=pool();if(p.length<2){$("#exBox").innerHTML='<p class="muted">Cần ít nhất 2 từ để làm bài nối.</p>';return}const set=shuffle(p).slice(0,6);
+  const L=shuffle(set),R=shuffle(set);let sel=null,done=0,miss=0;
+  const box=$("#exBox");
+  box.innerHTML=`<div class="bar" style="margin-top:0"><span class="eyebrow">Nối từ với định nghĩa đúng</span><span class="grow"></span><span class="score" id="ms">0/${set.length} · sai 0</span></div>
+   <div class="match"><div class="col">${L.map(v=>`<button class="mi t" data-t="${esc(v.t)}">${esc(v.t)}</button>`).join("")}</div>
+   <div class="col">${R.map(v=>`<button class="mi" data-d="${esc(v.t)}">${esc(v.en)}</button>`).join("")}</div></div><div id="mend"></div>`;
+  box.querySelectorAll("[data-t]").forEach(b=>b.onclick=()=>{if(b.classList.contains("done"))return;box.querySelectorAll("[data-t]").forEach(x=>x.classList.remove("sel"));b.classList.add("sel");sel=b;sayNow(b.dataset.t)});
+  box.querySelectorAll("[data-d]").forEach(b=>b.onclick=()=>{
+    if(!sel||b.classList.contains("done"))return;
+    if(b.dataset.d===sel.dataset.t){b.classList.add("done");sel.classList.add("done");sel.classList.remove("sel");b.disabled=sel.disabled=true;sel=null;done++}
+    else{miss++;b.classList.add("shake");setTimeout(()=>b.classList.remove("shake"),500)}
+    $("#ms").textContent=`${done}/${set.length} · sai ${miss}`;
+    if(done===set.length){$("#mend").innerHTML=`<div class="fcnav"><button class="btn primary" id="mnew">Bộ từ mới →</button></div>`;$("#mnew").onclick=exMatch}
+  });
+}
+function exTF(){
+  const list=unit==="all"?TF:TF.filter(x=>x.u===unit);
+  if(!list.length){$("#exBox").innerHTML='<p class="muted">Chưa có câu Đúng/Sai cho phần này. Thêm vào mục [TRUE-FALSE] trong file txt.</p>';return}const qs=shuffle(list).slice(0,10);
+  quizRunner(qs,(q,i,n,mark,next,sc)=>{
+    $("#exBox").innerHTML=head(i,n,`Đúng hay sai? · Unit ${q.u}`,sc())+`<p class="q">${esc(q.s)} ${sayBtn(q.s,"câu")}</p>`+optsHTML(["True (Đúng)","False (Sai)"])+`<div id="fbx"></div>`;
+    bindOpts(q.a?0:1,mark,ok=>{
+      $("#fbx").innerHTML=`<div class="fb ${ok?"ok":"no"}"><div><b>${ok?"Chính xác.":"Chưa đúng."}</b> ${esc(q.why||(q.a?"Câu này đúng.":"Câu này sai."))}</div></div><div class="fcnav"><button class="btn primary" id="nx">Câu tiếp →</button></div>`;
+      $("#nx").onclick=next;$("#nx").focus();
+    });
+  },"Đúng / Sai");
+}
+function exBra(){
+  if(BRAME.length<2){$("#exBox").innerHTML='<p class="muted">Cần ít nhất 2 cặp từ trong mục [BRE-AME].</p>';return}const qs=shuffle(BRAME).slice(0,8);
+  quizRunner(qs,(q,i,n,mark,next,sc)=>{
+    const opts=shuffle([q[1],...shuffle(BRAME.filter(x=>x!==q)).slice(0,3).map(x=>x[1])]);
+    $("#exBox").innerHTML=head(i,n,"Anh-Anh (BrE) → Anh-Mỹ (AmE)",sc())+`<p class="q">Người Mỹ nói gì thay cho <b>${esc(q[0])}</b>? ${sayBtn(q[0])}</p>`+optsHTML(opts)+`<div id="fbx"></div>`;
+    bindOpts(opts.indexOf(q[1]),mark,ok=>{
+      $("#fbx").innerHTML=`<div class="fb ${ok?"ok":"no"}">${sayBtn(q[1])}<div><b>BrE:</b> ${esc(q[0])} &nbsp;→&nbsp; <b>AmE:</b> ${esc(q[1])}</div></div><div class="fcnav"><button class="btn primary" id="nx">Câu tiếp →</button></div>`;
+      $("#nx").onclick=next;$("#nx").focus();speak(q[1]);
+    });
+  },"Anh-Anh ↔ Anh-Mỹ");
+}
+
+/* ============ TEST: DỊCH ANH ↔ VIỆT ============ */
+const TMODES={ev:"Anh → Việt (chọn nghĩa)",ve:"Việt → Anh (chọn từ)",vt:"Việt → Anh (gõ từ)",mix:"Trộn cả 3 dạng"};
+let tCfg=store.get("tcfg",{mode:"ev",n:20});
+const normEn=s=>s.toLowerCase().replace(/[’`]/g,"'").replace(/[-–]/g," ").replace(/[^a-z0-9' ]/g,"").replace(/\s+/g," ").trim();
+function renderTest(){
+  $("#view").onchange=null;
+  const hist=store.get("thist",[]);
+  $("#view").innerHTML=`
+  <div class="panel" style="margin-top:18px" id="tBox">
+    <div class="eyebrow">Kiểm tra dịch nghĩa</div>
+    <h2 style="margin-top:4px">Anh ↔ Việt</h2>
+    <p class="muted" style="margin-block:6px 14px;max-width:62ch">Bài kiểm tra lấy từ trong phạm vi unit bạn đang chọn ở trên (${unit==="all"?"tất cả unit":"Unit "+unit+" · "+esc(UNITS[unit])}, ${pool().length} từ). Làm xong sẽ có bảng các từ sai và video gợi ý để ôn.</p>
+    <div class="bar" style="margin-top:0">
+      <label class="note" for="tMode">Dạng bài</label>
+      <select class="sel" id="tMode">${Object.entries(TMODES).map(([k,v])=>`<option value="${k}">${v}</option>`).join("")}</select>
+      <label class="note" for="tN">Số câu</label>
+      <select class="sel" id="tN"><option value="10">10</option><option value="20">20</option><option value="30">30</option><option value="0">Tất cả</option></select>
+      <span class="grow"></span>
+      <button class="btn primary" id="tStart">Bắt đầu kiểm tra</button>
+    </div>
+    ${hist.length?`<div class="note" style="margin-top:6px">Kết quả gần đây</div><div class="hist">${hist.slice(-6).reverse().map(h=>`<span class="tag" title="${esc(h.d)}">${h.s}/${h.n} · ${esc(h.m)} · ${esc(h.r)}</span>`).join("")}</div>`:""}
+  </div>`;
+  $("#tMode").value=tCfg.mode;$("#tN").value=String(tCfg.n);
+  $("#tStart").onclick=()=>{tCfg={mode:$("#tMode").value,n:+$("#tN").value};store.set("tcfg",tCfg);runTest()};
+}
+function runTest(retryList){
+  const p=pool().filter(v=>v.vi);
+  if(p.length<4){$("#tBox").innerHTML='<p class="muted">Cần ít nhất 4 từ có nghĩa tiếng Việt để làm bài kiểm tra. Hãy chọn “Tất cả” hoặc unit khác.</p>';return}
+  const items=retryList||shuffle(p).slice(0,tCfg.n?Math.min(tCfg.n,p.length):p.length);
+  const qs=items.map(v=>({v,m:tCfg.mode==="mix"?["ev","ve","vt"][Math.random()*3|0]:tCfg.mode}));
+  let i=0,score=0;const wrong=[];
+  const box=$("#tBox");
+  const distract=(v,key)=>{const seen=new Set([v[key].toLowerCase()]);const out=[];
+    for(const o of shuffle(p.filter(o=>o.u===v.u)).concat(shuffle(p))){const k=o[key].toLowerCase();if(!seen.has(k)){seen.add(k);out.push(o[key])}if(out.length===3)break}return out};
+  const finish=()=>{
+    const pct=Math.round(score/qs.length*100);
+    const grade=pct>=90?"Xuất sắc":pct>=75?"Khá tốt":pct>=50?"Đạt, cần ôn thêm":"Cần học lại";
+    const h=store.get("thist",[]);h.push({s:score,n:qs.length,m:TMODES[tCfg.mode].split(" (")[0],r:unit==="all"?"Tất cả":"U"+unit,d:new Date().toLocaleString("vi-VN")});store.set("thist",h.slice(-20));
+    const wu=[...new Set(wrong.map(w=>w.v.u))].sort((a,b)=>a-b);
+    box.innerHTML=`<div class="result" style="padding-top:4px"><div class="eyebrow">Kết quả kiểm tra</div><div class="big">${score}/${qs.length}</div><div class="grade">${pct}% · ${grade}</div></div>
+      ${wrong.length?`<h3 style="margin-block:10px 8px">Các câu sai (${wrong.length})</h3>
+      <div style="overflow-x:auto"><table class="wrong"><thead><tr><th></th><th>Từ</th><th>Nghĩa</th><th>Bạn trả lời</th></tr></thead><tbody>
+      ${wrong.map(w=>`<tr><td>${sayBtn(w.v.t)}</td><td><b>${esc(w.v.t)}</b><br><span class="note">Unit ${w.v.u}</span></td><td>${esc(w.v.vi)}<br><span class="note">${esc(w.v.en)}</span></td><td class="x">${esc(w.a||"(bỏ trống)")}</td></tr>`).join("")}
+      </tbody></table></div>
+      <h3 style="margin-block:18px 4px">Video nên xem để ôn</h3>${wu.map(u=>`<div class="note" style="margin-top:8px">Unit ${u} · ${esc(UNITS[u]||"")}</div>${vidLinks(u,3)}`).join("")}`
+      :`<p style="text-align:center">Không sai câu nào. Thử dạng “Việt → Anh (gõ từ)” để luyện khó hơn.</p>`}
+      <div class="fcnav" style="margin-top:18px">
+        ${wrong.length?`<button class="btn primary" id="tRetry">Làm lại ${wrong.length} câu sai</button><button class="btn" id="tFlash">Đưa từ sai vào flashcard</button>`:""}
+        <button class="btn" id="tNew">Bài kiểm tra mới</button>
+      </div><div id="tMsg" class="note" style="text-align:center;margin-top:8px" role="status"></div>`;
+    $("#tNew").onclick=renderTest;
+    if(wrong.length){
+      $("#tRetry").onclick=()=>runTest(shuffle(wrong.map(w=>w.v)));
+      $("#tFlash").onclick=()=>{wrong.forEach(w=>known.delete(w.v.t));saveKnown();$("#tMsg").textContent=`Đã bỏ đánh dấu “đã thuộc” cho ${wrong.length} từ. Vào tab Flashcard, chọn “Chỉ thẻ chưa thuộc” để ôn.`};
+    }
+  };
+  const step=()=>{
+    if(i>=qs.length)return finish();
+    const {v,m}=qs[i];
+    const top=`<div class="bar" style="margin-top:0"><span class="eyebrow">${TMODES[m]}</span><span class="grow"></span><span class="score">Câu ${i+1}/${qs.length} · Đúng ${score}</span></div>
+      <div class="progress" style="margin:0 0 18px;max-width:none"><i style="width:${(i/qs.length*100).toFixed(1)}%"></i></div>`;
+    const reveal=(ok,ans)=>{
+      if(ok)score++;else wrong.push({v,a:ans});
+      $("#fbx").innerHTML=`<div class="fb ${ok?"ok":"no"}">${sayBtn(v.t)}<div><b>${ok?"Chính xác.":"Chưa đúng."}</b> <b>${esc(v.t)}</b>${v.ipa?` <span class="note">${esc(v.ipa)}</span>`:""} = ${esc(v.vi)}<br><span class="note">${esc(v.en)}</span>${v.ex?`<br><i>${exMark(v.ex)}</i>`:""}</div></div>
+        <div class="fcnav"><button class="btn primary" id="nx">${i+1<qs.length?"Câu tiếp →":"Xem kết quả"}</button></div>`;
+      $("#nx").onclick=()=>{i++;step()};setTimeout(()=>{const n=$("#nx");if(n)n.focus()},250);
+    };
+    if(m==="ev"){
+      const opts=shuffle([v.vi,...distract(v,"vi")]);
+      box.innerHTML=top+`<p class="muted" style="margin-bottom:4px">Từ này nghĩa là gì?</p><div class="row" style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><span class="tq-term">${esc(v.t)}</span>${sayBtn(v.t)}${v.ipa?`<span class="ipa note" style="font-family:var(--mono)">${esc(v.ipa)}</span>`:""}</div><div style="height:16px"></div>`+optsHTML(opts)+`<div id="fbx"></div>`;
+      sayNow(v.t);
+      const bs=[...box.querySelectorAll(".opt")],ci=opts.indexOf(v.vi);
+      bs.forEach(b=>b.onclick=()=>{bs.forEach(x=>x.disabled=true);bs[ci].classList.add("ok");const ok=+b.dataset.j===ci;if(!ok)b.classList.add("no");reveal(ok,opts[+b.dataset.j])});
+    }else if(m==="ve"){
+      const opts=shuffle([v.t,...distract(v,"t")]);
+      box.innerHTML=top+`<p class="muted" style="margin-bottom:4px">Chọn từ tiếng Anh đúng nghĩa:</p><div class="tq-vi">${esc(v.vi)}</div><div style="height:16px"></div>`+optsHTML(opts)+`<div id="fbx"></div>`;
+      const bs=[...box.querySelectorAll(".opt")],ci=opts.indexOf(v.t);
+      bs.forEach(b=>b.onclick=()=>{bs.forEach(x=>x.disabled=true);bs[ci].classList.add("ok");const ok=+b.dataset.j===ci;if(!ok)b.classList.add("no");reveal(ok,opts[+b.dataset.j]);speak(v.t)});
+    }else{
+      const first=v.t.charAt(0),len=v.t.replace(/\s/g,"").length;
+      box.innerHTML=top+`<p class="muted" style="margin-bottom:4px">Gõ từ tiếng Anh có nghĩa:</p><div class="tq-vi">${esc(v.vi)}</div><p class="note" style="margin-block:4px 14px">Gợi ý: bắt đầu bằng “${esc(first)}”, ${len} chữ cái${v.t.includes(" ")?`, ${v.t.split(" ").length} từ`:""} · ${esc(v.en)}</p>
+        <input class="tq-in" id="tIn" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Nhập từ tiếng Anh…" aria-label="Từ tiếng Anh">
+        <div class="bar"><button class="btn primary" id="tChk">Kiểm tra</button><button class="btn" id="tSkip">Không biết</button></div><div id="fbx"></div>`;
+      const inp=$("#tIn");inp.focus();
+      const go=skip=>{const a=skip?"":inp.value;inp.disabled=true;$("#tChk").disabled=$("#tSkip").disabled=true;
+        const ok=!skip&&normEn(a)===normEn(v.t);reveal(ok,a);speak(v.t)};
+      $("#tChk").onclick=()=>{if(inp.value.trim())go(false)};
+      $("#tSkip").onclick=()=>go(true);
+      inp.onkeydown=e=>{if(e.key==="Enter"&&inp.value.trim()&&!inp.disabled)go(false)};
+    }
+  };
+  step();
+}
+
+/* ============ LISTENING ============ */
+function renderListen(){
+  $("#view").onchange=null;
+  const ps=unit==="all"?PASS:PASS.filter(p=>p.u===unit);
+  const vocabRe=new RegExp("\\b("+V.map(v=>v.t).sort((a,b)=>b.length-a.length).map(t=>t.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")).join("|")+")\\b","gi");
+  $("#view").innerHTML=`
+  <div class="panel dict" style="margin-top:18px">
+    <div class="eyebrow">Nghe & chép chính tả</div>
+    <h2 style="margin-top:4px">Dictation</h2>
+    <p class="muted" style="margin-block:4px 12px">Nghe một câu ví dụ, gõ lại những gì bạn nghe được, rồi bấm Kiểm tra.</p>
+    <div class="bar" style="margin-top:0"><button class="btn primary" id="dPlay">${SPK} Nghe câu</button><button class="btn" id="dSlow">Nghe chậm</button><button class="btn" id="dNew">Câu khác</button><span class="grow"></span><span class="note" id="dUnit"></span></div>
+    <input id="dIn" type="text" autocomplete="off" spellcheck="false" placeholder="Gõ câu bạn nghe được…" aria-label="Câu bạn nghe được">
+    <div class="bar"><button class="btn" id="dCheck">Kiểm tra</button><button class="btn" id="dShow">Xem đáp án</button></div>
+    <div id="dRes"></div>
+  </div>
+  <h2 style="margin-block:28px 4px">Bài nghe theo unit</h2>
+  <p class="muted" style="margin-bottom:14px">Mỗi bài là một đoạn văn mới dùng lại từ vựng trong unit. Nghe trước khi đọc transcript, rồi trả lời câu hỏi.</p>
+  ${ps.length?"":'<p class="muted">Chưa có bài nghe cho phần này. Thêm mục [PASSAGE] trong file txt.</p>'}<div class="passages">${ps.map((p,k)=>`
+    <section class="panel pas" data-k="${PASS.indexOf(p)}">
+      <h3><span class="eyebrow">Unit ${p.u}</span>${esc(p.title)}</h3>
+      <div class="ctrl"><button class="btn primary" data-act="play"><span class="eq"><i></i><i></i><i></i><i></i></span> Phát</button><button class="btn" data-act="stop">Dừng</button><button class="btn" data-act="tr">Hiện transcript</button></div>
+      <div class="trans" hidden>${sentences(p.text).map((s,i)=>`<span data-s="${i}">${esc(s).replace(vocabRe,"<b>$1</b>")}</span>`).join("")}</div>
+      <details class="rel"><summary>Video liên quan tới bài này</summary>${vidLinks(p.u,4)}</details>
+      <div class="lq">${p.qs.map((q,qi)=>`<div data-q="${qi}"><div class="qq">${qi+1}. ${esc(q[0])}</div><div class="opts">${q[1].map((o,j)=>`<button class="opt" data-j="${j}">${esc(o)}</button>`).join("")}</div></div>`).join("")}</div>
+    </section>`).join("")}</div>`;
+  // passages
+  document.querySelectorAll(".pas").forEach(sec=>{
+    const p=PASS[+sec.dataset.k],tr=sec.querySelector(".trans");
+    sec.querySelector('[data-act="tr"]').onclick=e=>{tr.hidden=!tr.hidden;e.currentTarget.textContent=tr.hidden?"Hiện transcript":"Ẩn transcript"};
+    sec.querySelector('[data-act="stop"]').onclick=stopAll;
+    sec.querySelector('[data-act="play"]').onclick=async()=>{
+      stopAll();const id=runId;sec.classList.add("running");
+      const ss=sentences(p.text);
+      for(let i=0;i<ss.length&&id===runId;i++){
+        tr.querySelectorAll("span").forEach(x=>x.classList.toggle("on",+x.dataset.s===i));
+        await speak(ss[i]);
+      }
+      tr.querySelectorAll("span").forEach(x=>x.classList.remove("on"));
+      if(id===runId)sec.classList.remove("running");
+    };
+    sec.querySelectorAll("[data-q]").forEach(qd=>{
+      const q=p.qs[+qd.dataset.q],bs=[...qd.querySelectorAll(".opt")];
+      bs.forEach(b=>b.onclick=()=>{bs.forEach(x=>x.disabled=true);bs[q[2]].classList.add("ok");if(+b.dataset.j!==q[2])b.classList.add("no")});
+    });
+  });
+  // dictation
+  let cur=null;
+  const pick=()=>{const p=pool().filter(v=>v.ex);if(!p.length){cur={u:0,t:"",vi:"",ex:"No example sentence."};return}cur=p[Math.random()*p.length|0];$("#dIn").value="";$("#dRes").innerHTML="";$("#dUnit").textContent="Unit "+cur.u};
+  pick();
+  $("#dPlay").onclick=()=>sayNow(exPlain(cur.ex));
+  $("#dSlow").onclick=()=>{stopAll();speak(exPlain(cur.ex),.7)};
+  $("#dNew").onclick=()=>{pick();sayNow(exPlain(cur.ex))};
+  $("#dShow").onclick=()=>{$("#dRes").innerHTML=`<div class="fb ok"><div>${exMark(cur.ex)}<br><span class="muted">${esc(cur.t)} = ${esc(cur.vi)}</span></div></div>`};
+  const check=()=>{
+    const norm=s=>s.toLowerCase().replace(/[’']/g,"'").replace(/[^a-z0-9' -]/g," ").split(/\s+/).filter(Boolean);
+    const tgtRaw=exPlain(cur.ex).split(/\s+/),tgt=tgtRaw.map(w=>norm(w).join("")),got=norm($("#dIn").value);
+    const n=tgt.length,m=got.length,dp=Array.from({length:n+1},()=>Array(m+1).fill(0));
+    for(let i=n-1;i>=0;i--)for(let j=m-1;j>=0;j--)dp[i][j]=tgt[i]===got[j]?dp[i+1][j+1]+1:Math.max(dp[i+1][j],dp[i][j+1]);
+    const hit=new Set();let i=0,j=0;while(i<n&&j<m){if(tgt[i]===got[j]){hit.add(i);i++;j++}else if(dp[i+1][j]>=dp[i][j+1])i++;else j++}
+    const pct=Math.round(hit.size/n*100);
+    $("#dRes").innerHTML=`<div class="diff">${tgtRaw.map((w,k)=>`<span class="${hit.has(k)?"m":"x"}">${esc(w)}</span>`).join(" ")}</div><p class="score" style="margin-top:6px">Đúng ${hit.size}/${n} từ · ${pct}%${pct===100?" · Hoàn hảo!":""}</p>`;
+  };
+  $("#dCheck").onclick=check;
+  $("#dIn").onkeydown=e=>{if(e.key==="Enter")check()};
+}
+
+/* ============ IMMERSION ============ */
+function renderImm(){
+  $("#view").onchange=null;
+  $("#view").innerHTML=`
+  <p class="muted" style="margin-top:18px;max-width:70ch">Bật lên rồi để đó như một podcast: máy đọc liên tục từng từ, định nghĩa tiếng Anh và câu ví dụ, hoặc đọc nối tiếp các bài nghe. Nhìn màn hình khi rảnh, nghe khi đang làm việc khác.</p>
+  <div class="bar">
+    <select class="sel" id="imMode" aria-label="Nội dung phát"><option value="words">Từ vựng + định nghĩa + ví dụ</option><option value="pass">Các bài nghe nối tiếp</option></select>
+    <select class="sel" id="imGap" aria-label="Khoảng nghỉ"><option value="600">Nghỉ ngắn</option><option value="1400" selected>Nghỉ vừa</option><option value="2600">Nghỉ dài (để nhắc lại)</option></select>
+    <label class="tog"><input type="checkbox" id="imRep" checked> Đọc từ 2 lần</label>
+    <label class="tog"><input type="checkbox" id="imVi" checked> Hiện nghĩa tiếng Việt</label>
+  </div>
+  <div class="imm" id="imm">
+    <div class="eyebrow" id="imMeta">Sẵn sàng · ${pool().length} từ trong phạm vi đang chọn</div>
+    <div class="term" data-part="t">Press play</div>
+    <div class="vi" data-part="v">Bấm Bắt đầu để nghe liên tục</div>
+    <div class="def" data-part="d"></div>
+    <div class="ex" data-part="e"></div>
+  </div>
+  <div class="fcnav"><button class="btn primary" id="imGo"><span class="eq"><i></i><i></i><i></i><i></i></span> Bắt đầu</button><button class="btn" id="imStop">Dừng</button></div>`;
+  const box=$("#imm");
+  const lit=p=>box.querySelectorAll("[data-part]").forEach(x=>x.classList.toggle("lit",x.dataset.part===p));
+  const set=(p,h)=>box.querySelector(`[data-part="${p}"]`).innerHTML=h;
+  $("#imStop").onclick=()=>{stopAll();lit(null);$("#imMeta").textContent="Đã dừng"};
+  $("#imGo").onclick=async()=>{
+    stopAll();const id=runId;box.classList.add("running");$("#imGo").classList.add("running");
+    const gap=()=>wait(+$("#imGap").value);
+    if($("#imMode").value==="words"){if(!pool().length){stopAll();return}
+      let n=0;
+      while(id===runId){
+        for(const v of shuffle(pool())){
+          if(id!==runId)return;
+          n++;$("#imMeta").textContent=`Unit ${v.u} · ${UNITS[v.u]} · từ thứ ${n}`;
+          set("t",esc(v.t));set("v",$("#imVi").checked?esc(v.vi):"");set("d",esc(v.en));set("e",exMark(v.ex));
+          lit("t");await speak(v.t,.9);if(id!==runId)return;
+          if($("#imRep").checked){await wait(500);await speak(v.t,.8)}if(id!==runId)return;
+          await gap();lit("d");await speak(v.en);if(id!==runId)return;
+          await gap();lit("e");await speak(exPlain(v.ex));if(id!==runId)return;
+          await gap();
+        }
+      }
+    }else{
+      const plist=unit==="all"?PASS:PASS.filter(x=>x.u===unit);if(!plist.length){stopAll();$("#imMeta").textContent="Chưa có bài nghe cho phần này";return}
+      while(id===runId){
+        for(const p of plist){
+          if(id!==runId)return;
+          $("#imMeta").textContent=`Unit ${p.u} · bài nghe`;set("t",esc(p.title));set("v","");set("d","");set("e","");lit("t");
+          await speak(p.title);await gap();
+          for(const s of sentences(p.text)){if(id!==runId)return;set("e",esc(s));lit("e");await speak(s)}
+          await gap();await gap();
+        }
+      }
+    }
+  };
+}
+
+/* ============ VIDEO ============ */
+function renderVideo(){
+  $("#view").onchange=null;
+  const vs=unit==="all"?VIDEOS.slice().sort((a,b)=>(a.u||99)-(b.u||99)):VIDEOS.filter(v=>v.u===unit||v.u===0);
+  const us=unit==="all"?Object.keys(UNITS).map(Number):[unit];
+  $("#view").innerHTML=`
+  <div class="tips" style="margin-top:18px">
+    <div><b>Xem lần 1</b>Bật phụ đề tiếng Anh, tốc độ 0.75×. Chỉ nắm ý chính.</div>
+    <div><b>Xem lần 2</b>Tắt phụ đề. Ghi lại các từ trong sổ này mà bạn nghe thấy.</div>
+    <div><b>Shadowing</b>Dừng sau mỗi câu và nói lại theo người nói, đúng ngữ điệu.</div>
+  </div>
+  <h2 style="margin-block:26px 12px">Video tuyển chọn</h2>
+  ${vs.length?`<div class="vgrid">${vs.map(v=>`<a class="vcard" href="${v.url}" target="_blank" rel="noopener"><span class="row" style="display:flex;gap:6px"><span class="tag">${v.u?"Unit "+v.u:"Tổng hợp"}</span>${v.lvl?`<span class="tag">${esc(v.lvl)}</span>`:""}</span><span class="vt">${esc(v.t)}</span><span class="note">${v.u?esc(UNITS[v.u]||""):"Từ vựng tài chính – kế toán"}</span><span class="go">Mở trên YouTube ↗</span></a>`).join("")}</div>`:`<p class="muted">Chưa có video chọn sẵn cho unit này. Dùng các liên kết tìm kiếm bên dưới.</p>`}
+  <h2 style="margin-block:26px 12px">Tìm thêm video theo chủ đề</h2>
+  <div class="vgrid">${us.map(u=>`<a class="vcard" href="https://www.youtube.com/results?search_query=${encodeURIComponent(VSEARCH[u]||UNITS[u]+" explained english")}" target="_blank" rel="noopener"><span class="tag" style="align-self:flex-start">Unit ${u}</span><span class="vt">${UNITS[u]}</span><span class="note">Tìm: “${esc(VSEARCH[u]||UNITS[u]+" explained english")}”</span><span class="go">Tìm trên YouTube ↗</span></a>`).join("")}</div>
+  <p class="note" style="margin-top:14px">Video mở trong thẻ mới. Nội dung do các kênh YouTube bên ngoài cung cấp.</p>`;
+}
+
+/* ============ TXT IMPORT / EXPORT ============ */
+const DEFAULT={UNITS:{...UNITS},V:V.slice(),TF:TF.slice(),BRAME:BRAME.slice(),PASS:PASS.slice(),VIDEOS:VIDEOS.slice(),VSEARCH:{...VSEARCH}};
+const escRe=s=>s.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+function parseTxt(txt){
+  const d={UNITS:{},V:[],TF:[],BRAME:[],PASS:[],VIDEOS:[],VSEARCH:{}},errs=[];
+  let sec=null,u=null,cur=null;
+  txt.replace(/^\uFEFF/,"").replace(/\r/g,"").split("\n").forEach((raw,ln)=>{
+    const line=raw.trim();
+    if(!line||line.startsWith("#"))return;
+    const hm=line.match(/^\[(.+)\]$/);
+    if(hm){
+      const parts=hm[1].split("|").map(s=>s.trim()),key=parts[0].toUpperCase();let m;
+      if((m=key.match(/^UNIT\s+(\d+)$/))){u=+m[1];d.UNITS[u]=parts[1]||("Unit "+u);if(parts[2])d.VSEARCH[u]=parts[2];sec="unit"}
+      else if(/^(TRUE|DUNG|ĐÚNG|TF)/.test(key))sec="tf";
+      else if(/^(BRE|BR)/.test(key))sec="bra";
+      else if(/^VIDEO/.test(key))sec="video";
+      else if((m=key.match(/^(PASSAGE|BAI NGHE|BÀI NGHE)\s+(\d+)$/))){cur={u:+m[2],title:parts[1]||"Listening",text:"",qs:[]};d.PASS.push(cur);sec="pass"}
+      else{sec=null;errs.push(`Dòng ${ln+1}: không hiểu tiêu đề “${line}”`)}
+      return;
+    }
+    const f=line.split("|").map(s=>s.trim());
+    if(sec==="unit"){
+      if(f.length<4||!f[0]){errs.push(`Dòng ${ln+1}: từ vựng cần ít nhất 4 cột (từ | phiên âm | nghĩa Việt | định nghĩa | ví dụ)`);return}
+      let ex=f[4]||"";
+      if(ex&&!/\[.+?\]/.test(ex)){const r=new RegExp("\\b"+escRe(f[0])+"\\w*","i");ex=ex.replace(r,x=>"["+x+"]")}
+      d.V.push({u,t:f[0],ipa:f[1]||"",vi:f[2]||"",en:f[3]||"",ex});
+    }else if(sec==="tf"){
+      if(f.length<3){errs.push(`Dòng ${ln+1}: câu đúng/sai cần dạng unit | câu | T hoặc F | giải thích`);return}
+      d.TF.push({u:+f[0]||1,s:f[1],a:/^(t|true|đ|đúng|dung|y|yes)$/i.test(f[2]),why:f[3]||""});
+    }else if(sec==="bra"){
+      if(f.length<2){errs.push(`Dòng ${ln+1}: cần dạng từ Anh-Anh | từ Anh-Mỹ`);return}
+      d.BRAME.push([f[0],f[1]]);
+    }else if(sec==="video"){
+      const ui=f.findIndex((x,i)=>i>=2&&/^https?:\/\//.test(x));
+      if(ui<0){errs.push(`Dòng ${ln+1}: video cần dạng unit | tiêu đề | link https | mức độ`);return}
+      d.VIDEOS.push({u:isNaN(parseInt(f[0]))?0:parseInt(f[0]),t:f.slice(1,ui).join(" | "),url:f[ui],lvl:f.slice(ui+1).join(" | ")});
+    }else if(sec==="pass"){
+      if(/^(Q|H)\s*:/i.test(line)){
+        const qf=line.replace(/^(Q|H)\s*:\s*/i,"").split("|").map(s=>s.trim());
+        const opts=qf.slice(1),ci=opts.findIndex(o=>o.startsWith("*"));
+        if(opts.length<2||ci<0){errs.push(`Dòng ${ln+1}: câu hỏi cần dạng Q: câu hỏi | *đáp án đúng | sai | sai`);return}
+        cur.qs.push([qf[0],opts.map(o=>o.replace(/^\*/,"").trim()),ci]);
+      }else cur.text+=(cur.text?" ":"")+line;
+    }else errs.push(`Dòng ${ln+1}: nằm ngoài mục nào (thiếu tiêu đề [UNIT n | tên])`);
+  });
+  return {d,errs};
+}
+function applyData(d,mode){
+  if(mode==="replace"){UNITS=d.UNITS;V=d.V;TF=d.TF;BRAME=d.BRAME;PASS=d.PASS;VIDEOS=d.VIDEOS;VSEARCH={...d.VSEARCH};}
+  else{
+    Object.assign(UNITS,d.UNITS);Object.assign(VSEARCH,d.VSEARCH);
+    const key=v=>v.u+"|"+v.t.toLowerCase();const map=new Map(V.map(v=>[key(v),v]));
+    d.V.forEach(v=>map.set(key(v),v));V=[...map.values()];
+    TF=TF.concat(d.TF);BRAME=BRAME.concat(d.BRAME.filter(n=>!BRAME.some(o=>o[0]===n[0])));
+    PASS=PASS.concat(d.PASS);VIDEOS=VIDEOS.concat(d.VIDEOS.filter(n=>!VIDEOS.some(o=>o.url===n.url)));
+  }
+  V.sort((a,b)=>a.u-b.u);
+}
+function toTxt(){
+  const L=[];
+  L.push("# ================================================================");
+  L.push("# MOVERS ENGLISH NOTEBOOK · dữ liệu học");
+  L.push("# Trình độ: Cambridge A1 Movers");
+  L.push("# ----------------------------------------------------------------");
+  L.push("# CÁCH VIẾT (mỗi cột cách nhau bằng dấu | ; dòng bắt đầu bằng # là ghi chú):");
+  L.push("#");
+  L.push("# [UNIT số | Tên unit | từ khoá tìm video (không bắt buộc)]");
+  L.push("# từ | phiên âm | nghĩa tiếng Việt | định nghĩa tiếng Anh | câu ví dụ có [từ cần điền]");
+  L.push("#   - Phiên âm có thể để trống:  cash |  | tiền mặt | ...");
+  L.push("#   - Trong câu ví dụ, đặt từ cần điền trong [ ] để dùng cho bài tập điền từ.");
+  L.push("#     Nếu quên [ ], trang sẽ tự tìm từ đó trong câu.");
+  L.push("#");
+  L.push("# [TRUE-FALSE]");
+  L.push("# unit | câu nhận định | T hoặc F | giải thích");
+  L.push("#");
+  L.push("# [BRE-AME]");
+  L.push("# từ Anh-Anh | từ Anh-Mỹ");
+  L.push("#");
+  L.push("# [PASSAGE số-unit | Tiêu đề bài nghe]");
+  L.push("# Đoạn văn (có thể viết nhiều dòng)...");
+  L.push("# Q: Câu hỏi? | *đáp án đúng (có dấu *) | đáp án sai | đáp án sai | đáp án sai");
+  L.push("#");
+  L.push("# [VIDEO]");
+  L.push("# unit | tiêu đề | link https://... | mức độ      (unit = 0: video tổng hợp, hiện ở mọi unit)");
+  L.push("# ================================================================");
+  Object.keys(UNITS).map(Number).sort((a,b)=>a-b).forEach(u=>{
+    L.push("",`[UNIT ${u} | ${UNITS[u]}${VSEARCH[u]?" | "+VSEARCH[u]:""}]`);
+    V.filter(v=>v.u===u).forEach(v=>L.push([v.t,v.ipa,v.vi,v.en,v.ex].join(" | ")));
+  });
+  if(TF.length){L.push("","[TRUE-FALSE]");TF.forEach(q=>L.push([q.u,q.s,q.a?"T":"F",q.why].join(" | ")))}
+  if(BRAME.length){L.push("","[BRE-AME]");BRAME.forEach(p=>L.push(p.join(" | ")))}
+  PASS.forEach(p=>{L.push("",`[PASSAGE ${p.u} | ${p.title}]`,p.text);p.qs.forEach(q=>L.push("Q: "+q[0]+" | "+q[1].map((o,j)=>(j===q[2]?"*":"")+o).join(" | ")))});
+  if(VIDEOS.length){L.push("","[VIDEO]");VIDEOS.forEach(v=>L.push([v.u,v.t,v.url,v.lvl].join(" | ")))}
+  return L.join("\n")+"\n";
+}
+function dataLabel(){$("#dataSrc").textContent=`· ${Object.keys(UNITS).length} unit · ${V.length} từ${store.get("imports",[]).length?" · có dữ liệu bạn nhập":""}`}
+function afterDataChange(){if(unit!=="all"&&!UNITS[unit]){unit="all";store.set("unit",unit)}renderUnits();updateStat();dataLabel();render()}
+function doImport(mode){
+  const txt=$("#txtArea").value;const msg=$("#impMsg");
+  if(!txt.trim()){msg.className="note err";msg.textContent="Chưa có nội dung. Hãy chọn file .txt hoặc dán nội dung vào ô.";return}
+  const {d,errs}=parseTxt(txt);
+  if(mode==="replace"&&!d.V.length){msg.className="note err";msg.textContent="Không tìm thấy từ vựng nào. Kiểm tra lại tiêu đề [UNIT số | tên] và các cột ngăn bằng dấu |."+(errs.length?" "+errs.slice(0,3).join("; "):"");return}
+  applyData(d,mode);
+  const imps=mode==="replace"?[]:store.get("imports",[]);imps.push({mode,txt});store.set("imports",imps);
+  msg.className="note ok";
+  msg.innerHTML=`Đã ${mode==="replace"?"thay thế":"gộp"}: ${Object.keys(d.UNITS).length} unit, ${d.V.length} từ, ${d.TF.length} câu đúng/sai, ${d.PASS.length} bài nghe, ${d.VIDEOS.length} video.`+(errs.length?`<br><span style="color:var(--red)">Bỏ qua ${errs.length} dòng lỗi: ${esc(errs.slice(0,4).join("; "))}${errs.length>4?"…":""}</span>`:"");
+  afterDataChange();
+}
+$("#txtFile").onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{$("#txtArea").value=r.result;$("#impMsg").className="note";$("#impMsg").textContent=`Đã đọc “${f.name}”. Bấm Thay thế hoặc Gộp thêm.`};r.readAsText(f,"utf-8")};
+$("#impReplace").onclick=()=>doImport("replace");
+$("#impMerge").onclick=()=>doImport("merge");
+$("#impReset").onclick=()=>{store.set("imports",[]);applyData(JSON.parse(JSON.stringify(DEFAULT)),"replace");$("#impMsg").className="note ok";$("#impMsg").textContent="Đã quay về dữ liệu gốc (Unit 1–18).";afterDataChange()};
+$("#copyTxt").onclick=async()=>{const t=toTxt();$("#txtArea").value=t;try{await navigator.clipboard.writeText(t);$("#impMsg").className="note ok";$("#impMsg").textContent="Đã sao chép dữ liệu hiện tại. Dán vào Notepad và lưu thành file .txt."}catch(e){$("#txtArea").select();$("#impMsg").className="note";$("#impMsg").textContent="Dữ liệu đã hiện trong ô. Bấm Ctrl+C để sao chép."}};
+// áp dụng lại dữ liệu đã nhập lần trước
+store.get("imports",[]).forEach(im=>{try{applyData(parseTxt(im.txt).d,im.mode)}catch(e){}});
+
+/* ============ BOOT ============ */
+dataLabel();
+const h=(location.hash||"").slice(1);if(["flash","vocab","ex","test","listen","imm","video"].includes(h))tab=h;
+renderUnits();updateStat();render();
+</script>
+
+</body>
+</html>
