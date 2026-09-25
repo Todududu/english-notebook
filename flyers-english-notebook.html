@@ -118,10 +118,17 @@ mark{background:var(--accent-soft);color:inherit;padding:0 2px;border-radius:3px
 .fcnav{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px}
 .count{font-family:var(--mono);font-size:13px;text-align:center;margin-top:10px;color:var(--muted);font-variant-numeric:tabular-nums}
 
+
+/* word pictures */
+.pic{width:56px;height:56px;border-radius:12px;background:var(--accent-soft);border:1px solid var(--rule);display:flex;align-items:center;justify-content:center;font-size:30px;line-height:1;letter-spacing:-4px;font-family:"Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji",sans-serif;overflow:hidden;white-space:nowrap}
+.pic.empty{font-family:var(--display);font-size:26px;font-weight:700;color:var(--accent);letter-spacing:0;opacity:.7}
+.fcpic{font-size:72px;line-height:1.1;text-align:center;margin:4px 0 2px;letter-spacing:-6px;font-family:"Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji",sans-serif}
+.fcpic.sm{font-size:44px;letter-spacing:-4px}
+.fcpic.empty{display:none}
 /* vocab list */
 .search{flex:1;min-width:180px;border:1px solid var(--rule);background:var(--surface);border-radius:8px;padding:8px 12px}
 .ledger{border-top:2px solid var(--ink)}
-.entry{display:grid;grid-template-columns:34px minmax(150px,1.1fr) 2fr 26px;gap:4px 14px;padding:12px 0;border-bottom:1px solid var(--rule);align-items:start}
+.entry{display:grid;grid-template-columns:34px 56px minmax(150px,1.1fr) 2fr 26px;gap:4px 14px;padding:12px 0;border-bottom:1px solid var(--rule);align-items:start}
 .entry .t{font-weight:600;font-size:16px}
 .entry .i{font-family:var(--mono);font-size:12px;color:var(--muted)}
 .entry .v{color:var(--accent);font-weight:500}
@@ -132,9 +139,10 @@ mark{background:var(--accent-soft);color:inherit;padding:0 2px;border-radius:3px
 .unithead{font-family:var(--display);font-size:19px;font-weight:600;padding:22px 0 6px;border-bottom:1px solid var(--ink)}
 .unithead span{font-family:var(--mono);font-size:12px;font-weight:400;color:var(--muted);margin-right:8px}
 @media (max-width:620px){
-  .entry{grid-template-columns:34px 1fr 26px}
-  .entry .col2{grid-column:2/3}
-  .entry .chk{grid-row:1;grid-column:3}
+  .entry{grid-template-columns:34px 48px 1fr 26px}
+  .entry .pic{width:48px;height:48px;font-size:26px}
+  .entry .col2{grid-column:3/4}
+  .entry .chk{grid-row:1;grid-column:4}
 }
 
 /* exercises */
@@ -629,6 +637,12 @@ let PASS=[
 let VIDEOS=[];
 let VSEARCH={"1": "kids english vocabulary magazine internet email", "2": "tv programmes vocabulary for kids english", "3": "jobs vocabulary for kids english flyers", "4": "city places vocabulary for kids english", "5": "natural disasters vocabulary for kids english", "6": "materials vocabulary made of metal plastic glass kids", "7": "five senses vocabulary for kids english", "8": "nature vocabulary forest desert river for kids", "9": "sports vocabulary for kids english flyers", "10": "technology vocabulary for kids english", "11": "fairy tales vocabulary dragon giant castle for kids", "12": "future vocabulary will space robots kids english", "13": "camping vocabulary for kids english", "14": "food and cooking vocabulary for kids english", "15": "sea animals vocabulary for kids english", "16": "hobbies vocabulary for kids english", "17": "clothes vocabulary for kids english flyers", "18": "countries travel vocabulary for kids english"};
 
+
+/* ============ WORD PICTURES ============ */
+const PIC={"magazine": "📰", "article": "📄✍️", "website": "🌐", "email": "📧", "message": "💬", "online": "🌐💻", "page": "📃", "reporter": "🎙️📰", "interview": "🎤🗣️", "competition": "🏆", "envelope": "✉️", "post": "📮", "news": "🗞️", "type": "⌨️", "programme": "📺", "channel": "📡📺", "cartoon": "🐭📺", "quiz show": "❓📺", "weather forecast": "🌦️📺", "documentary": "🎥🌍", "advertisement": "📢", "presenter": "👩‍💼🎤", "comedy": "😂🎬", "series": "🎞️", "remote control": "🎮📺", "switch on": "💡✅", "switch off": "💡❌", "exciting": "🤩", "job": "💼", "mechanic": "👨‍🔧", "engineer": "👷", "pilot": "👨‍✈️", "dentist": "🦷👩‍⚕️", "firefighter": "👨‍🚒", "police officer": "👮", "businessman": "👨‍💼", "secretary": "👩‍💻", "waiter": "🤵🍽️", "cook": "👨‍🍳", "factory": "🏭", "office": "🏢", "uniform": "👔", "city centre": "🏙️", "square": "⛲", "bridge": "🌉", "museum": "🏛️", "library": "📚", "post office": "🏤", "chemist": "💊", "traffic": "🚗🚕", "underground": "🚇", "crowded": "👥👥", "noisy": "🔊", "building": "🏢", "hotel": "🏨", "turn left": "⬅️", "storm": "⛈️", "flood": "🌊🏠", "earthquake": "🌍💥", "volcano": "🌋", "lightning": "⚡", "thunder": "🌩️", "fog": "🌫️", "fire": "🔥", "rescue": "🆘", "emergency": "🚨", "ambulance": "🚑", "dangerous": "⚠️", "safe": "🛡️", "escape": "🏃‍♂️🚪", "material": "🧱", "made of": "🧵🔨", "metal": "🔩", "plastic": "🥤", "glass": "🥛", "wood": "🌳🪓", "wooden": "🪑", "paper": "📄", "card": "💌", "gold": "🥇", "silver": "🥈", "wool": "🧶", "cotton": "👕", "recycle": "♻️", "see": "👀", "hear": "👂", "smell": "👃", "taste": "👅", "touch": "✋", "feel": "🤲", "sound": "🔉", "soft": "🧸", "hard": "🧱", "sweet": "🍬", "sour": "🍋", "loud": "📢", "quiet": "🤫", "rough": "🌵", "smooth": "🥚", "forest": "🌲🌲", "jungle": "🌴🐒", "desert": "🏜️", "river": "🏞️", "lake": "🛶", "mountain": "⛰️", "hill": "🌄", "island": "🏝️", "cave": "🕳️", "waterfall": "💦⛰️", "valley": "🏞️", "planet": "🪐", "environment": "🌳🌍", "rock": "🗿", "team": "👥", "match": "⚽🆚", "win": "🏆", "lose": "😞", "score": "🥅⚽", "goal": "🥅", "race": "🏁", "prize": "🎁🏅", "champion": "🥇", "player": "⛹️", "coach": "📋🧑", "stadium": "🏟️", "skate": "⛸️", "sailing": "⛵", "technology": "🔧💻", "laptop": "💻", "mobile phone": "📱", "screen": "🖥️", "keyboard": "⌨️", "internet": "🌐", "app": "📲", "download": "⬇️", "robot": "🤖", "invent": "💡", "battery": "🔋", "password": "🔑", "printer": "🖨️", "digital camera": "📷", "tale": "📖", "dragon": "🐉", "giant": "🗿", "castle": "🏰", "king": "🤴👑", "queen": "👸", "prince": "🤴", "magic": "✨🎩", "brave": "🦸", "frightened": "😨", "wing": "🦋", "tail": "🐈", "fur": "🦊", "once upon a time": "📖✨", "future": "🔮", "space": "🌌", "rocket": "🚀", "astronaut": "👨‍🚀", "spaceship": "🛸", "moon": "🌙", "alien": "👽", "probably": "🤔👍", "perhaps": "🤷", "electric": "⚡🔌", "solar panel": "☀️🔋", "travel": "✈️", "become": "🐛➡️🦋", "scientist": "👩‍🔬", "camping": "🏕️", "tent": "⛺", "campsite": "🏕️", "sleeping bag": "🛌", "torch": "🔦", "map": "🗺️", "compass": "🧭", "backpack": "🎒", "picnic": "🧺", "path": "🥾", "climb": "🧗", "explore": "🔍🗺️", "adventure": "🤠", "insect": "🐞", "recipe": "📜🍳", "ingredient": "🥚🥛", "flour": "🌾", "butter": "🧈", "jam": "🍓🍞", "sauce": "🥫", "pepper": "🌶️", "pancake": "🥞", "soup": "🥣", "bake": "🍞", "boil": "🍲", "fry": "🍳", "delicious": "😋", "menu": "📋🍽️", "octopus": "🐙", "dolphin": "🐬", "shark": "🦈", "whale": "🐋", "jellyfish": "🎐", "seaweed": "🌿🌊", "shell": "🐚", "coral": "🐠🌊", "diver": "🤿", "submarine": "🚢🌊", "wave": "🌊", "fin": "🐟", "underwater": "🐠🌊", "beach": "🏖️", "free time": "🛋️", "hobby": "🎨", "collect": "🗂️", "stamp": "📮", "chess": "♟️", "puzzle": "🧩", "board game": "🎲", "club": "👥🏠", "concert": "🎵🎤", "instrument": "🎺", "violin": "🎻", "drum": "🥁", "skateboard": "🛹", "relax": "😌", "clothes": "👕👖", "jacket": "🧥", "sweater": "🧶", "scarf": "🧣", "gloves": "🧤", "belt": "🎗️", "boots": "🥾", "pocket": "👖", "button": "🔘", "striped": "🦓", "spotted": "🐞", "fashion": "👗", "try on": "👗👀", "wear": "👒", "country": "🗺️", "capital": "🏛️⭐", "passport": "🛂", "tourist": "📸🧳", "journey": "🛣️", "flag": "🚩", "language": "🗣️", "suitcase": "🧳", "holiday": "🏖️", "abroad": "✈️🌍", "foreign": "🌏", "international": "🌐🤝", "souvenir": "🎁", "visit": "🚪👋"};
+const picOf=v=>PIC[v.u+"|"+v.t]||PIC[v.t]||PIC[String(v.t).toLowerCase()]||"";
+const picBox=(v,cls="pic")=>{const p=picOf(v);return `<div class="${cls}${p?"":" empty"}" aria-hidden="true">${p?p:esc(String(v.t).charAt(0).toUpperCase())}</div>`};
+
 /* ============ STATE & UTILS ============ */
 const $=s=>document.querySelector(s);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -730,9 +744,9 @@ function drawCard(){if(!deck.length){$("#fcBox").innerHTML=ALLDONE;return}
   if(di>=deck.length){box.innerHTML=`<div class="panel result"><div class="big">${deck.filter(v=>known.has(v.t)).length}/${deck.length}</div><p>Hết một lượt. Số thẻ đã thuộc trong lượt này.</p><div class="fcnav"><button class="btn primary" id="again">Ôn lượt mới</button></div></div>`;$("#again").onclick=()=>{buildDeck();drawCard()};return}
   const v=deck[di],k=known.has(v.t);
   const en=`<div class="row"><span class="tag">Unit ${v.u}</span>${k?'<span class="tag k">đã thuộc</span>':""}</div>
-    <div class="row"><div class="term">${esc(v.t)}</div>${sayBtn(v.t)}</div>${v.ipa?`<div class="ipa">${esc(v.ipa)}</div>`:""}`;
-  const vi=`<div class="row"><span class="tag">Unit ${v.u}</span></div><div class="vi" style="font-size:26px">${esc(v.vi)}</div><div class="def">${esc(v.en)}</div>`;
-  const full=`<div class="row"><div class="term" style="font-size:28px">${esc(v.t)}</div>${sayBtn(v.t)}${v.ipa?`<span class="ipa">${esc(v.ipa)}</span>`:""}</div>
+    ${picBox(v,"fcpic")}<div class="row"><div class="term">${esc(v.t)}</div>${sayBtn(v.t)}</div>${v.ipa?`<div class="ipa">${esc(v.ipa)}</div>`:""}`;
+  const vi=`<div class="row"><span class="tag">Unit ${v.u}</span></div>${picBox(v,"fcpic")}<div class="vi" style="font-size:26px">${esc(v.vi)}</div><div class="def">${esc(v.en)}</div>`;
+  const full=`${picBox(v,"fcpic sm")}<div class="row"><div class="term" style="font-size:28px">${esc(v.t)}</div>${sayBtn(v.t)}${v.ipa?`<span class="ipa">${esc(v.ipa)}</span>`:""}</div>
     <div class="vi">${esc(v.vi)}</div><div class="def">${esc(v.en)}</div>
     <div class="ex row" style="flex-wrap:nowrap;align-items:flex-start"><span>${exMark(v.ex)}</span>${sayBtn(exPlain(v.ex),"câu ví dụ")}</div>`;
   box.innerHTML=`<div class="stage"><div class="card ${flipped?"flip":""}" id="card" role="button" tabindex="0" aria-label="Lật thẻ">
@@ -770,7 +784,7 @@ function renderVocab(){
     let html="",cur=0;
     items.forEach(v=>{
       if(v.u!==cur){cur=v.u;html+=`<div class="unithead"><span>UNIT ${v.u}</span>${UNITS[v.u]}</div>${vidLinks(v.u,2)}`}
-      html+=`<div class="entry">${sayBtn(v.t)}
+      html+=`<div class="entry">${sayBtn(v.t)}${picBox(v)}
         <div><div class="t">${esc(v.t)}</div>${v.ipa?`<div class="i">${esc(v.ipa)}</div>`:""}<div class="v">${esc(v.vi)}</div></div>
         <div class="col2"><div class="d">${esc(v.en)}</div><div class="e">${exMark(v.ex)} <button class="say" style="width:24px;height:24px;vertical-align:middle" data-say="${esc(exPlain(v.ex))}" aria-label="Nghe câu ví dụ">${SPK}</button></div></div>
         <input class="chk" type="checkbox" id="k-${esc(v.t).replace(/\W/g,"_")}" data-k="${esc(v.t)}" ${known.has(v.t)?"checked":""} title="Đánh dấu đã thuộc" aria-label="Đã thuộc ${esc(v.t)}">

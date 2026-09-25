@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Cập nhật English Notebook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Spectral:wght@600;700&display=swap">
+<style>
+:root{
+  --paper:#F3F5F0;--surface:#FFFFFF;--ink:#1B2623;--muted:#5B6964;--rule:#D8DFD9;--rule-soft:#E7ECE8;
+  --accent:#1C6A4F;--accent-ink:#FFFFFF;--accent-soft:#DFEDE5;--red:#B03A2A;--red-soft:#F6E2DD;--gold:#9A6B12;--gold-soft:#F5EBD6;
+  --display:"Spectral",Georgia,serif;--body:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root{color-scheme:dark;
+  --paper:#101614;--surface:#172019;--ink:#E3EBE6;--muted:#93A39C;--rule:#2B3833;--rule-soft:#212C28;
+  --accent:#5CC196;--accent-ink:#0C1511;--accent-soft:#1B3328;--red:#EB8471;--red-soft:#3A221D;--gold:#E0B25A;--gold-soft:#3A2E17}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55}
+.wrap{max-width:820px;margin:0 auto;padding:28px 16px 60px}
+h1,h2{font-family:var(--display);margin:0;line-height:1.2}
+h1{font-size:clamp(26px,5vw,36px)}
+h2{font-size:20px;display:flex;gap:10px;align-items:baseline}
+h2 .n{font-family:var(--mono);font-size:12px;color:var(--muted);font-weight:400}
+p{margin:0}
+a{color:var(--accent)}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.top{border-bottom:2px solid var(--ink);padding-bottom:14px;margin-bottom:18px;display:flex;flex-wrap:wrap;gap:10px 20px;align-items:flex-end;justify-content:space-between}
+.top .sub{color:var(--muted);margin-top:6px;max-width:60ch}
+.panel{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:20px;margin-top:16px}
+.note{font-size:13px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+@media (max-width:560px){.grid{grid-template-columns:1fr}}
+label.f{display:flex;flex-direction:column;gap:4px;font-size:13px;color:var(--muted)}
+input[type=text],input[type=password],textarea{font:inherit;color:var(--ink);background:var(--paper);border:1px solid var(--rule);border-radius:8px;padding:9px 11px;width:100%}
+input.mono{font-family:var(--mono);font-size:13.5px}
+button,select{font:inherit;color:inherit}
+.btn{border:1px solid var(--rule);background:var(--surface);border-radius:8px;padding:8px 14px;font-size:14px;cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.btn:hover{border-color:var(--muted)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:600}
+.btn:disabled{opacity:.5;cursor:default}
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:14px}
+.grow{flex:1}
+.tog{display:inline-flex;gap:6px;align-items:center;font-size:14px;color:var(--muted)}
+.status{font-size:14px;margin-top:10px;padding:10px 12px;border-radius:8px;display:none}
+.status.ok{display:block;background:var(--accent-soft)}
+.status.err{display:block;background:var(--red-soft)}
+.status.info{display:block;background:var(--rule-soft)}
+details.help{margin-top:14px;border-top:1px dashed var(--rule);padding-top:10px}
+details.help summary{cursor:pointer;font-weight:500;font-size:14px}
+details.help ol{margin:8px 0 0;padding-left:20px;font-size:14px}
+details.help li{margin-bottom:4px}
+code{font-family:var(--mono);font-size:12.5px;background:var(--rule-soft);padding:1px 5px;border-radius:4px}
+.drop{margin-top:14px;border:2px dashed var(--rule);border-radius:10px;padding:26px 16px;text-align:center;cursor:pointer;transition:border-color .2s,background .2s}
+.drop.on,.drop:hover{border-color:var(--accent);background:var(--accent-soft)}
+.drop b{display:block;font-size:16px;margin-bottom:4px}
+table{width:100%;border-collapse:collapse;font-size:14px;margin-top:14px}
+th,td{text-align:left;padding:8px 8px 8px 0;border-bottom:1px solid var(--rule);vertical-align:middle}
+th{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500}
+td input{padding:6px 8px}
+.tag{font-family:var(--mono);font-size:11px;border:1px solid var(--rule);border-radius:4px;padding:1px 6px;white-space:nowrap}
+.tag.new{color:var(--gold);border-color:var(--gold);background:var(--gold-soft)}
+.tag.rep{color:var(--accent);border-color:var(--accent)}
+.tag.ok{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.tag.err{background:var(--red);color:#fff;border-color:var(--red)}
+.x{border:0;background:none;color:var(--muted);cursor:pointer;font-size:18px;line-height:1;padding:2px 6px}
+.files{list-style:none;padding:0;margin:10px 0 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:6px}
+.files li{font-size:13.5px;display:flex;gap:8px;align-items:center;justify-content:space-between;border:1px solid var(--rule);border-radius:8px;padding:6px 10px;background:var(--paper)}
+.files li span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-family:var(--mono);font-size:12.5px}
+.files li a{font-size:12px;white-space:nowrap}
+.conn{font-family:var(--mono);font-size:12.5px}
+.conn.ok{color:var(--accent)}
+.conn.no{color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <div class="eyebrow">English Notebook · công cụ quản trị</div>
+      <h1>Cập nhật trang lên GitHub</h1>
+      <p class="sub">Chọn file .html trên máy, bấm Đăng. Công cụ ghi thẳng vào repo, trang github.io tự cập nhật sau 1–2 phút.</p>
+    </div>
+    <a class="btn" href="./">← Trang chủ</a>
+  </header>
+
+  <!-- 1. Kết nối -->
+  <section class="panel">
+    <h2><span class="n">01</span>Kết nối GitHub <span class="grow"></span><span class="conn no" id="connState">chưa kết nối</span></h2>
+    <div class="grid">
+      <label class="f">Tài khoản (owner)<input type="text" class="mono" id="owner" autocomplete="off" spellcheck="false"></label>
+      <label class="f">Repo<input type="text" class="mono" id="repo" autocomplete="off" spellcheck="false"></label>
+      <label class="f">Nhánh (để trống = nhánh mặc định)<input type="text" class="mono" id="branch" autocomplete="off" spellcheck="false" placeholder="main"></label>
+      <label class="f">Thư mục trong repo (để trống = thư mục gốc)<input type="text" class="mono" id="folder" autocomplete="off" spellcheck="false" placeholder=""></label>
+    </div>
+    <label class="f" style="margin-top:12px">Mã truy cập (Personal access token)
+      <input type="password" class="mono" id="token" autocomplete="off" spellcheck="false" placeholder="github_pat_…">
+    </label>
+    <div class="bar">
+      <label class="tog"><input type="checkbox" id="remember" checked> Ghi nhớ trên máy này</label>
+      <span class="grow"></span>
+      <button class="btn" id="forget">Xoá mã đã lưu</button>
+      <button class="btn primary" id="connect">Kết nối</button>
+    </div>
+    <div class="status" id="connMsg" role="status"></div>
+    <details class="help">
+      <summary>Cách tạo mã truy cập (làm một lần)</summary>
+      <ol>
+        <li>Mở <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a> (đăng nhập GitHub nếu được hỏi).</li>
+        <li><b>Token name</b>: đặt tên dễ nhớ, ví dụ <code>english-notebook</code>. <b>Expiration</b>: chọn thời hạn (ví dụ 1 năm).</li>
+        <li><b>Repository access</b>: chọn <i>Only select repositories</i> → chọn repo <code id="helpRepo">english-notebook</code>.</li>
+        <li><b>Permissions → Repository permissions → Contents</b>: chọn <i>Read and write</i>.</li>
+        <li>Bấm <b>Generate token</b>, sao chép mã (bắt đầu bằng <code>github_pat_</code>) và dán vào ô ở trên.</li>
+      </ol>
+      <p class="note" style="margin-top:8px">Mã chỉ được lưu trong trình duyệt của máy này và chỉ gửi tới GitHub. Đừng chia sẻ mã cho người khác. Trên máy dùng chung, bỏ tick “Ghi nhớ trên máy này”. Nếu lỡ lộ mã, vào trang token trên GitHub và bấm Revoke.</p>
+    </details>
+  </section>
+
+  <!-- 2. Chọn file -->
+  <section class="panel" id="upPanel">
+    <h2><span class="n">02</span>Chọn file để đăng</h2>
+    <label class="drop" id="drop" for="picker">
+      <b>Kéo thả file vào đây</b>
+      <span class="note">hoặc bấm để chọn · có thể chọn nhiều file (.html, .txt, .css, .js, ảnh…)</span>
+      <input type="file" id="picker" multiple hidden>
+    </label>
+    <div id="queueBox" hidden>
+      <div style="overflow-x:auto"><table>
+        <thead><tr><th>Tên trên GitHub</th><th>Cỡ</th><th>Trạng thái</th><th></th></tr></thead>
+        <tbody id="queue"></tbody>
+      </table></div>
+      <label class="f" style="margin-top:14px">Ghi chú thay đổi (commit message)
+        <input type="text" id="msg" placeholder="Cập nhật trang">
+      </label>
+      <div class="bar">
+        <button class="btn" id="clear">Bỏ hết</button>
+        <span class="grow"></span>
+        <button class="btn primary" id="publish">Đăng lên GitHub</button>
+      </div>
+    </div>
+    <div class="status" id="upMsg" role="status"></div>
+  </section>
+
+  <!-- 3. File hiện có -->
+  <section class="panel">
+    <h2><span class="n">03</span>File đang có trên repo <span class="grow"></span><button class="btn" id="reload" style="font-family:var(--body)">Tải lại</button></h2>
+    <p class="note" style="margin-top:6px">File có tên giống file bạn chọn sẽ được thay bằng bản mới. Lịch sử cũ vẫn nằm trong GitHub nếu cần lấy lại.</p>
+    <ul class="files" id="files"><li><span class="note">Kết nối để xem danh sách.</span></li></ul>
+  </section>
+</div>
+
+<script>
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const KEY="gh-updater";
+const load=()=>{try{return JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){return {}}};
+const save=o=>{try{localStorage.setItem(KEY,JSON.stringify(o))}catch(e){}};
+
+/* ---------- defaults: đoán owner/repo từ địa chỉ github.io ---------- */
+(function init(){
+  const s=load();let owner="todududu",repo="english-notebook";
+  const m=location.hostname.match(/^([^.]+)\.github\.io$/i);
+  if(m){owner=m[1];const seg=location.pathname.split("/").filter(Boolean);repo=seg.length>1||(seg[0]&&!/\.html?$/i.test(seg[0]))?seg[0]:owner+".github.io"}
+  $("#owner").value=s.owner||owner;$("#repo").value=s.repo||repo;$("#branch").value=s.branch||"";$("#folder").value=s.folder||"";
+  $("#token").value=s.token||"";$("#remember").checked=s.remember!==false;
+  $("#helpRepo").textContent=$("#repo").value;
+})();
+$("#repo").oninput=()=>$("#helpRepo").textContent=$("#repo").value||"english-notebook";
+
+const cfg=()=>({owner:$("#owner").value.trim(),repo:$("#repo").value.trim(),branch:$("#branch").value.trim(),
+  folder:$("#folder").value.trim().replace(/^\/+|\/+$/g,""),token:$("#token").value.trim(),remember:$("#remember").checked});
+function persist(){const c=cfg();save(c.remember?c:{owner:c.owner,repo:c.repo,branch:c.branch,folder:c.folder,remember:false})}
+
+/* ---------- GitHub API ---------- */
+async function gh(path,opt={}){
+  const c=cfg();
+  const r=await fetch("https://api.github.com"+path,{...opt,headers:{Accept:"application/vnd.github+json","X-GitHub-Api-Version":"2022-11-28",
+    Authorization:"Bearer "+c.token,...(opt.body?{"Content-Type":"application/json"}:{})}});
+  let data=null;try{data=await r.json()}catch(e){}
+  if(!r.ok){const e=new Error((data&&data.message)||("HTTP "+r.status));e.status=r.status;throw e}
+  return data;
+}
+const encPath=p=>p.split("/").map(encodeURIComponent).join("/");
+function explain(e){
+  if(e.status===401)return "Mã truy cập sai hoặc đã hết hạn. Hãy tạo mã mới.";
+  if(e.status===403)return "Mã không có quyền ghi. Kiểm tra mục Contents đã chọn “Read and write” và đã chọn đúng repo.";
+  if(e.status===404)return "Không tìm thấy repo, nhánh hoặc thư mục. Kiểm tra lại tên tài khoản, repo và quyền của mã.";
+  if(e.status===409)return "File vừa bị thay đổi ở nơi khác. Bấm Tải lại rồi đăng lại.";
+  if(e.status===422)return "GitHub từ chối file này ("+e.message+").";
+  if(e instanceof TypeError)return "Không kết nối được tới GitHub. Kiểm tra mạng.";
+  return e.message;
+}
+function status(el,kind,html){const s=$(el);s.className="status "+kind;s.innerHTML=html}
+
+let connected=false,remote=new Map(),defaultBranch="main",pagesBase="";
+async function connect(){
+  const c=cfg();
+  if(!c.owner||!c.repo){status("#connMsg","err","Hãy nhập tài khoản và repo.");return false}
+  if(!c.token){status("#connMsg","err","Hãy dán mã truy cập (xem hướng dẫn bên dưới).");return false}
+  persist();status("#connMsg","info","Đang kết nối…");
+  try{
+    const r=await gh(`/repos/${encodeURIComponent(c.owner)}/${encodeURIComponent(c.repo)}`);
+    defaultBranch=r.default_branch||"main";
+    if(r.permissions&&!r.permissions.push){status("#connMsg","err","Kết nối được nhưng mã chỉ có quyền đọc. Cần Contents: Read and write.");connected=false;setConn();return false}
+    connected=true;
+    pagesBase=/\.github\.io$/i.test(c.repo)?`https://${c.repo}/`:`https://${c.owner.toLowerCase()}.github.io/${c.repo}/`;
+    status("#connMsg","ok",`Đã kết nối <b>${esc(r.full_name)}</b> · nhánh <b>${esc(c.branch||defaultBranch)}</b>.`);
+    setConn();await listFiles();return true;
+  }catch(e){connected=false;setConn();status("#connMsg","err",esc(explain(e)));return false}
+}
+function setConn(){const s=$("#connState");s.textContent=connected?"đã kết nối":"chưa kết nối";s.className="conn "+(connected?"ok":"no")}
+async function listFiles(){
+  const c=cfg(),ul=$("#files");ul.innerHTML='<li><span class="note">Đang tải…</span></li>';
+  try{
+    const q=c.branch?`?ref=${encodeURIComponent(c.branch)}`:"";
+    const items=await gh(`/repos/${encodeURIComponent(c.owner)}/${encodeURIComponent(c.repo)}/contents/${encPath(c.folder)}${q}`);
+    remote=new Map();(Array.isArray(items)?items:[]).forEach(i=>{if(i.type==="file")remote.set(i.name,i.sha)});
+    const files=[...remote.keys()].sort((a,b)=>(/\.html?$/i.test(b)-/\.html?$/i.test(a))||a.localeCompare(b));
+    ul.innerHTML=files.length?files.map(n=>`<li><span title="${esc(n)}">${esc(n)}</span>${/\.html?$/i.test(n)?`<a href="${esc(pageUrl(n))}" target="_blank" rel="noopener">Xem ↗</a>`:""}</li>`).join(""):'<li><span class="note">Thư mục trống.</span></li>';
+    paintQueue();
+  }catch(e){ul.innerHTML=`<li><span class="note">${esc(explain(e))}</span></li>`}
+}
+const pageUrl=n=>pagesBase+(cfg().folder?encPath(cfg().folder)+"/":"")+(n==="index.html"?"":encodeURIComponent(n));
+
+/* ---------- hàng đợi file ---------- */
+let queue=[];
+function addFiles(list){
+  [...list].forEach(f=>{const i=queue.findIndex(q=>q.name===f.name);const item={file:f,name:f.name,state:""};if(i>=0)queue[i]=item;else queue.push(item)});
+  paintQueue();$("#upMsg").className="status";
+}
+const size=b=>b<1024?b+" B":b<1048576?(b/1024).toFixed(1)+" KB":(b/1048576).toFixed(1)+" MB";
+function paintQueue(){
+  $("#queueBox").hidden=!queue.length;
+  $("#queue").innerHTML=queue.map((q,i)=>{
+    const tag=q.state==="ok"?'<span class="tag ok">✓ đã đăng</span>':q.state==="err"?`<span class="tag err" title="${esc(q.err||"")}">lỗi</span>`:q.state==="run"?'<span class="tag">đang đăng…</span>':
+      !connected?'<span class="tag">—</span>':remote.has(q.name)?'<span class="tag rep">thay bản cũ</span>':'<span class="tag new">file mới</span>';
+    return `<tr><td><input type="text" class="mono" data-i="${i}" value="${esc(q.name)}" aria-label="Tên file trên GitHub"></td><td class="note">${size(q.file.size)}</td><td>${tag}</td><td><button class="x" data-rm="${i}" aria-label="Bỏ ${esc(q.name)}">×</button></td></tr>`}).join("");
+  if(!$("#msg").value&&queue.length)$("#msg").placeholder="Cập nhật "+queue.map(q=>q.name).join(", ");
+}
+$("#queue").oninput=e=>{const i=e.target.dataset.i;if(i!=null){queue[+i].name=e.target.value.trim();queue[+i].state=""}};
+$("#queue").onchange=()=>paintQueue();
+$("#queue").onclick=e=>{const b=e.target.closest("[data-rm]");if(b){queue.splice(+b.dataset.rm,1);paintQueue()}};
+$("#picker").onchange=e=>{addFiles(e.target.files);e.target.value=""};
+const drop=$("#drop");
+["dragenter","dragover"].forEach(t=>drop.addEventListener(t,e=>{e.preventDefault();drop.classList.add("on")}));
+["dragleave","drop"].forEach(t=>drop.addEventListener(t,e=>{e.preventDefault();drop.classList.remove("on")}));
+drop.addEventListener("drop",e=>addFiles(e.dataTransfer.files));
+$("#clear").onclick=()=>{queue=[];paintQueue();$("#upMsg").className="status"};
+
+const b64=f=>new Promise((res,rej)=>{const r=new FileReader();r.onload=()=>res(String(r.result).split(",")[1]||"");r.onerror=()=>rej(r.error);r.readAsDataURL(f)});
+
+async function publish(){
+  if(!queue.length)return;
+  if(!connected&&!(await connect())){status("#upMsg","err","Chưa kết nối được GitHub. Xem thông báo ở mục 01.");return}
+  const bad=queue.find(q=>!q.name||/[\\:*?"<>|]/.test(q.name));
+  if(bad){status("#upMsg","err","Tên file không hợp lệ: “"+esc(bad.name||"(trống)")+"”.");return}
+  const c=cfg(),msg=$("#msg").value.trim()||$("#msg").placeholder;
+  $("#publish").disabled=true;let ok=0;const done=[];
+  status("#upMsg","info","Đang đăng…");
+  for(const q of queue){
+    if(q.state==="ok")continue;
+    q.state="run";paintQueue();
+    try{
+      if(q.file.size>50*1048576)throw Object.assign(new Error("File lớn hơn 50 MB."),{status:422});
+      const path=(c.folder?c.folder+"/":"")+q.name;
+      const body={message:msg,content:await b64(q.file)};
+      if(c.branch)body.branch=c.branch;
+      if(remote.has(q.name))body.sha=remote.get(q.name);
+      const r=await gh(`/repos/${encodeURIComponent(c.owner)}/${encodeURIComponent(c.repo)}/contents/${encPath(path)}`,{method:"PUT",body:JSON.stringify(body)});
+      remote.set(q.name,r.content&&r.content.sha);q.state="ok";ok++;done.push(q.name);
+    }catch(e){q.state="err";q.err=explain(e)}
+    paintQueue();
+  }
+  $("#publish").disabled=false;
+  const errs=queue.filter(q=>q.state==="err");
+  const links=done.filter(n=>/\.html?$/i.test(n)).map(n=>`<a href="${esc(pageUrl(n))}" target="_blank" rel="noopener">${esc(n)}</a>`).join(" · ");
+  if(!errs.length)status("#upMsg","ok",`Đã đăng ${ok} file. Trang github.io sẽ cập nhật sau khoảng 1–2 phút (bấm Ctrl+F5 nếu vẫn thấy bản cũ).${links?"<br>Mở: "+links:""}`);
+  else status("#upMsg","err",`Đăng được ${ok}/${ok+errs.length} file. Lỗi: ${errs.map(q=>"<b>"+esc(q.name)+"</b>: "+esc(q.err)).join("; ")}`);
+  listFiles();
+}
+
+$("#connect").onclick=connect;
+$("#reload").onclick=()=>connected?listFiles():connect();
+$("#publish").onclick=publish;
+$("#forget").onclick=()=>{$("#token").value="";const s=load();delete s.token;save(s);connected=false;setConn();status("#connMsg","ok","Đã xoá mã khỏi máy này.")};
+["owner","repo","branch","folder"].forEach(id=>$("#"+id).addEventListener("change",()=>{connected=false;setConn()}));
+$("#remember").onchange=persist;
+if(cfg().token)connect();
+</script>
+</body>
+</html>
