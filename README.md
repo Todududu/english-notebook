@@ -8,6 +8,7 @@ Trang học tiếng Anh: Cambridge Movers, Flyers (thiếu nhi) và tiếng Anh 
 | `movers-english-notebook.html` | Trang học Movers (18 unit) |
 | `flyers-english-notebook.html` | Trang học Flyers (18 unit) |
 | `finance-english-ledger.html` | Trang học tiếng Anh tài chính (Unit 1–20, 22) |
+| `my-next-grammar-1.html` | Bài giảng ngữ pháp My Next Grammar 1 (24 bài, giảng bằng tiếng Việt) |
 | `movers-english-data.txt`, `flyers-english-data.txt`, `finance-english-data.txt` | Dữ liệu học dạng txt, có thể sửa rồi nhập lại qua mục "Dữ liệu học" trên trang |
 
 Tiến độ học được lưu trong trình duyệt của từng máy.
